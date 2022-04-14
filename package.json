@@ -1,22 +1,22 @@
 {
   "name": "building-of-the-year",
   "version": "1.0.0",
-  "description": "",
+  "description": "building-of-the-year",
   "scripts": {
     "dev": "npx tailwindcss -i ./src/assets/css/style.css -o ./dist/style.css --watch",
     "build": "npx tailwindcss -o ./dist/style.min.css --minify"
   },
   "repository": {
     "type": "git",
-    "url": "#"
+    "url": "git@github.com:kostadindraganov/Building-of-the-Year.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "#"
+    "url": "git@github.com:kostadindraganov/Building-of-the-Year.git"
   },
-  "homepage": "#",
+  "homepage": "git@github.com:kostadindraganov/Building-of-the-Year.git",
   "devDependencies": {
     "tailwindcss": "^3.0.23"
   }
