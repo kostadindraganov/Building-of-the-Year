@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Neue-bold';
+    src: url('/src/assets/fonts/en/NeueHaasUnicaW1G-Bold1.eot');
+    src: url('/src/assets/fonts/en/NeueHaasUnicaW1G-Bold1.eot?#iefix') format('embedded-opentype'),
+         url('/src/assets/fonts/en/NeueHaasUnicaW1G-Bold1.woff2') format('woff2'),
+         url('/src/assets/fonts/en/NeueHaasUnicaW1G-Bold1.woff') format('woff'),
+         url('/src/assets/fonts/en/NeueHaasUnicaW1G-Bold1.ttf')  format('truetype'),
+         url('/src/assets/fonts/en/NeueHaasUnicaW1G-Bold1.svg#Neue Haas Unica W1G') format('svg');
+  },
+
+  @font-face {
+    font-family: 'Neue-regular';
+    src: url('/src/assets/fonts/en/NeueHaasUnicaW1G-Regular.eot');
+    src: url('/src/assets/fonts/en/NeueHaasUnicaW1G-Regular.eot?#iefix') format('embedded-opentype'),
+         url('/src/assets/fonts/en/NeueHaasUnicaW1G-Regular.woff2') format('woff2'),
+         url('/src/assets/fonts/en/NeueHaasUnicaW1G-Regular.woff') format('woff'),
+         url('/src/assets/fonts/en/NeueHaasUnicaW1G-Regular.ttf')  format('truetype'),
+         url('/src/assets/fonts/en/NeueHaasUnicaW1G-Regular.svg#Neue Haas Unica W1G') format('svg');
+  }
+  @font-face {
+    font-family: 'Neue-regular-cyrillic';
+    src: url('/src/assets/fonts/bg/NeueHaasUnicaW1G-Regular.eot');
+    src: url('/src/assets/fonts/bg/NeueHaasUnicaW1G-Regular.eot?#iefix') format('embedded-opentype'),
+         url('/src/assets/fonts/bg/NeueHaasUnicaW1G-Regular.woff2') format('woff2'),
+         url('/src/assets/fonts/bg/NeueHaasUnicaW1G-Regular.woff') format('woff'),
+         url('/src/assets/fonts/bg/NeueHaasUnicaW1G-Regular.ttf')  format('truetype'),
+         url('/src/assets/fonts/bg/NeueHaasUnicaW1G-Regular.svg#Neue Haas Unica W1G') format('svg');
+  }
+  @font-face {
+    font-family: 'Neue-bold-cyrillic';
+    src: url('/src/assets/fonts/bg/NeueHaasUnicaW1G-Bold.eot');
+    src: url('/src/assets/fonts/bg/NeueHaasUnicaW1G-Bold.eot?#iefix') format('embedded-opentype'),
+         url('/src/assets/fonts/bg/NeueHaasUnicaW1G-Bold.woff2') format('woff2'),
+         url('/src/assets/fonts/bg/NeueHaasUnicaW1G-Bold.woff') format('woff'),
+         url('/src/assets/fonts/bg/NeueHaasUnicaW1G-Bold.ttf')  format('truetype'),
+         url('/src/assets/fonts/bg/NeueHaasUnicaW1G-Bold.svg#Neue Haas Unica W1G') format('svg');
+  }
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn {
+  @apply shadow-md py-3 px-6 rounded-md transition duration-300;
+}
+
+.btn-purple {
+  @apply bg-bookmark-purple text-white;
+}
+
+.btn-white {
+  @apply bg-bookmark-white;
+}
+
+
+.enter-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  width: 270px;
+  position: relative;
+  outline: 0;
+  overflow:hidden;
+  background: none;
+  z-index: 1;
+  cursor: pointer;
+  border-bottom: solid 2px white;
+  transition:         all .2s ease-in-out;
+  -o-transition:      all .2s ease-in-out;
+  -ms-transition:     all .2s ease-in-out;
+  -moz-transition:    all .2 ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+}
+
+.enter-btn:hover {
+  padding-right: 12px;
+  border-color: #CF8D3B;
+}
+
+.enter-btn:hover span {
+  transform: translate3d(100%,0,0);
+  transition:         all .2s ease-in-out;
+}
+.enter-btn span {
+
+  transition: all .2s ease-in-out;
+}
+
+
+.enter-btn:before {
+  content: "";
+  position: absolute;
+  background: #CF8D3B;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.14s ease-in;
+}
+
+.enter-btn:hover:before {
+  top: 0;
+}
