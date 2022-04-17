@@ -47,18 +47,9 @@ html {
   scroll-behavior: smooth;
 }
 
-.btn {
-  @apply shadow-md py-3 px-6 rounded-md transition duration-300;
+.footer {
+  @apply bg-footer sm:h-[640px] h-[720px] bg-no-repeat bg-bottom bg-cover	bg-black
 }
-
-.btn-purple {
-  @apply bg-bookmark-purple text-white;
-}
-
-.btn-white {
-  @apply bg-bookmark-white;
-}
-
 
 .enter-btn {
   display: flex;
