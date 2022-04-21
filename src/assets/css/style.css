@@ -47,16 +47,27 @@ html {
   scroll-behavior: smooth;
 }
 
-.footer {
-  @apply bg-footer sm:h-[640px] h-[720px] bg-no-repeat bg-bottom bg-cover	bg-black
+h1 {
+  @apply font-bold sm:text-7xl text-4xl text-white sm:leading-14 leading-9;
+}
+
+h2 {
+  @apply font-bold sm:text-5xl text-3xl text-white sm:leading-15 leading-8;
+}
+
+h5 {
+  @apply font-bold text-2xl border-b-3 border-b-black w-44 pb-4;
+}
+
+.container {
+  @apply lg:px-0 md:px-4 px-4;
 }
 
 .enter-btn {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   color: white;
-  width: 270px;
   position: relative;
   outline: 0;
   overflow:hidden;
@@ -64,27 +75,18 @@ html {
   z-index: 1;
   cursor: pointer;
   border-bottom: solid 2px white;
-  transition:         all .2s ease-in-out;
-  -o-transition:      all .2s ease-in-out;
-  -ms-transition:     all .2s ease-in-out;
-  -moz-transition:    all .2 ease-in-out;
-  -webkit-transition: all .2s ease-in-out;
+
 }
 
-.enter-btn:hover {
-  padding-right: 12px;
-  border-color: #CF8D3B;
+.enter-btn .spacer{
+  flex-grow: 1;
+  transition: flex-grow 270ms linear;
 }
 
-.enter-btn:hover span {
-  transform: translate3d(100%,0,0);
-  transition:         all .2s ease-in-out;
+.enter-btn:hover .spacer{
+  flex-grow: 0;
+  transition: flex-grow 220ms linear;
 }
-.enter-btn span {
-
-  transition: all .2s ease-in-out;
-}
-
 
 .enter-btn:before {
   content: "";
@@ -95,9 +97,42 @@ html {
   right: 0;
   top: 100%;
   z-index: -1;
-  -webkit-transition: top 0.14s ease-in;
+  transition:         all 0.2s ease-in-out;
+  -webkit-transition: top 0.24s ease-in-out;
 }
 
 .enter-btn:hover:before {
   top: 0;
+}
+
+.more-btn {
+  @apply flex items-center justify-between border-b-1 pb-1.5;
+}
+
+.btn-hover-1 {
+  @apply border-b-primary hover:border-b-white text-primary hover:text-white fill-primary hover:fill-white;
+}
+
+.btn-hover-2 {
+  @apply border-b-black text-black fill-black hover:border-b-primary hover:text-primary hover:fill-primary;
+}
+
+.btn-hover-3 {
+  @apply border-b-black text-black fill-black hover:border-b-white hover:text-white hover:fill-white;
+}
+
+.btn-hover-4 {
+  @apply border-b-white text-white fill-white hover:border-b-black hover:text-black hover:fill-black;
+}
+
+.grid-zoom {
+  @apply relative overflow-hidden lg:w-68 lg:h-47 md:w-56 md:h-36 w-42 h-29 cursor-pointer;
+}
+
+.grid-zoom-image {
+  @apply absolute w-full h-full transition-all duration-500 ease-in-out transform ;
+}
+
+.grid-zoom:hover .grid-zoom-image {
+  @apply scale-150;
 }
