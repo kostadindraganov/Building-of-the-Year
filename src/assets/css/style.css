@@ -110,19 +110,23 @@ h5 {
 }
 
 .btn-hover-1 {
-  @apply border-b-primary hover:border-b-white text-primary hover:text-white fill-primary hover:fill-white;
+  @apply border-b-primary hover:border-b-white text-primary hover:text-white fill-primary hover:fill-white cursor-pointer;
 }
 
 .btn-hover-2 {
-  @apply border-b-black text-black fill-black hover:border-b-primary hover:text-primary hover:fill-primary;
+  @apply border-b-black text-black fill-black hover:border-b-primary hover:text-primary hover:fill-primary cursor-pointer;
 }
 
 .btn-hover-3 {
-  @apply border-b-black text-black fill-black hover:border-b-white hover:text-white hover:fill-white;
+  @apply border-b-black text-black fill-black hover:border-b-white hover:text-white hover:fill-white cursor-pointer;
 }
 
 .btn-hover-4 {
-  @apply border-b-white text-white fill-white hover:border-b-black hover:text-black hover:fill-black;
+  @apply border-b-white text-white fill-white hover:border-b-black hover:text-black hover:fill-black cursor-pointer;
+}
+
+.btn-hover-5 {
+  @apply border-b-white text-white fill-white hover:border-b-primary hover:text-primary hover:fill-primary cursor-pointer;
 }
 
 .grid-zoom {
