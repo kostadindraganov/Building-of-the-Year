@@ -109,6 +109,10 @@ h5 {
   @apply flex items-center justify-between border-b-1 pb-1.5;
 }
 
+.hover-scale {
+  @apply transform transition duration-500 hover:scale-110;
+}
+
 .btn-hover-1 {
   @apply border-b-primary hover:border-b-white text-primary hover:text-white fill-primary hover:fill-white cursor-pointer;
 }
