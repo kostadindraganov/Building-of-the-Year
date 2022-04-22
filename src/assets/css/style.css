@@ -126,7 +126,7 @@ h5 {
 }
 
 .btn-hover-5 {
-  @apply border-b-white text-white fill-white hover:border-b-primary hover:text-primary hover:fill-primary cursor-pointer;
+  @apply border-b-white text-white fill-white hover:border-b-primary hover:text-primary hover:fill-primary cursor-pointer stroke-white hover:stroke-primary;
 }
 
 .grid-zoom {
