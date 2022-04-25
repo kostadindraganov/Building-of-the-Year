@@ -4,50 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon/favicon.ico">
+    <title>Building of the Year</title>
     <link href="/dist/style.css" rel="stylesheet">
-    <title>Bookmark Landing Page</title>
   </head>
   
   <body class="font-regular">
     <!-- Header -->
-    <header class="h-29 max-h-29 mt-4 sm:mt-5">
-      <nav class="container flex flex-row items-start justify-between bg-black">
-        <div class="flex items-center sm:w-68 w-56">
+    
+    <header class="absolute w-full z-20 bg-gradient-to-b  from-black to-transparent">
+      <nav class="container flex flex-row items-start justify-between sm:mt-5 mt-4 pb-11">
+        <div class="flex items-center sm:w-68 md:w-56 w-56">
           <img src="./assets/logo/logo.png" alt="logo" class="h-full w-full" />
         </div>
-        <div class="hidden sm:flex text-white font-regular flex-col items-end justify-between h-29">
+        <div class="hidden md:flex text-white font-regular flex-col items-end justify-between h-29">
           <div>
-            <ul class="flex items-center gap-5 text-sm">
+            <ul class="flex items-center lg:gap-5 gap-3 text-sm">
               <li class="btn-hover-5">Home</li>
-              <li class="cursor-pointer">About</li>
+              <li class="btn-hover-5">About</li>
               <li class="btn-hover-5">Archive</li>
               <li class="btn-hover-5">Archive</li>
               <li class="btn-hover-5">Contacts</li>
               <li class="flex items-center btn-hover-5"> 
-                <img src="./assets/icon/globe.svg" alt="" class="w-4" />
+                <img src="./assets/icon/globe.svg" alt="globe" class="w-5" />
                 <span class="ml-1.5">bg</span>
               </li>
             </ul>
           </div>
   
           <div class="flex flex-1 justify-end items-center">
-            <ul class="flex flex-1 items-start gap-5 text-xl mt-2">
-              <li class="cursor-pointer">Participants</li>
-              <li class="cursor-pointer">Jury</li>
-              <li class="cursor-pointer">Gallery</li>
-              <li class="cursor-pointer">Initiatives</li>
-              <li class="cursor-pointer">Rules</li>
+            <ul class="flex flex-1 items-start lg:gap-5 gap-3 text-xl mt-2">
+              <li class="btn-hover-5">Participants</li>
+              <li class="btn-hover-5">Jury</li>
+              <li class="btn-hover-5">Gallery</li>
+              <li class="btn-hover-5">Initiatives</li>
+              <li class="btn-hover-5">Rules</li>
                 <button type="button" class="more-btn btn-hover-1">
                   <span class="mr-2"> Online Application </span>
-                  <svg xmlns="http://www.w3.org/2000/svg"width="14.145" height="12.142" viewBox="0 0 14.145 12.142"><path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(0 0)"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg"width="14.145" height="12.142" viewBox="0 0 14.145 12.142"><path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(0 0)" /></svg>
                 </button>
             </ul>
           </div>
-     
         </div>
 
         	<!-- Mobile menu button -->
-          <div class="md:hidden flex items-center mt-5">
+          <div class=" md:hidden flex items-center mt-5">
             <button id="mobile-menu-btn">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="17" viewBox="0 0 25 17" class="btn-hover-5">
                 <g transform="translate(-333 -19)">
@@ -61,95 +62,133 @@
       </nav>
     </header>
 
-    <div class="h-80"></div>
+    <!-- Hero -->
+
+    <section class="relative flex flex-col justify-between md:h-188 h-141"> 
+      <div class="container flex justify-end flex-col h-full">
+        <div class="border-l-20 border-l-primary sm:mb-10 mb-5.5">
+          <div class="md:w-173 w-80 sm:ml-7.1 ml-3.5">
+            <h1>Online Application Phase for 2022 Has Launched</h1>
+            <button type="button" class="more-btn sm:w-68 w-34.5 btn-hover-5 mt-5">
+              <span> Submit Your Application Now </span>
+              <svg xmlns="http://www.w3.org/2000/svg"width="14.145" height="12.142" viewBox="0 0 14.145 12.142"><path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(0 0)"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+     <div class="absolute top-0 left-0 -z-20 md:h-188 h-141">
+      <img src="./assets/images/hero-slider/hero-1.jpg" alt="mrdpw" class="w-full h-full">
+     </div>
+
+     <div class="absolute bottom-0 right-0 flex items-center md:w-84 w-30 h-12 bg-white px-2.5">
+      <button class="btn-hover-2 h-full px-2.5"> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="32.618" height="28" viewBox="0 0 32.618 28">
+          <path d="M31.984,15.53,20.149,27.365A2.165,2.165,0,0,1,17.087,24.3l8.14-8.139H2.165a2.165,2.165,0,0,1,0-4.33H25.227L17.087,3.7A2.165,2.165,0,0,1,20.149.634L31.984,12.469a2.164,2.164,0,0,1,0,3.061" transform="translate(32.618 28) rotate(180)"/>
+        </svg>
+      </button>
+
+      <button class="btn-hover-2 h-full px-2.5"> 
+        <svg xmlns="http://www.w3.org/2000/svg" width="32.618" height="28" viewBox="0 0 32.618 28">
+          <path  d="M31.984,15.53,20.149,27.365A2.165,2.165,0,0,1,17.087,24.3l8.14-8.139H2.165a2.165,2.165,0,0,1,0-4.33H25.227L17.087,3.7A2.165,2.165,0,0,1,20.149.634L31.984,12.469a2.164,2.164,0,0,1,0,3.061" transform="translate(0 0)"/>
+        </svg>
+       </button>
+
+    </div>
+    </section>
+
 
     <!-- Sponsors -->
 
-    <section class="container sm:text-sm text-extra-small ">
+    <section class="container sm:text-sm text-extra-small mt-11">
       <div class="flex flex-wrap sm:gap-x-24 gap-x-23 gap-y-10.5 justify-start items-start content-center">
         <div>
           <p class="sm:mb-9 mb-5">Under the Auspices of</p>
-          <img src="./assets/images/partners/mrdpw.png" alt="mrdpw" class="sm:w-36 w-25.5">
+          <img src="./assets/images/partners/mrdpw.png" alt="mrdpw" class="sm:w-36 w-25.5 cursor-pointer">
         </div>
         <div>
           <p class="sm:mb-9 mb-5">Exclusive Partner</p>
-          <img src="./assets/images/partners/euromarket.png" alt="euromarket" class="sm:w-47 w-32">
+          <img src="./assets/images/partners/euromarket.png" alt="euromarket" class="sm:w-47 w-32 cursor-pointer">
         </div>
         <div>
           <p class="sm:mb-9 mb-5">Main Sponsor</p>
-          <img src="./assets/images/partners/agcapital.png" alt="agcapital" class="sm:w-44 w-25.5">
+          <img src="./assets/images/partners/agcapital.png" alt="agcapital" class="sm:w-44 w-25.5 cursor-pointer">
         </div>
         <div>
           <p class="mb-2">Golden Sponsor</p>
-          <img src="./assets/images/partners/etem.png" alt="etem" class="sm:w-42 w-26">
+          <img src="./assets/images/partners/etem.png" alt="etem" class="sm:w-42 w-26 cursor-pointer">
         </div>
       </div>
 
       <div class="sm:mt-13.5 mt-8">
         <p>With the Support of</p>
-        <div class="flex flex-wrap sm:gap-x-10.5 gap-x-10 sm:gap-y-10.5 gap-y-5 items-center content-center sm:mt-2.5 mt-5.2">
+        <div class="flex flex-wrap sm:gap-x-10.5 gap-x-5 sm:gap-y-10.5 gap-y-5 items-center content-center sm:mt-2.5 mt-5.2">
           <div>
-            <img src="./assets/images/partners/milkana.png" alt="milkana" class="sm:w-36 w-[86px]">
+            <img src="./assets/images/partners/milkana.png" alt="milkana" class="sm:w-36 w-[86px] cursor-pointer">
           </div>
           <div>
-            <img src="./assets/images/partners/hidromat.png" alt="hidromat" class="sm:w-[138px] w-[83px]">
+            <img src="./assets/images/partners/hidromat.png" alt="hidromat" class="sm:w-[138px] w-[83px] cursor-pointer">
           </div>
           <div>
-            <img src="./assets/images/partners/semmelrock.png" alt="semmelrock" class="sm:w-[175px] w-[104px]">
+            <img src="./assets/images/partners/semmelrock.png" alt="semmelrock" class="sm:w-[175px] w-[104px] cursor-pointer">
           </div>
           <div>
-            <img src="./assets/images/partners/ideal-standart.png" alt="ideal-standart" class="sm:w-[115px] w-[104px]">
+            <img src="./assets/images/partners/ideal-standart.png" alt="ideal-standart" class="sm:w-[115px] w-[64px] cursor-pointer">
           </div>
           <div>
-            <img src="./assets/images/partners/schnider.png" alt="schnider" class="sm:w-[139px] w-[104px]">
+            <img src="./assets/images/partners/schnider.png" alt="schnider" class="sm:w-[139px] w-[104px] cursor-pointer">
           </div>
           <div>
-            <img src="./assets/images/partners/sisecam.png" alt="sisecam" class="sm:w-[152px] w-[104px]">
+            <img src="./assets/images/partners/sisecam.png" alt="sisecam" class="sm:w-[152px] w-[90px] cursor-pointer">
           </div>
           <div>
-            <img src="./assets/images/partners/amax.png" alt="amax" class="sm:w-[155px] w-[93px]">
+            <img src="./assets/images/partners/amax.png" alt="amax" class="sm:w-[155px] w-[90px] cursor-pointer">
           </div>
           <div class="sm:sml-10 ml-7.1">
-            <img src="./assets/images/partners/rollplast.png" alt="rollplast" class="sm:w-[70px] w-[42px]">
+            <img src="./assets/images/partners/rollplast.png" alt="rollplast" class="sm:w-[70px] w-[42px] cursor-pointer">
           </div>
           <div class="sm:sml-10 ml-7.1">
-            <img src="./assets/images/partners/alukoning.png" alt="alukoning" class="sm:w-[147px] w-[88px]">
+            <img src="./assets/images/partners/alukoning.png" alt="alukoning" class="sm:w-[147px] w-[88px] cursor-pointer">
           </div>
           <div class="sm:sml-10 ">
-            <img src="./assets/images/partners/knouf.png" alt="knouf" class="sm:w-[130px] w-[78px] sm:ml-4 ">
+            <img src="./assets/images/partners/knouf.png" alt="knouf" class="sm:w-[130px] w-[78px] sm:ml-4 cursor-pointer">
           </div>
           <div class="sm:sml-10 ml-7.1">
-            <img src="./assets/images/partners/doors-center.png" alt="doors-center" class="sm:w-[144px] w-[86px]">
+            <img src="./assets/images/partners/doors-center.png" alt="doors-center" class="sm:w-[144px] w-[86px] cursor-pointer">
           </div>
           <div class="sm:sml-10 ml-7.1">
-            <img src="./assets/images/partners/seg.png" alt="seg" class="sm:w-[71px] w-[43px]">
+            <img src="./assets/images/partners/seg.png" alt="seg" class="sm:w-[71px] w-[43px] cursor-pointer">
           </div>
         </div>
       </div>
-
-      <div class="flex flex-wrap sm:gap-x-14 gap-x-23 gap-y-10.5 justify-start items-end content-center sm:mt-13.5 mt-8">
-        <div>
-          <p class="sm:mb-6">Partners</p>
-          <img src="./assets/images/partners/bcc.png" alt="bcc" class="sm:w-[189px] w-[104px]">
+    
+      <div class="flex flex-wrap justify-between items-end content-center sm:gap-x-16 gap-x-23 gap-y-10.5 sm:mt-13.5 mt-8 mb-16">
+        <div class="flex flex-wrap sm:gap-x-20 gap-x-8 gap-y-10.5 justify-start items-end content-center">
+          <div>
+            <p class="sm:mb-7 mb-5">Partners</p>
+            <img src="./assets/images/partners/bcc.png" alt="bcc" class="sm:w-[189px] w-[104px] py-2 cursor-pointer">
+          </div>
+          <div>
+            <img src="./assets/images/partners/kab.png" alt="kab" class=w-[44px] cursor-pointer">
+          </div>
+          <div>
+            <img src="./assets/images/partners/kuun.png" alt="kuun" class="sm:w-[65px] w-[36px] cursor-pointer">
+          </div>
+          <div>
+            <img src="./assets/images/partners/bacea.png" alt="bacea" class="sm:w-[73px] w-[40px] cursor-pointer">
+          </div>
         </div>
-        <div>
-          <img src="./assets/images/partners/kab.png" alt="kab" class=w-[46px]">
+        <div class="flex flex-1 justify-between items-end content-center">
+          <div>
+            <p class="sm:mb-5.2 mb-4">Media Partner</p>
+            <img src="./assets/images/partners/bnt.png" alt="bnt" class="sm:w-[174px] w-[104px] cursor-pointer">
+          </div>
+          <div>
+            <p class="sm:mb-5.2 mb-4">Organizer</p>
+            <img src="./assets/images/partners/town.png" alt="town" class="sm:w-[175px] w-[100px] cursor-pointer">
+          </div>
         </div>
-        <div>
-          <img src="./assets/images/partners/kuun.png" alt="kuun" class="sm:w-[65px] w-[36px]">
-        </div>
-        <div>
-          <img src="./assets/images/partners/bacea.png" alt="bacea" class="sm:w-[73px] w-[40px]">
-        </div>
-        <div>
-          <p class="sm:mb-6">Media Partner</p>
-          <img src="./assets/images/partners/bnt.png" alt="bnt" class="sm:w-[174px] w-[104px]">
-        </div>
-        <div>
-          <p class="sm:mb-6">Organizer</p>
-          <img src="./assets/images/partners/town.png" alt="town" class="sm:w-[175px] w-[100px]">
-        </div>
-      </div>
+    </div>
     </section>
 
      <!-- Calendar -->
@@ -182,8 +221,9 @@
 
                 <button type="button" id="show-less-btn" class="more-btn btn-hover-4 my-2 w-full">
                   <span class="mr-2"> Show Less </span>
-                  <svg xmlns="http://www.w3.org/2000/svg"width="14.145" height="12.142" viewBox="0 0 14.145 12.142"><path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(0 0)"/></svg>
-                </button>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12.142" height="14.145" viewBox="0 0 12.142 14.145">
+                    <path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(0 14.145) rotate(-90)"/>
+                  </svg>                </button>
               </div>
             </div>
           </div>
@@ -227,7 +267,7 @@
           
           </div>
         </div>
-      </section>
+    </section>
 
     <!-- Gallery -->
 
@@ -265,7 +305,7 @@
           </button>
         </div>
       </div>
-      </section>
+    </section>
 
 
     <!-- Footer -->
