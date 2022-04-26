@@ -53,6 +53,10 @@ h2 {
   @apply font-bold md:text-6xl text-3xl text-white md:leading-15 leading-8;
 }
 
+h4 {
+  @apply font-bold md:text-7xl text-4xl md:leading-12 leading-7;
+}
+
 h5 {
   @apply font-bold md:text-2xl text-1xl border-b-3 border-b-black w-44 pb-4 md:leading-7.5 leading-5.2;
 }
@@ -145,11 +149,11 @@ h5 {
 }
 
 .gallery__wrapper {
-  @apply relative overflow-hidden lg:w-68 lg:h-47 md:w-56 md:h-36 w-42 h-29 cursor-pointer
+  @apply relative overflow-hidden lg:w-68 lg:h-47 md:w-56 md:h-36 w-42 h-29 cursor-pointer;
 }
 
 .gallery__image {
-  @apply absolute w-full h-full transition-all duration-500 ease-in-out transform ;
+  @apply absolute w-full h-full transition-all duration-500 ease-in-out transform;
 }
 
 .grid-zoom:hover .gallery__image {
@@ -187,3 +191,7 @@ h5 {
 }
 
 /* Album */
+
+.album_wrapper {
+  @apply relative overflow-hidden  md:w-68 md:h-48.2 w-18.1 h-13.8 cursor-pointer;
+}

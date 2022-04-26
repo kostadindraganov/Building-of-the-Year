@@ -14,7 +14,7 @@
     <header class="bg-header bg-cover bg-no-repeat bg-center sm:pt-5 py-4 pb-8">
       <nav class="container flex flex-row items-start justify-between">
         <img src="./assets/logo/logo.png" alt="logo" class="md:w-56 lg:w-68 w-56" />
-        <div class="flex text-white font-regular flex-col items-end justify-between h-29 mt-1">
+        <div class="hidden md:flex text-white font-regular flex-col items-end justify-between h-29 mt-1">
           <div>
             <ul class="flex items-center lg:gap-5 gap-3 text-sm">
               <li class="btn-hover-5">Home</li>
@@ -43,62 +43,73 @@
             </ul>
           </div>
         </div>
+
+        <!-- Mobile menu button -->
+        <div class=" md:hidden flex items-center mt-5">
+         <button id="mobile-menu-btn">
+           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="17" viewBox="0 0 25 17" class="btn-hover-5">
+             <g transform="translate(-333 -19)">
+               <line x1="25" transform="translate(333 20)"   stroke-width="2"/>
+               <line x1="25" transform="translate(333 27.5)"  stroke-width="2"/>
+               <line x1="25" transform="translate(333 35)"  stroke-width="2"/>
+             </g>
+           </svg>
+         </button>
+        </div>
+
       </nav>
     </header>
-    <div class="h-80"></div>
-
-    <!-- Gallery -->
 
     <section class="container">
-      <h5>Gallery</h5>
-      <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 sm:gap-4 md:gap-3 gap-3.8 mb-30 mt-10">
-        <div class="grid-zoom">
-          <img src="./assets/images/gallery/t1.jpg" alt="t1" class="grid-zoom-image" />
+      <h4>Building of the year 2013, Award Ceremony</h4>
+      <div class="album grid grid-cols-4 gap-3.8 mb-30 mt-10">
+        <div class="album_wrapper grid-zoom">
+          <img src="./assets/images/gallery/t1.jpg" alt="t1" class="gallery__image" />
         </div>
-        <div class="grid-zoom">
-          <img src="./assets/images/gallery/t2.jpg" alt="t2" class="grid-zoom-image" />
+        <div class="album_wrapper grid-zoom">
+          <img src="./assets/images/gallery/t2.jpg" alt="t2" class="gallery__image" />
         </div>
-        <div class="grid-zoom">
-          <img src="./assets/images/gallery/t3.jpg" alt="t3" class="grid-zoom-image" />
+        <div class="album_wrapper grid-zoom">
+          <img src="./assets/images/gallery/t3.jpg" alt="t3" class="gallery__image" />
         </div>
-        <div class="grid-zoom">
-          <img src="./assets/images/gallery/t4.jpg" alt="t4" class="grid-zoom-image" />
+        <div class="album_wrapper grid-zoom">
+          <img src="./assets/images/gallery/t4.jpg" alt="t4" class="gallery__image" />
         </div>
-        <div class="grid-zoom">
-          <img src="./assets/images/gallery/t5.jpg" alt="t5" class="grid-zoom-image" />
+        <div class="album_wrapper grid-zoom">
+          <img src="./assets/images/gallery/t5.jpg" alt="t5" class="gallery__image" />
         </div>
-        <div class="grid-zoom">
-          <img src="./assets/images/gallery/t6.jpg" alt="t6" class="grid-zoom-image" />
+        <div class="album_wrapper grid-zoom">
+          <img src="./assets/images/gallery/t6.jpg" alt="t6" class="gallery__image" />
         </div>
-        <div class="grid-zoom">
-          <img src="./assets/images/gallery/t7.jpg" alt="t7" class="grid-zoom-image" />
+        <div class="album_wrapper grid-zoom">
+          <img src="./assets/images/gallery/t7.jpg" alt="t7" class="gallery__image" />
         </div>
-        <div class="grid-zoom">
-          <img src="./assets/images/gallery/t8.jpg" alt="t8" class="grid-zoom-image" />
+        <div class="album_wrapper grid-zoom">
+          <img src="./assets/images/gallery/t8.jpg" alt="t8" class="gallery__image" />
         </div>
-        <div class="grid-zoom">
-          <img src="./assets/images/gallery/t9.jpg" alt="t9" class="grid-zoom-image" />
+        <div class="album_wrapper grid-zoom">
+          <img src="./assets/images/gallery/t9.jpg" alt="t9" class="gallery__image" />
         </div>
-        <div class="grid-zoom">
-          <img src="./assets/images/gallery/t10.jpg" alt="t10" class="grid-zoom-image" />
+        <div class="album_wrapper grid-zoom">
+          <img src="./assets/images/gallery/t10.jpg" alt="t10" class="gallery__image" />
         </div>
-        <div class="grid-zoom">
-          <img src="./assets/images/gallery/t11.jpg" alt="t11" class="grid-zoom-image" />
+        <div class="album_wrapper grid-zoom">
+          <img src="./assets/images/gallery/t11.jpg" alt="t11" class="gallery__image" />
         </div>
-        <div class="grid-zoom">
-          <img src="./assets/images/gallery/t12.jpg" alt="t12" class="grid-zoom-image" />
+        <div class="album_wrapper grid-zoom">
+          <img src="./assets/images/gallery/t12.jpg" alt="t12" class="gallery__image" />
         </div>
-        <div class="grid-zoom">
-          <img src="./assets/images/gallery/t13.jpg" alt="t13" class="grid-zoom-image" />
+        <div class="album_wrapper grid-zoom">
+          <img src="./assets/images/gallery/t13.jpg" alt="t13" class="gallery__image" />
         </div>
-        <div class="grid-zoom">
-          <img src="./assets/images/gallery/t14.jpg" alt="t14" class="grid-zoom-image" />
+        <div class="album_wrapper grid-zoom">
+          <img src="./assets/images/gallery/t14.jpg" alt="t14" class="gallery__image" />
         </div>
-        <div class="grid-zoom">
-          <img src="./assets/images/gallery/t15.jpg" alt="t15" class="grid-zoom-image" />
+        <div class="album_wrapper grid-zoom">
+          <img src="./assets/images/gallery/t15.jpg" alt="t15" class="gallery__image" />
         </div>
-        <div class="grid-zoom">
-          <img src="./assets/images/gallery/t16.jpg" alt="t16" class="grid-zoom-image" />
+        <div class="album_wrapper grid-zoom">
+          <img src="./assets/images/gallery/t16.jpg" alt="t16" class="gallery__image" />
         </div>
       </div>
     </section>
