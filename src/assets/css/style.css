@@ -12,7 +12,6 @@
          url('/src/assets/fonts/en/NeueHaasUnicaW1G-Bold1.ttf')  format('truetype'),
          url('/src/assets/fonts/en/NeueHaasUnicaW1G-Bold1.svg#Neue Haas Unica W1G') format('svg');
   },
-
   @font-face {
     font-family: 'Neue-regular';
     src: url('/src/assets/fonts/en/NeueHaasUnicaW1G-Regular.eot');
@@ -40,7 +39,6 @@
          url('/src/assets/fonts/bg/NeueHaasUnicaW1G-Bold.ttf')  format('truetype'),
          url('/src/assets/fonts/bg/NeueHaasUnicaW1G-Bold.svg#Neue Haas Unica W1G') format('svg');
   }
-  
 }
 
 html {
@@ -146,15 +144,15 @@ h5 {
   @apply border-b-white text-white fill-white hover:border-b-primary hover:text-primary hover:fill-primary cursor-pointer stroke-white hover:stroke-primary;
 }
 
-.grid-zoom {
-  @apply relative overflow-hidden lg:w-68 lg:h-47 md:w-56 md:h-36 w-42 h-29 cursor-pointer;
+.gallery__wrapper {
+  @apply relative overflow-hidden lg:w-68 lg:h-47 md:w-56 md:h-36 w-42 h-29 cursor-pointer
 }
 
-.grid-zoom-image {
+.gallery__image {
   @apply absolute w-full h-full transition-all duration-500 ease-in-out transform ;
 }
 
-.grid-zoom:hover .grid-zoom-image {
+.grid-zoom:hover .gallery__image {
   @apply scale-150;
 }
 
@@ -164,3 +162,28 @@ h5 {
   @apply w-20 h-13.5 flex items-center justify-center overflow-hidden border-1 border-grey-light shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out cursor-pointer;
 }
 
+.collapsible {
+  @apply border-1 border-grey-light shadow-md bg-white sm:text-xl text-xs sm:leading-5.2 leading-4.5 cursor-pointer;
+}
+
+.collapsible__wrapper {
+  @apply flex justify-between items-center sm:h-10 h-14 px-5;
+}
+
+.collapsible__content {
+  @apply hidden flex-col sm:gap-2.5 gap-0.8 justify-between items-start mb-5 sm:mt-5 px-5 text-left;
+}
+
+.expanded .collapsible__wrapper {
+  @apply  sm:border-y-0 border-y-1 border-y-grey-light sm:mt-0 mt-6;
+}
+
+.expanded .collapsible__content {
+  @apply  flex;
+}
+
+.expanded   {
+  @apply  sm:mb-0 mb-18.5;
+}
+
+/* Album */

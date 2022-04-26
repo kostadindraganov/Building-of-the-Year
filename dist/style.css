@@ -436,7 +436,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 ,
-
   @font-face {
   font-family: 'Neue-regular';
   src: url('/src/assets/fonts/en/NeueHaasUnicaW1G-Regular.eot');
@@ -578,16 +577,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: auto;
 }
 
-.mx-2\.5 {
-  margin-left: 0.625rem;
-  margin-right: 0.625rem;
-}
-
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
 .my-5 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
@@ -601,6 +590,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
+}
+
+.mx-2\.5 {
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .my-10 {
@@ -643,24 +642,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.5rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mt-18 {
-  margin-top: 4.375rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
+.mb-30 {
+  margin-bottom: 7.5rem;
 }
 
 .mt-10 {
   margin-top: 2.5rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
 }
 
 .mr-4 {
@@ -679,6 +666,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -689,6 +680,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-7\.1 {
   margin-bottom: 1.875rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-18 {
+  margin-top: 4.375rem;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-41 {
+  margin-bottom: 10.375rem;
 }
 
 .mt-5 {
@@ -731,10 +738,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2rem;
 }
 
-.mb-30 {
-  margin-bottom: 7.5rem;
-}
-
 .mt-7\.1 {
   margin-top: 1.875rem;
 }
@@ -771,12 +774,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 7.063rem;
 }
 
+.h-80 {
+  height: 20rem;
+}
+
 .h-full {
   height: 100%;
 }
 
-.h-141 {
-  height: 27.813rem;
+.h-42 {
+  height: 10.438rem;
+}
+
+.h-13\.5 {
+  height: 3.125rem;
+}
+
+.h-13 {
+  height: 3.25rem;
 }
 
 .h-12 {
@@ -829,6 +844,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-23 {
   width: 5.625rem;
+}
+
+.w-87 {
+  width: 21.375rem;
 }
 
 .w-full {
@@ -987,6 +1006,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0.75rem;
 }
 
+.gap-3\.8 {
+  gap: .938rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -995,12 +1018,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1.5rem;
 }
 
-.gap-5 {
-  gap: 1.25rem;
+.gap-2\.5 {
+  gap: 0.625rem;
 }
 
-.gap-3\.8 {
-  gap: .938rem;
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .gap-x-23 {
@@ -1034,6 +1061,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   overflow-x: scroll;
 }
 
+.border-1 {
+  border-width: 1px;
+}
+
+.border-x-1 {
+  border-left-width: 1px;
+  border-right-width: 1px;
+}
+
 .border-t-10 {
   border-top-width: 10px;
 }
@@ -1046,12 +1082,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-width: 10px;
 }
 
+.border-b-1 {
+  border-bottom-width: 1px;
+}
+
 .border-l-20 {
   border-left-width: 20px;
 }
 
 .border-b-4 {
   border-bottom-width: 4px;
+}
+
+.border-grey-light {
+  --tw-border-opacity: 1;
+  border-color: rgb(112 112 112 / var(--tw-border-opacity));
 }
 
 .border-t-primary {
@@ -1078,9 +1123,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.bg-grey {
+.bg-white {
   --tw-bg-opacity: 1;
-  background-color: rgb(199 199 199 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -1088,9 +1133,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-white {
+.bg-grey {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(199 199 199 / var(--tw-bg-opacity));
 }
 
 .bg-primary {
@@ -1155,6 +1200,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .px-2\.5 {
@@ -1238,16 +1288,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: .938rem;
 }
 
+.text-lg {
+  font-size: .813rem;
+}
+
 .text-xs {
   font-size: .688rem;
 }
 
 .text-4xl {
   font-size: 1.75rem;
-}
-
-.text-lg {
-  font-size: .813rem;
 }
 
 .text-extra-small {
@@ -1266,12 +1316,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700;
 }
 
-.leading-4\.5 {
-  line-height: 1.063rem;
-}
-
 .leading-4 {
   line-height: 1rem;
+}
+
+.leading-4\.5 {
+  line-height: 1.063rem;
 }
 
 .leading-5\.2 {
@@ -1285,6 +1335,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-grey {
+  --tw-text-opacity: 1;
+  color: rgb(199 199 199 / var(--tw-text-opacity));
 }
 
 .opacity-50 {
@@ -1571,7 +1626,7 @@ h5 {
   color: rgb(190 141 60 / var(--tw-text-opacity));
 }
 
-.grid-zoom {
+.gallery__wrapper {
   position: relative;
   height: 7.063rem;
   width: 10.25rem;
@@ -1580,26 +1635,26 @@ h5 {
 }
 
 @media (min-width: 768px) {
-  .grid-zoom {
+  .gallery__wrapper {
     height: 9.375rem;
   }
 
-  .grid-zoom {
+  .gallery__wrapper {
     width: 14rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .grid-zoom {
+  .gallery__wrapper {
     height: 11.875rem;
   }
 
-  .grid-zoom {
+  .gallery__wrapper {
     width: 16.875rem;
   }
 }
 
-.grid-zoom-image {
+.gallery__image {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -1609,7 +1664,7 @@ h5 {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.grid-zoom:hover .grid-zoom-image {
+.grid-zoom:hover .gallery__image {
   --tw-scale-x: 1.5;
   --tw-scale-y: 1.5;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1644,6 +1699,103 @@ h5 {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.collapsible {
+  cursor: pointer;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(112 112 112 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  font-size: .688rem;
+  line-height: 1.063rem;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 640px) {
+  .collapsible {
+    font-size: .938rem;
+  }
+
+  .collapsible {
+    line-height: 1.375rem;
+  }
+}
+
+.collapsible__wrapper {
+  display: flex;
+  height: 3.5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .collapsible__wrapper {
+    height: 2.5rem;
+  }
+}
+
+.collapsible__content {
+  margin-bottom: 1.25rem;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: .188rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  text-align: left;
+}
+
+@media (min-width: 640px) {
+  .collapsible__content {
+    margin-top: 1.25rem;
+  }
+
+  .collapsible__content {
+    gap: 0.625rem;
+  }
+}
+
+.expanded .collapsible__wrapper {
+  margin-top: 1.5rem;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-top-color: rgb(112 112 112 / var(--tw-border-opacity));
+  border-bottom-color: rgb(112 112 112 / var(--tw-border-opacity));
+}
+
+@media (min-width: 640px) {
+  .expanded .collapsible__wrapper {
+    margin-top: 0px;
+  }
+
+  .expanded .collapsible__wrapper {
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+  }
+}
+
+.expanded .collapsible__content {
+  display: flex;
+}
+
+.expanded {
+  margin-bottom: 4.813rem;
+}
+
+@media (min-width: 640px) {
+  .expanded {
+    margin-bottom: 0px;
+  }
+}
+
+/* Album */
+
 .hover\:border-b-primary:hover {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(190 141 60 / var(--tw-border-opacity));
@@ -1654,6 +1806,14 @@ h5 {
 }
 
 @media (min-width: 640px) {
+  .sm\:mr-0 {
+    margin-right: 0px;
+  }
+
+  .sm\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
   .sm\:mt-9 {
     margin-top: 2.25rem;
   }
@@ -1674,12 +1834,12 @@ h5 {
     margin-bottom: 1.25rem;
   }
 
-  .sm\:mr-0 {
-    margin-right: 0px;
+  .sm\:mt-9\.5 {
+    margin-top: 2.4rem;
   }
 
-  .sm\:mb-16 {
-    margin-bottom: 4rem;
+  .sm\:mb-30 {
+    margin-bottom: 7.5rem;
   }
 
   .sm\:mt-5 {
@@ -1742,6 +1902,14 @@ h5 {
     display: none;
   }
 
+  .sm\:h-78 {
+    height: 18.375rem;
+  }
+
+  .sm\:h-20 {
+    height: 5rem;
+  }
+
   .sm\:h-44\.8 {
     height: 11.438rem;
   }
@@ -1776,6 +1944,14 @@ h5 {
 
   .sm\:w-26 {
     width: 6.625rem;
+  }
+
+  .sm\:w-188 {
+    width: 46.563rem;
+  }
+
+  .sm\:w-150 {
+    width: 34.688rem;
   }
 
   .sm\:w-36 {
@@ -1852,10 +2028,6 @@ h5 {
 
   .sm\:w-146 {
     width: 28.75rem;
-  }
-
-  .sm\:w-150 {
-    width: 34.688rem;
   }
 
   .sm\:w-133 {
@@ -1939,12 +2111,12 @@ h5 {
     font-size: 1.25rem;
   }
 
-  .sm\:leading-5\.2 {
-    line-height: 1.375rem;
-  }
-
   .sm\:leading-5 {
     line-height: 1.25rem;
+  }
+
+  .sm\:leading-5\.2 {
+    line-height: 1.375rem;
   }
 
   .sm\:leading-7\.5 {
@@ -2001,6 +2173,10 @@ h5 {
     flex-direction: row;
   }
 
+  .md\:justify-center {
+    justify-content: center;
+  }
+
   .md\:gap-3 {
     gap: 0.75rem;
   }
@@ -2027,4 +2203,3 @@ h5 {
     gap: 1.25rem;
   }
 }
-
