@@ -48,11 +48,11 @@ html {
 }
 
 h1 {
-  @apply font-bold md:text-7xl text-4xl text-white md:leading-14 leading-9;
+  @apply font-bold md:text-8xl text-5xl text-white md:leading-14 leading-9;
 }
 
 h2 {
-  @apply font-bold md:text-5xl text-3xl text-white md:leading-15 leading-8;
+  @apply font-bold md:text-6xl text-3xl text-white md:leading-15 leading-8;
 }
 
 h5 {
@@ -61,6 +61,14 @@ h5 {
 
 .container {
   @apply lg:px-0 md:px-4 px-4;
+}
+
+.hide-scroll-bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
 }
 
 .enter-btn {
@@ -149,3 +157,10 @@ h5 {
 .grid-zoom:hover .grid-zoom-image {
   @apply scale-150;
 }
+
+/* Arhives */
+
+.arhives__tab a {
+  @apply w-20 h-13.5 flex items-center justify-center overflow-hidden border-1 border-grey-light shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out cursor-pointer;
+}
+

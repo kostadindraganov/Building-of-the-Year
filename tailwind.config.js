@@ -5,7 +5,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "primary": "#BE8D3C",
+        'primary': '#BE8D3C',
+        'grey':    '#C7C7C7',
+        'grey-light':   '#707070'
       },
       fontFamily: {
         bold: ['Neue-bold', ...defaultTheme.fontFamily.sans],
@@ -24,14 +26,14 @@ module.exports = {
         '1xl': '.938rem',  // 16px
         '2xl': '1.25rem', // 20px
         '3xl': '1.563rem', // 25px
-        '4xl': '2.25rem', // 36px
-        '5xl': '2.5rem', // 40px
-        '7xl': '3.5rem', // 56px
+        '4xl': '1.75rem', // 28px
+        '5xl': '2.25rem', // 36px
+        '6xl': '2.5rem', // 40px
+        '8xl': '3.5rem', // 56px
       },
       lineHeight: {
         '4.5': '1.063rem', // 17px
         '5.2': '1.375rem', // 22px
-        '5.5': '1.375rem', // 56px
         '7.5': '1.875rem', // 30px
         '8': '2.313rem',   // 37px
         '14': '3.5rem',    // 56px 
@@ -40,6 +42,9 @@ module.exports = {
       width: {
         '3.8': '0.938rem',  // 15px
         '4.5': '1.125rem',  // 18px
+        '5.5': '1.563rem', // 25px
+        '13.5': '3.125rem',  // 50px
+        '18': '4.625rem',   // 74px
         '23': '5.625rem',   // 90px
         '25.5': '6.25rem',  // 100px
         '26': '6.625rem',   // 106px
@@ -61,7 +66,8 @@ module.exports = {
         '173': '41.5rem', // 664px
       },
       height: {
-        '29': '7.5rem',  // 120px
+        '13.5': '3.125rem',  // 50px
+        '29': '7.063rem',  // 113px
         '31': '7.688rem',  // 123px
         '44.8': '11.438rem',// 183px
         '47': '11.875rem',// 190px
@@ -98,6 +104,7 @@ module.exports = {
       },
       backgroundImage: {
         'splash': "url('/src/assets/images/backgrounds/splash-bg.jpg')",
+        'header': "url('/src/assets/images/backgrounds/header-bg.jpg')",
         'footer': "url('/src/assets/images/backgrounds/footer-bg.jpg')",
         'calendar': "url('/src/assets/images/backgrounds/calendar-bg.png')"
       }
