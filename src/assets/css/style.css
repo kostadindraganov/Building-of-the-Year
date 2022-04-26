@@ -115,11 +115,27 @@ h5 {
   top: 0;
 }
 
+.back-btn {
+  @apply flex items-center justify-between;
+}
+
+.back-btn p {
+  @apply sm:text-sm text-lg font-bold text-left sm:leading-4.6 leading-4.7;
+}
+
+.share-btn {
+  @apply flex items-center justify-between border-b-1 pb-1.5;
+}
+
+.share-btn p {
+  @apply sm:text-xl md:text-xl text-lg font-bold text-left;
+}
+
 .more-btn {
   @apply flex items-center justify-between border-b-1 pb-1.5;
 }
 
-.more-btn span{
+.more-btn span {
   @apply sm:text-xl md:text-xl text-lg font-bold text-left;
 }
 
