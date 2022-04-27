@@ -706,6 +706,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 10.375rem;
 }
 
+.mt-7\.1 {
+  margin-top: 1.875rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .mb-5\.5 {
   margin-bottom: 1.563rem;
 }
@@ -734,20 +746,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 4rem;
 }
 
-.mt-7 {
-  margin-top: 1.75rem;
-}
-
 .mb-8 {
   margin-bottom: 2rem;
 }
 
 .mb-30 {
   margin-bottom: 7.5rem;
-}
-
-.mt-7\.1 {
-  margin-top: 1.875rem;
 }
 
 .mr-0 {
@@ -768,6 +772,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex {
   display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
 }
 
 .grid {
@@ -962,6 +970,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -1042,6 +1054,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1.25rem;
 }
 
+.gap-y-10 {
+  row-gap: 2.5rem;
+}
+
 .gap-x-23 {
   -moz-column-gap: 5.313rem;
        column-gap: 5.313rem;
@@ -1049,10 +1065,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-y-10\.5 {
   row-gap: 2.625rem;
-}
-
-.gap-y-10 {
-  row-gap: 2.5rem;
 }
 
 .gap-x-9 {
@@ -1109,6 +1121,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-grey-light {
   --tw-border-opacity: 1;
   border-color: rgb(112 112 112 / var(--tw-border-opacity));
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .border-t-primary {
@@ -1260,6 +1277,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1.25rem;
 }
 
+.pl-2 {
+  padding-left: 0.5rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
 .pb-11 {
   padding-bottom: 2.75rem;
 }
@@ -1312,12 +1337,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.75rem;
 }
 
-.text-extra-small {
-  font-size: .563rem;
-}
-
 .text-1xl {
   font-size: .938rem;
+}
+
+.text-extra-small {
+  font-size: .563rem;
 }
 
 .text-2xl {
@@ -1328,8 +1353,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700;
 }
 
-.leading-5 {
-  line-height: 1.25rem;
+.leading-4\.7 {
+  line-height: 1.188rem;
 }
 
 .leading-4 {
@@ -1344,8 +1369,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.375rem;
 }
 
-.leading-4\.7 {
-  line-height: 1.188rem;
+.leading-5 {
+  line-height: 1.25rem;
 }
 
 .text-white {
@@ -1422,6 +1447,23 @@ h2 {
   }
 }
 
+h3 {
+  font-family: Neue-bold, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    line-height: 3.813rem;
+  }
+}
+
 h4 {
   font-family: Neue-bold, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.75rem;
@@ -1458,6 +1500,23 @@ h5 {
 
   h5 {
     line-height: 1.875rem;
+  }
+}
+
+h6 {
+  font-family: Neue-bold, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  h6 {
+    font-size: 1.563rem;
+  }
+
+  h6 {
+    line-height: 1.563rem;
   }
 }
 
@@ -1748,7 +1807,7 @@ h5 {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.grid-zoom:hover .gallery__image {
+.grid-zoom:hover .gallery__image, .grid-zoom:hover .image-gallery__image {
   --tw-scale-x: 1.5;
   --tw-scale-y: 1.5;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1898,6 +1957,241 @@ h5 {
   }
 }
 
+/* Image gallery */
+
+.tab-btn {
+  width: 10.25rem;
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  padding-bottom: 1.063rem;
+  text-align: left;
+}
+
+@media (min-width: 640px) {
+  .tab-btn {
+    width: 16.875rem;
+  }
+
+  .tab-btn {
+    padding-bottom: 0.875rem;
+  }
+}
+
+.active {
+  border-bottom-width: 10px;
+  --tw-border-opacity: 1;
+  border-color: rgb(190 141 60 / var(--tw-border-opacity));
+  font-family: Neue-bold, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(190 141 60 / var(--tw-text-opacity));
+}
+
+.image-gallery__item {
+  width: 21.375rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .image-gallery__item {
+    width: 28.75rem;
+  }
+}
+
+.image-gallery__image-wrapper {
+  position: relative;
+  height: 12.125rem;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .image-gallery__image-wrapper {
+    height: 15.313rem;
+  }
+}
+
+.image-gallery__image {
+  position: absolute;
+  width: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.image-gallery__title {
+  position: relative;
+  margin-top: -2.25rem;
+  width: 100%;
+}
+
+.image-gallery__title-wrapper {
+  width: 16.875rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 640px) {
+  .image-gallery__title-wrapper {
+    width: 22.813rem;
+  }
+}
+
+.image-gallery__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-top: 0.625rem;
+}
+
+.image-gallery__navigation-btn {
+  margin-top: 0.5rem;
+  width: 10.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom-width: 1px;
+  padding-bottom: 0.375rem;
+}
+
+.image-gallery__navigation-btn span {
+  text-align: left;
+  font-family: Neue-bold, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: .813rem;
+  font-weight: 700;
+}
+
+@media (min-width: 640px) {
+  .image-gallery__navigation-btn span {
+    font-size: .938rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .image-gallery__navigation-btn span {
+    font-size: .938rem;
+  }
+}
+
+.image-gallery__navigation-btn {
+  cursor: pointer;
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(0 0 0 / var(--tw-border-opacity));
+  fill: #000;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.image-gallery__navigation-btn:hover {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(190 141 60 / var(--tw-border-opacity));
+  fill: #BE8D3C;
+  --tw-text-opacity: 1;
+  color: rgb(190 141 60 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .image-gallery__navigation-btn {
+    width: 11rem;
+  }
+}
+
+/* Video gallery */
+
+.video-gallery__item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .video-gallery__item {
+    flex-direction: column;
+  }
+}
+
+.video-gallery__play-icon {
+  position: absolute;
+  bottom: 0.625rem;
+  left: 0.625rem;
+  z-index: 10;
+  width: 2rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .video-gallery__play-icon {
+    bottom: -1.5rem;
+  }
+
+  .video-gallery__play-icon {
+    left: 0px;
+  }
+
+  .video-gallery__play-icon {
+    width: 3rem;
+  }
+}
+
+.video-gallery__image-wrapper {
+  position: relative;
+  height: 6rem;
+  width: 10.25rem;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .video-gallery__image-wrapper {
+    height: 11.438rem;
+  }
+
+  .video-gallery__image-wrapper {
+    width: 21.375rem;
+  }
+}
+
+.video-gallery__wrapper {
+  display: flex;
+  width: 10.25rem;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+@media (min-width: 768px) {
+  .video-gallery__wrapper {
+    width: 21.375rem;
+  }
+}
+
+.video-gallery__title-wrapper {
+  width: 10.25rem;
+}
+
+@media (min-width: 768px) {
+  .video-gallery__title-wrapper {
+    width: 17.75rem;
+  }
+}
+
+.video-gallery__title {
+  font-size: .813rem;
+  line-height: 1.063rem;
+}
+
+@media (min-width: 768px) {
+  .video-gallery__title {
+    font-size: 1.125rem;
+  }
+
+  .video-gallery__title {
+    line-height: 1.125rem;
+  }
+}
+
 .hover\:border-b-primary:hover {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(190 141 60 / var(--tw-border-opacity));
@@ -1966,6 +2260,10 @@ h5 {
 
   .sm\:mb-30 {
     margin-bottom: 7.5rem;
+  }
+
+  .sm\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .sm\:ml-7\.1 {
@@ -2252,11 +2550,19 @@ h5 {
   .sm\:leading-7 {
     line-height: 1.75rem;
   }
+
+  .sm\:leading-5\.5 {
+    line-height: 1.563rem;
+  }
 }
 
 @media (min-width: 768px) {
   .md\:mt-14 {
     margin-top: 3.5rem;
+  }
+
+  .md\:mb-30 {
+    margin-bottom: 7.5rem;
   }
 
   .md\:block {
@@ -2321,11 +2627,23 @@ h5 {
     width: 16.875rem;
   }
 
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:gap-5 {
     gap: 1.25rem;
+  }
+
+  .lg\:gap-27\.5 {
+    gap: 6.875;
   }
 }

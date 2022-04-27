@@ -53,12 +53,20 @@ h2 {
   @apply font-bold md:text-6xl text-3xl text-white md:leading-15 leading-8;
 }
 
+h3 {
+  @apply font-bold md:text-6xl text-4xl md:leading-15 leading-7;
+}
+
 h4 {
   @apply font-bold md:text-7xl text-4xl md:leading-12 leading-7;
 }
 
 h5 {
   @apply font-bold md:text-2xl text-1xl border-b-3 border-b-black w-44 pb-4 md:leading-7.5 leading-5.2;
+}
+
+h6 {
+  @apply font-bold md:text-3xl text-title md:leading-5.5 leading-4.6;
 }
 
 .container {
@@ -172,7 +180,9 @@ h5 {
   @apply absolute w-full h-full transition-all duration-500 ease-in-out transform;
 }
 
-.grid-zoom:hover .gallery__image {
+.grid-zoom:hover .gallery__image,
+.grid-zoom:hover .image-gallery__image
+{
   @apply scale-150;
 }
 
@@ -206,8 +216,75 @@ h5 {
   @apply  sm:mb-0 mb-18.5;
 }
 
+
 /* Album */
 
 .album_wrapper {
   @apply relative overflow-hidden  md:w-68 md:h-48.2 w-18.1 h-13.8 cursor-pointer;
+}
+
+
+/* Image gallery */
+
+.tab-btn {
+  @apply sm:w-68 w-42 text-left border-b-1 sm:pb-3.5 pb-4.2 border-black;
+}
+
+.active {
+  @apply font-bold border-b-10 border-primary text-primary;
+}
+
+.image-gallery__item {
+  @apply md:w-146 w-87 cursor-pointer;
+}
+
+.image-gallery__image-wrapper {
+  @apply md:h-62 h-48.2 relative overflow-hidden;
+}
+
+.image-gallery__image {
+  @apply absolute w-full transition-all duration-500 ease-in-out transform;
+}
+
+.image-gallery__title {
+  @apply relative w-full -mt-9;
+}
+
+.image-gallery__title-wrapper {
+  @apply bg-white sm:w-94 w-68;
+}
+
+.image-gallery__navigation {
+  @apply flex justify-between items-center bg-white pt-2.5;
+}
+
+.image-gallery__navigation-btn {
+  @apply more-btn btn-hover-2 mt-2 sm:w-44 w-42;
+}
+
+/* Video gallery */
+
+
+.video-gallery__item {
+  @apply flex md:flex-col flex-row items-start gap-3;
+}
+
+.video-gallery__play-icon {
+  @apply md:w-12 w-8 absolute md:-bottom-6 bottom-2.5 md:left-0 left-2.5 z-10 cursor-pointer;
+}
+
+.video-gallery__image-wrapper {
+  @apply md:w-87 w-42 md:h-44.8 h-24 relative overflow-hidden;
+}
+
+.video-gallery__wrapper {
+  @apply flex items-end justify-end md:w-87 w-42;
+}
+
+.video-gallery__title-wrapper {
+  @apply md:w-71 w-42;
+}
+
+.video-gallery__title {
+  @apply md:text-title text-lg md:leading-4.6 leading-4.5;
 }
