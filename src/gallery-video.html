@@ -9,13 +9,12 @@
     <link href="/dist/style.css" rel="stylesheet">
   </head>
   
-  <body class="font-bg font-normal bg-grey">
+  <body class="font-en font-normal bg-white">
     <!-- Header -->
-  
-    <header class="hidden md:block bg-header bg-cover bg-no-repeat bg-center sm:pt-5 py-4 pb-8">
+    <header class="bg-header bg-cover bg-no-repeat bg-center sm:pt-5 py-4 pb-8">
       <nav class="container flex flex-row items-start justify-between">
         <img src="./assets/logo/logo.png" alt="logo" class="md:w-56 lg:w-68 w-56" />
-        <div class="flex text-white font-regular flex-col items-end justify-between h-29 mt-1">
+        <div class="hidden md:flex text-white font-regular flex-col items-end justify-between h-29 mt-1">
           <div>
             <ul class="flex items-center lg:gap-5 gap-3 text-sm">
               <li class="btn-hover-5">Home</li>
@@ -44,269 +43,145 @@
             </ul>
           </div>
         </div>
+
+        <!-- Mobile menu button -->
+        <div class=" md:hidden flex items-center mt-5">
+         <button id="mobile-menu-btn">
+           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="17" viewBox="0 0 25 17" class="btn-hover-5">
+             <g transform="translate(-333 -19)">
+               <line x1="25" transform="translate(333 20)"   stroke-width="2"/>
+               <line x1="25" transform="translate(333 27.5)"  stroke-width="2"/>
+               <line x1="25" transform="translate(333 35)"  stroke-width="2"/>
+             </g>
+           </svg>
+         </button>
+        </div>
+
       </nav>
     </header>
 
-    <header class="md:hidden block">
-      <nav class="container flex flex-row items-start justify-end">
-       	<!-- Mobile menu button -->
-         <div class="flex items-center mt-4 btn-hover-5">
-          <p class="text-xs mx-2.5"> Menu </p>
-          <button id="mobile-menu-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="11" viewBox="0 0 13 11">
-              <g transform="translate(-309 -18.5)">
-                <line  x1="13" transform="translate(309 19)" stroke-width="1"/>
-                <line  x1="13" transform="translate(309 24)" stroke-width="1"/>
-                <line  x1="13" transform="translate(309 29)" stroke-width="1"/>
-              </g>
-            </svg>
+    <section class="container">
+      
+      <div class="sm:mt-5.5 mt-5 mb-10"> 
+        <button type="button" class="back-btn btn-hover-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10.484" height="9" viewBox="0 0 10.484 9">
+            <path d="M10.281,4.992l-3.8,3.8a.7.7,0,0,1-.984-.984L8.109,5.2H.7A.7.7,0,1,1,.7,3.8H8.109L5.492,1.188A.7.7,0,0,1,6.476.2l3.8,3.8a.7.7,0,0,1,0,.984" transform="translate(10.484 9) rotate(180)"/>
+          </svg>     
+          <p class="m-2"> Gallery </p>
+        </button>
+        <h3 class="sm:w-198 w-87">Gallery</h3>
+        <div class="inline-flex w-full sm:mt-10 mt-7.1">
+          <button type="button" class="tab-btn btn-hover-2">
+            <span class="sm:text-2xl text-1xl"> Photos </span>
           </button>
+          <button type="button" class="tab-btn btn-hover-2 active">
+            <span class="sm:text-2xl text-1xl"> Video </span>
+          </button>
+          <i class="border-b-1 border-black md:flex hidden flex-1"></i>
         </div>
-      </nav>
-    </header>
+      </div>
 
+      <!-- Grid -->
+      <div class="video-gallery grid lg:grid-cols-3 grid-cols-1 lg:gap-27.5 gap-y-10 md:mb-30 mb-20">
 
-      <section class="container text-center sm:mt-9 mt-18">
-        <p class="text-4xl sm:mb-9 mb-10">Архив</p>
-        
-        <div class="flex flex-col m-auto p-auto">
-          <div class="flex overflow-x-scroll hide-scroll-bar md:justify-center justify-start">
-            <div class="flex flex-nowrap">
-              <div class="arhives__tab inline-block px-2">
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <span class="text-xs"> 2021 </span>
-                </a>
-              </div>    
-              <div class="arhives__tab inline-block px-2">
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <span class="text-xs"> 2020 </span>
-                </a>
-              </div> 
-              <div class="arhives__tab inline-block px-2">
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <span class="text-xs"> 2019 </span>
-                </a>
-              </div> 
-              <div class="arhives__tab inline-block px-2">
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <span class="text-xs"> 2018 </span>
-                </a>
-              </div> 
-              <div class="arhives__tab inline-block px-2">
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <span class="text-xs"> 2017 </span>
-                </a>
-              </div>
-              <div class="arhives__tab inline-block px-2">
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <span class="text-xs"> 2016 </span>
-                </a>
-              </div>
-              <div class="arhives__tab inline-block px-2">
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <span class="text-xs"> 2015 </span>
-                </a>
-              </div> 
-              <div class="arhives__tab inline-block px-2">
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <span class="text-xs"> 2014 </span>
-                </a>
-              </div> 
-              <div class="arhives__tab inline-block px-2">
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <span class="text-xs"> 2013 </span>
-                </a>
-              </div> 
-              <div class="arhives__tab inline-block px-2">
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <span class="text-xs"> 2012 </span>
-                </a>
-              </div> 
-              <div class="arhives__tab inline-block px-2">
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <span class="text-xs"> 2011 </span>
-                </a>
-              </div> 
+        <div class="video-gallery__item">
+          <div class="relative">
+            <img src="./assets/icon/icon-play.svg" alt="play" class="video-gallery__play-icon hover-scale" />
+            <div class="video-gallery__image-wrapper grid-zoom ">
+              <img src="./assets/images/gallery/t15.jpg" alt="t15" class="image-gallery__image hover-scale" />
             </div>
           </div>
-      </section>
-
-      <section class="container text-center sm:mt-13 mt-10">
-        <p class="text-xl sm:leading-5.2 leading-4.5 sm:mb-5.5 mb-5">Проекти</p>
-
-        <div class="flex justify-center flex-nowrap">
-          <div class="sm:w-188 w-87 flex flex-col gap-2.5">
-
-            <div class="collapsible expanded">
-              <div class="collapsible__wrapper">
-                <label>Име на категория</label>
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6">
-                  <g fill="#fff">
-                    <path d="M 9.863381385803223 5.5 L 1.136618375778198 5.5 L 5.5 0.7399472594261169 L 9.863381385803223 5.5 Z" stroke="none"/>
-                    <path d="M 5.5 1.479883670806885 L 2.273226737976074 5 L 8.726773262023926 5 L 5.5 1.479883670806885 M 5.5 0 L 11 6 L 0 6 L 5.5 0 Z" stroke="none" fill="#707070"/>
-                  </g>
-                </svg>
-              </div>
-              <div class="collapsible__content flex">
-                <div class="sm:block hidden">
-                  <p>Победител</p>
-                </div>
-                <div>
-                  <p>Специална награда</p>
-                </div>
-                <div>
-                  <p>Участник</p>
-                </div>
-                <div>
-                  <p>Участник</p>
-                </div>
-                <div>
-                  <p>Участник</p>
-                </div>
-              </div>
-            </div>  
-
-            <div class="collapsible">
-              <div class="collapsible__wrapper">
-                <label>Име на категория</label>
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6">
-                  <g transform="translate(11 6) rotate(180)" fill="#fff">
-                    <path d="M 9.863381385803223 5.5 L 1.136618375778198 5.5 L 5.5 0.7399472594261169 L 9.863381385803223 5.5 Z" stroke="none"/>
-                    <path d="M 5.5 1.479883670806885 L 2.273226737976074 5 L 8.726773262023926 5 L 5.5 1.479883670806885 M 5.5 0 L 11 6 L 0 6 L 5.5 0 Z" stroke="none" fill="#707070"/>
-                  </g>
-                </svg>
-              </div>
-              <div class="collapsible__content">
-                <div class="sm:block hidden">
-                  <p>Победител</p>
-                </div>
-                <div>
-                  <p>Специална награда</p>
-                </div>
-                <div>
-                  <p>Участник</p>
-                </div>
-                <div>
-                  <p>Участник</p>
-                </div>
-                <div>
-                  <p>Участник</p>
-                </div>
-              </div>
-            </div>  
-
-
-            <div class="collapsible">
-              <div class="collapsible__wrapper">
-                <label>Име на категория</label>
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6">
-                  <g transform="translate(11 6) rotate(180)" fill="#fff">
-                    <path d="M 9.863381385803223 5.5 L 1.136618375778198 5.5 L 5.5 0.7399472594261169 L 9.863381385803223 5.5 Z" stroke="none"/>
-                    <path d="M 5.5 1.479883670806885 L 2.273226737976074 5 L 8.726773262023926 5 L 5.5 1.479883670806885 M 5.5 0 L 11 6 L 0 6 L 5.5 0 Z" stroke="none" fill="#707070"/>
-                  </g>
-                </svg>
-              </div>
-              <div class="collapsible__content">
-                <div class="sm:block hidden">
-                  <p>Победител</p>
-                </div>
-                <div>
-                  <p>Специална награда</p>
-                </div>
-                <div>
-                  <p>Участник</p>
-                </div>
-                <div>
-                  <p>Участник</p>
-                </div>
-                <div>
-                  <p>Участник</p>
-                </div>
-              </div>
-            </div>  
-
-
-            <div class="collapsible">
-              <div class="collapsible__wrapper">
-                <label>Име на категория</label>
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6">
-                  <g transform="translate(11 6) rotate(180)" fill="#fff">
-                    <path d="M 9.863381385803223 5.5 L 1.136618375778198 5.5 L 5.5 0.7399472594261169 L 9.863381385803223 5.5 Z" stroke="none"/>
-                    <path d="M 5.5 1.479883670806885 L 2.273226737976074 5 L 8.726773262023926 5 L 5.5 1.479883670806885 M 5.5 0 L 11 6 L 0 6 L 5.5 0 Z" stroke="none" fill="#707070"/>
-                  </g>
-                </svg>
-              </div>
-              <div class="collapsible__content">
-                <div class="sm:block hidden">
-                  <p>Победител</p>
-                </div>
-                <div>
-                  <p>Специална награда</p>
-                </div>
-                <div>
-                  <p>Участник</p>
-                </div>
-                <div>
-                  <p>Участник</p>
-                </div>
-                <div>
-                  <p>Участник</p>
-                </div>
-              </div>
-            </div>  
-
-
-            <div class="collapsible">
-              <div class="collapsible__wrapper">
-                <label>Име на категория</label>
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6">
-                  <g transform="translate(11 6) rotate(180)" fill="#fff">
-                    <path d="M 9.863381385803223 5.5 L 1.136618375778198 5.5 L 5.5 0.7399472594261169 L 9.863381385803223 5.5 Z" stroke="none"/>
-                    <path d="M 5.5 1.479883670806885 L 2.273226737976074 5 L 8.726773262023926 5 L 5.5 1.479883670806885 M 5.5 0 L 11 6 L 0 6 L 5.5 0 Z" stroke="none" fill="#707070"/>
-                  </g>
-                </svg>
-              </div>
-              <div class="collapsible__content">
-                <div class="sm:block hidden">
-                  <p>Победител</p>
-                </div>
-                <div>
-                  <p>Специална награда</p>
-                </div>
-                <div>
-                  <p>Участник</p>
-                </div>
-                <div>
-                  <p>Участник</p>
-                </div>
-                <div>
-                  <p>Участник</p>
-                </div>
-              </div>
-            </div>  
-            
-         </div>
-        </div>
-      </section>
-
-
-      <section class="container text-center sm:mt-9.5 mt-10 sm:mb-30 mb-41">
-        <p class="text-xl sm:leading-5.2 leading-4.5 sm:mb-5.5 mb-5">Галерии</p>
-        <div class="flex justify-center flex-nowrap">
-          <div class="sm:w-150 w-87">
-            <div class="w-full sm:h-78 h-42 bg-white border-1 border-grey-light flex flex-col justify-center items-center text-grey">
-              <p>Снимка от албума</p>
-            </div>
-            <div class="w-full sm:h-20 h-13.5 px-5 bg-white border-x-1 border-b-1 border-grey-light flex justify-between items-center">
-              <p>Име на албума</p>
-              <button type="button">
-                <span> 130 снимки → </span>              
-              </button>
+          <div class="video-gallery__wrapper">
+            <div class="video-gallery__title-wrapper">
+              <p class="video-gallery__title">
+                Запис на live stream на "Сграда на годината 2021", част 1
+               </p>
             </div>
           </div>
         </div>
-      </section>
 
+        <div class="video-gallery__item">
+          <div class="relative">
+            <img src="./assets/icon/icon-play.svg" alt="play" class="video-gallery__play-icon hover-scale" />
+            <div class="video-gallery__image-wrapper grid-zoom ">
+              <img src="./assets/images/gallery/t9.jpg" alt="t9" class="image-gallery__image hover-scale" />
+            </div>
+          </div>
+          <div class="video-gallery__wrapper">
+            <div class="video-gallery__title-wrapper">
+              <p class="video-gallery__title">
+                Запис на live stream на "Сграда на годината 2021", част 2
+               </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-gallery__item">
+          <div class="relative">
+            <img src="./assets/icon/icon-play.svg" alt="play" class="video-gallery__play-icon hover-scale" />
+            <div class="video-gallery__image-wrapper grid-zoom ">
+              <img src="./assets/images/gallery/t7.jpg" alt="t7" class="image-gallery__image hover-scale" />
+            </div>
+          </div>
+          <div class="video-gallery__wrapper">
+            <div class="video-gallery__title-wrapper">
+              <p class="video-gallery__title">
+                Посланията на уста колю фичето, "сграда на годината" 2010-2011
+               </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-gallery__item">
+          <div class="relative">
+            <img src="./assets/icon/icon-play.svg" alt="play" class="video-gallery__play-icon hover-scale" />
+            <div class="video-gallery__image-wrapper grid-zoom ">
+              <img src="./assets/images/gallery/t2.jpg" alt="t2" class="image-gallery__image hover-scale" />
+            </div>
+          </div>
+          <div class="video-gallery__wrapper">
+            <div class="video-gallery__title-wrapper">
+              <p class="video-gallery__title">
+                Запис на live stream на "Сграда на годината 2021", част 1
+               </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-gallery__item">
+          <div class="relative">
+            <img src="./assets/icon/icon-play.svg" alt="play" class="video-gallery__play-icon hover-scale" />
+            <div class="video-gallery__image-wrapper grid-zoom ">
+              <img src="./assets/images/gallery/t1.jpg" alt="t1" class="image-gallery__image hover-scale" />
+            </div>
+          </div>
+          <div class="video-gallery__wrapper">
+            <div class="video-gallery__title-wrapper">
+              <p class="video-gallery__title">
+                Запис на live stream на "Сграда на годината 2021", част 1
+               </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-gallery__item">
+          <div class="relative">
+            <img src="./assets/icon/icon-play.svg" alt="play" class="video-gallery__play-icon hover-scale" />
+            <div class="video-gallery__image-wrapper grid-zoom ">
+              <img src="./assets/images/gallery/t5.jpg" alt="t5" class="image-gallery__image hover-scale" />
+            </div>
+          </div>
+          <div class="video-gallery__wrapper">
+            <div class="video-gallery__title-wrapper">
+              <p class="video-gallery__title">
+                Съграждане на Храм "Св. Тривелий Български" в Мадрид, инициатива на Западно- и Средноевропейския Митрополит Антоний и Фондация "Трейс за Хората"
+               </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-footer h-full bg-no-repeat bg-bottom bg-cover	bg-black">

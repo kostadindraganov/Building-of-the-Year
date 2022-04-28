@@ -10,10 +10,10 @@ module.exports = {
         'grey-light':   '#707070'
       },
       fontFamily: {
-        bold: ['Neue-bold', ...defaultTheme.fontFamily.sans],
-        regular: ['Neue-regular', ...defaultTheme.fontFamily.sans],
-        boldCyrillic: ['Neue-bold-cyrillic', ...defaultTheme.fontFamily.sans],
-        regularCyrillic: ['Neue-regular-cyrillic', ...defaultTheme.fontFamily.sans],
+        en: ['Neue-regular', ...defaultTheme.fontFamily.sans],
+        bg: ['Neue-regular-cyrillic', ...defaultTheme.fontFamily.sans]
+        // bold: ['Neue-bold', ...defaultTheme.fontFamily.sans],
+        // boldCyrillic: ['Neue-bold-cyrillic', ...defaultTheme.fontFamily.sans],      
       },
       fontSize: {
         'extra-small': '.563rem', // 9px
