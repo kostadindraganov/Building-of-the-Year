@@ -1,6 +1,5 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 @layer base {
   @font-face {
@@ -39,35 +38,47 @@
          url('/src/assets/fonts/bg/NeueHaasUnicaW1G-Bold.ttf')  format('truetype'),
          url('/src/assets/fonts/bg/NeueHaasUnicaW1G-Bold.svg#Neue Haas Unica W1G') format('svg');
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  h1 {
+    @apply font-bold md:text-8xl text-5xl text-white md:leading-14 leading-9;
+  }
+  
+  h2 {
+    @apply font-bold md:text-6xl text-3xl text-white md:leading-15 leading-8;
+  }
+  
+  h3 {
+    @apply font-bold md:text-6xl text-4xl md:leading-15 leading-7;
+  }
+  
+  h4 {
+    @apply font-bold md:text-7xl text-4xl md:leading-12 leading-7;
+  }
+  
+  h5 {
+    @apply font-bold md:text-2xl text-1xl border-b-3 border-b-black w-44 pb-4 md:leading-7.5 leading-5.2;
+  }
+  
+  h6 {
+    @apply font-bold md:text-3xl text-title md:leading-5.5 leading-4.6;
+  }
 }
 
-html {
-  scroll-behavior: smooth;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-badge {
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: vertical-lr;
+  }
 }
 
-h1 {
-  @apply font-bold md:text-8xl text-5xl text-white md:leading-14 leading-9;
-}
-
-h2 {
-  @apply font-bold md:text-6xl text-3xl text-white md:leading-15 leading-8;
-}
-
-h3 {
-  @apply font-bold md:text-6xl text-4xl md:leading-15 leading-7;
-}
-
-h4 {
-  @apply font-bold md:text-7xl text-4xl md:leading-12 leading-7;
-}
-
-h5 {
-  @apply font-bold md:text-2xl text-1xl border-b-3 border-b-black w-44 pb-4 md:leading-7.5 leading-5.2;
-}
-
-h6 {
-  @apply font-bold md:text-3xl text-title md:leading-5.5 leading-4.6;
-}
 
 .container {
   @apply lg:px-0 md:px-4 px-4;
@@ -80,6 +91,7 @@ h6 {
 .hide-scroll-bar::-webkit-scrollbar {
   display: none;
 }
+
 
 .enter-btn {
   display: flex;
@@ -291,15 +303,4 @@ h6 {
 
 /* Category */
 
-.badge-first {
-  @apply md:absolute flex justify-center items-center md:top-[29px] md:-left-[59px] md:rotate-90 md:w-[88px] md:h-[30px] w-[71px] h-[20px] bg-primary;
-}
 
-.badge-second {
-  @apply md:absolute flex justify-center items-center md:top-[38px] md:-left-[68px] md:rotate-90 md:w-26 md:h-[30px] w-[75px] h-[20px] bg-grey-custom;
-}
-
-.badge-first span,
-.badge-second span { 
-  @apply md:text-sm text-extra-small md:leading-4.6 leading-3.3 text-white text-center uppercase;
-}
