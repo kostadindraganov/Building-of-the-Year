@@ -60,7 +60,7 @@
   }
   
   h5 {
-    @apply font-bold md:text-2xl text-1xl border-b-3 border-b-black w-44 pb-4 md:leading-7.5 leading-5.2;
+    @apply font-bold md:text-2xl text-1xl pb-4 md:leading-7.5 leading-5.2;
   }
   
   h6 {
@@ -90,6 +90,9 @@
 }
 .hide-scroll-bar::-webkit-scrollbar {
   display: none;
+}
+.bottom-border {
+  @apply sm:w-44 w-full transform  border-b-3 border-black;
 }
 
 
@@ -158,6 +161,11 @@
 .more-btn span {
   @apply sm:text-xl md:text-xl text-lg font-bold text-left;
 }
+
+.control-btn {
+  @apply more-btn btn-hover-2 mt-2 sm:w-68 w-42;
+}
+
 
 
 .hover-scale {
