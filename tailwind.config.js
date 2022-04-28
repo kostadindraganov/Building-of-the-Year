@@ -7,7 +7,9 @@ module.exports = {
       colors: {
         'primary': '#BE8D3C',
         'grey':    '#C7C7C7',
-        'grey-light':   '#707070'
+        'grey-light':   '#707070',
+        'grey-light-2' : '#F2F2F2',
+        'grey-custom' : '#8D8D8D'
       },
       fontFamily: {
         en: ['Neue-regular', ...defaultTheme.fontFamily.sans],
@@ -34,6 +36,7 @@ module.exports = {
         '8xl': '3.5rem', // 56px
       },
       lineHeight: {
+        '3.3': '0.813rem', // 13px
         '4.5': '1.063rem', // 17px
         '4.6': '1.125rem', // 18px
         '4.7': '1.188rem', // 19px
@@ -71,6 +74,7 @@ module.exports = {
         '133': '25.313rem', // 405px
         '146': '28.75rem',  // 460px
         '150': '34.688rem', // 555px
+        '152': '35.625rem', // 570px
         '155': '37rem',     // 592px
         '173': '41.5rem',   // 664px
         '188': '46.563rem', // 745px
@@ -89,6 +93,7 @@ module.exports = {
         '58': '14.5rem',     // 232px
         '62': '15.313rem',   // 245px
         '63.5': '15.875rem', // 254px  
+        '67': '16.25rem',    // 260px
         '77.5': '18.125rem', // 290px 
         '78': '18.375rem',   // 294px  
         '94': '23.438rem',   // 375px   
@@ -123,14 +128,21 @@ module.exports = {
         '20': '20px',
       },
       spacing: {
-        '0.8': '.188rem', // 3px
-        '3.8': '.938rem', // 15px
-        '7.5': '1.875rem', // 30px
+        '0.8': '.188rem',   // 3px
+        '3.8': '.938rem',   // 15px
+        '7.5': '1.875rem',  // 30px
+        '7.9': '2.188rem',  // 35px
         '10.5': '2.625rem', // 42px
-        '13': '3.25rem', // 52px
-        '23': '5.313rem', // 85px
-        '27.5': '6.875',  // 110px
-        '36': '9.375rem'  // 150px
+        '13': '3.25rem',    // 52px
+        '15.3': '3.625rem', // 58px
+        '15.5': '3.75rem',  // 60px
+        '15.6': '3.938rem',  // 63px
+        '23': '5.313rem',   // 85px
+        '27.5': '6.875',    // 110px
+        '36': '9.375rem'    // 150px
+      },
+      flex: {
+        '2': '1 1 50%'
       },
       backgroundImage: {
         'splash': "url('/src/assets/images/backgrounds/splash-bg.jpg')",

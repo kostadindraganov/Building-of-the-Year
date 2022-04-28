@@ -60,122 +60,94 @@
       </nav>
     </header>
 
-    <section class="container">
-      
-      <div class="sm:mt-5.5 mt-5 mb-10"> 
-        <button type="button" class="back-btn btn-hover-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="10.484" height="9" viewBox="0 0 10.484 9">
-            <path d="M10.281,4.992l-3.8,3.8a.7.7,0,0,1-.984-.984L8.109,5.2H.7A.7.7,0,1,1,.7,3.8H8.109L5.492,1.188A.7.7,0,0,1,6.476.2l3.8,3.8a.7.7,0,0,1,0,.984" transform="translate(10.484 9) rotate(180)"/>
-          </svg>     
-          <p class="m-2"> Gallery </p>
-        </button>
-        <h3 class="sm:w-198 w-87">Gallery</h3>
-        <div class="inline-flex w-full sm:mt-10 mt-7.1">
-          <button type="button" class="tab-btn btn-hover-2">
-            <span class="sm:text-2xl text-1xl"> Photos </span>
-          </button>
-          <button type="button" class="tab-btn btn-hover-2 active">
-            <span class="sm:text-2xl text-1xl"> Video </span>
-          </button>
-          <i class="border-b-1 border-black md:flex hidden flex-1"></i>
+    <section class="bg-grey-light-2">
+      <div class="container sm:pt-5.5 pt-5 sm:pb-10 pb-5"> 
+        <div class="flex flex-wrap flex-row items-center w-full gap-y-0 ">
+          <div class=" order-1 w-1/2">
+            <button type="button" class="back-btn btn-hover-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10.484" height="9" viewBox="0 0 10.484 9">
+                <path d="M10.281,4.992l-3.8,3.8a.7.7,0,0,1-.984-.984L8.109,5.2H.7A.7.7,0,1,1,.7,3.8H8.109L5.492,1.188A.7.7,0,0,1,6.476.2l3.8,3.8a.7.7,0,0,1,0,.984" transform="translate(10.484 9) rotate(180)"/>
+              </svg>     
+              <p class="m-2"> Categories </p>
+            </button>
+          </div>
+          <div class="md:order-2 order-3 md:w-1/2 w-full inline-flex items-center justify-end">
+            <span class="text-sm text-gray-400">Sponsored by</span>
+            <img src="./assets/images/partners/knouf.png" alt="knouf" class="w-24 ml-4" />
+          </div>
+          <div class="sm:order-3 order-2">
+            <h3 class="sm:w-152 w-68 md:leading-12 leading-7">Social Infrastructure and Special Purpose Buildings</h3>
+          </div>
         </div>
       </div>
+    </section>
 
       <!-- Grid -->
-      <div class="video-gallery grid lg:grid-cols-3 grid-cols-1 lg:gap-27.5 gap-y-10 md:mb-30 mb-20">
+    <section class="container md:mt-13.5 mt-5 md:mb-26.6 mb-20">
+      <div class=" grid lg:grid-cols-2 grid-cols-1 lg:gap-27.5 gap-y-10">
 
-        <div class="video-gallery__item">
-          <div class="relative">
-            <img src="./assets/icon/icon-play.svg" alt="play" class="video-gallery__play-icon hover-scale" />
-            <div class="video-gallery__image-wrapper grid-zoom ">
-              <img src="./assets/images/gallery/t15.jpg" alt="t15" class="image-gallery__image hover-scale" />
-            </div>
+        <div class="image-gallery__item relative">
+          <div class="badge-first">
+            <span>FIRST PRIZE</span>
           </div>
-          <div class="video-gallery__wrapper">
-            <div class="video-gallery__title-wrapper">
-              <p class="video-gallery__title">
-                Запис на live stream на "Сграда на годината 2021", част 1
-               </p>
+          <div class="image-gallery__image-wrapper sm:h-68 grid-zoom">
+            <img src="./assets/images/gallery/t22.jpg" alt="t22" class="image-gallery__image" />
+          </div>
+          <div class="image-gallery__title">
+            <div class="image-gallery__title-wrapper">
+              <h6 class="pt-2">Supercomputer Center Petascale Bulgaria</h6>
+            </div>
+            <div class="image-gallery__navigation w-full">
+              <div>
+                <p class="text-lg leading-4.7">Sofia</p>
+              </div>
+              <button type="button" class="image-gallery__navigation-btn">
+                <span class="mr-2"> Project Details </span>
+                <svg xmlns="http://www.w3.org/2000/svg"width="14.145" height="12.142" viewBox="0 0 14.145 12.142"><path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(0 0)"/></svg>
+              </button>
             </div>
           </div>
         </div>
 
-        <div class="video-gallery__item">
-          <div class="relative">
-            <img src="./assets/icon/icon-play.svg" alt="play" class="video-gallery__play-icon hover-scale" />
-            <div class="video-gallery__image-wrapper grid-zoom ">
-              <img src="./assets/images/gallery/t9.jpg" alt="t9" class="image-gallery__image hover-scale" />
-            </div>
+        <div class="image-gallery__item relative">
+          <div class="badge-second">
+            <span>SPECIAL PRIZE</span>
           </div>
-          <div class="video-gallery__wrapper">
-            <div class="video-gallery__title-wrapper">
-              <p class="video-gallery__title">
-                Запис на live stream на "Сграда на годината 2021", част 2
-               </p>
-            </div>
+          <div class="image-gallery__image-wrapper sm:h-68 grid-zoom">
+            <img src="./assets/images/gallery/t24.jpg" alt="t24" class="image-gallery__image" />
           </div>
-        </div>
-
-        <div class="video-gallery__item">
-          <div class="relative">
-            <img src="./assets/icon/icon-play.svg" alt="play" class="video-gallery__play-icon hover-scale" />
-            <div class="video-gallery__image-wrapper grid-zoom ">
-              <img src="./assets/images/gallery/t7.jpg" alt="t7" class="image-gallery__image hover-scale" />
+          <div class="image-gallery__title">
+            <div class="image-gallery__title-wrapper">
+              <h6 class="pt-2">First District Service "Fire Safety and Protection of the Population" - Main Renovation and Reconstruction of Buildings</h6>
             </div>
-          </div>
-          <div class="video-gallery__wrapper">
-            <div class="video-gallery__title-wrapper">
-              <p class="video-gallery__title">
-                Посланията на уста колю фичето, "сграда на годината" 2010-2011
-               </p>
+            <div class="image-gallery__navigation w-full">
+              <div>
+                <p class="text-lg leading-4.7">Ruse</p>
+              </div>
+              <button type="button" class="image-gallery__navigation-btn">
+                <span class="mr-2"> Project Details </span>
+                <svg xmlns="http://www.w3.org/2000/svg"width="14.145" height="12.142" viewBox="0 0 14.145 12.142"><path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(0 0)"/></svg>
+              </button>
             </div>
           </div>
         </div>
 
-        <div class="video-gallery__item">
-          <div class="relative">
-            <img src="./assets/icon/icon-play.svg" alt="play" class="video-gallery__play-icon hover-scale" />
-            <div class="video-gallery__image-wrapper grid-zoom ">
-              <img src="./assets/images/gallery/t2.jpg" alt="t2" class="image-gallery__image hover-scale" />
-            </div>
+        <div class="image-gallery__item">
+          <div class="image-gallery__image-wrapper sm:h-68 grid-zoom">
+            <img src="./assets/images/gallery/t22.jpg" alt="t22" class="image-gallery__image" />
           </div>
-          <div class="video-gallery__wrapper">
-            <div class="video-gallery__title-wrapper">
-              <p class="video-gallery__title">
-                Запис на live stream на "Сграда на годината 2021", част 1
-               </p>
+          <div class="image-gallery__title">
+            <div class="image-gallery__title-wrapper">
+              <h6 class="pt-2">Supercomputer Center Petascale Bulgaria</h6>
             </div>
-          </div>
-        </div>
-
-        <div class="video-gallery__item">
-          <div class="relative">
-            <img src="./assets/icon/icon-play.svg" alt="play" class="video-gallery__play-icon hover-scale" />
-            <div class="video-gallery__image-wrapper grid-zoom ">
-              <img src="./assets/images/gallery/t1.jpg" alt="t1" class="image-gallery__image hover-scale" />
-            </div>
-          </div>
-          <div class="video-gallery__wrapper">
-            <div class="video-gallery__title-wrapper">
-              <p class="video-gallery__title">
-                Запис на live stream на "Сграда на годината 2021", част 1
-               </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-gallery__item">
-          <div class="relative">
-            <img src="./assets/icon/icon-play.svg" alt="play" class="video-gallery__play-icon hover-scale" />
-            <div class="video-gallery__image-wrapper grid-zoom ">
-              <img src="./assets/images/gallery/t5.jpg" alt="t5" class="image-gallery__image hover-scale" />
-            </div>
-          </div>
-          <div class="video-gallery__wrapper">
-            <div class="video-gallery__title-wrapper">
-              <p class="video-gallery__title">
-                Съграждане на Храм "Св. Тривелий Български" в Мадрид, инициатива на Западно- и Средноевропейския Митрополит Антоний и Фондация "Трейс за Хората"
-               </p>
+            <div class="image-gallery__navigation w-full">
+              <div>
+                <p class="text-lg leading-4.7">Sofia</p>
+              </div>
+              <button type="button" class="image-gallery__navigation-btn">
+                <span class="mr-2"> Project Details </span>
+                <svg xmlns="http://www.w3.org/2000/svg"width="14.145" height="12.142" viewBox="0 0 14.145 12.142"><path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(0 0)"/></svg>
+              </button>
             </div>
           </div>
         </div>

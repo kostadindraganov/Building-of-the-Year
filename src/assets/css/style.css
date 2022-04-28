@@ -124,7 +124,7 @@ h6 {
 }
 
 .back-btn {
-  @apply flex items-center justify-between;
+  @apply flex items-baseline justify-between ;
 }
 
 .back-btn p {
@@ -287,4 +287,19 @@ h6 {
 
 .video-gallery__title {
   @apply md:text-title text-lg md:leading-4.6 leading-4.5;
+}
+
+/* Category */
+
+.badge-first {
+  @apply md:absolute flex justify-center items-center md:top-[29px] md:-left-[59px] md:rotate-90 md:w-[88px] md:h-[30px] w-[71px] h-[20px] bg-primary;
+}
+
+.badge-second {
+  @apply md:absolute flex justify-center items-center md:top-[38px] md:-left-[68px] md:rotate-90 md:w-26 md:h-[30px] w-[75px] h-[20px] bg-grey-custom;
+}
+
+.badge-first span,
+.badge-second span { 
+  @apply md:text-sm text-extra-small md:leading-4.6 leading-3.3 text-white text-center uppercase;
 }
