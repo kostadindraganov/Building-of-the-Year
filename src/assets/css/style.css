@@ -177,7 +177,7 @@
 }
 
 .btn-hover-2 {
-  @apply border-b-black text-black fill-black hover:border-b-primary hover:text-primary hover:fill-primary cursor-pointer;
+  @apply border-b-black text-black fill-black hover:border-b-primary hover:text-primary hover:fill-primary cursor-pointer stroke-black hover:stroke-primary;
 }
 
 .btn-hover-3 {
