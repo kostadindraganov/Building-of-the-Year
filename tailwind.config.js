@@ -30,6 +30,7 @@ module.exports = {
         '2xl': '1.25rem', // 20px
         '3xl': '1.563rem', // 25px
         '4xl': '1.75rem', // 28px
+        'mobile': '1.875rem', // 30px
         '5xl': '2.25rem', // 36px
         '6xl': '2.5rem', // 40px
         '7xl': '3rem', // 48px
@@ -37,12 +38,14 @@ module.exports = {
       },
       lineHeight: {
         '3.3': '0.813rem', // 13px
+        '3.4': '0.938rem', // 15px
         '4.5': '1.063rem', // 17px
         '4.6': '1.125rem', // 18px
         '4.7': '1.188rem', // 19px
         '5.2': '1.375rem', // 22px
         '5.5': '1.563rem', // 25px
         '7.5': '1.875rem', // 30px
+        '7.9': '2.25rem',   // 36px
         '8': '2.313rem',   // 37px
         '12': '3rem',      // 48px
         '14': '3.5rem',    // 56px 
@@ -153,6 +156,7 @@ module.exports = {
         '7.5': '1.875rem',  // 30px
         '7.9': '2.188rem',  // 35px
         '10.5': '2.625rem', // 42px
+        '12.8': '3.125rem',  // 50px
         '13': '3.25rem',    // 52px
         '15.3': '3.625rem', // 58px
         '15.5': '3.75rem',  // 60px
@@ -169,7 +173,10 @@ module.exports = {
         'header': "url('/src/assets/images/backgrounds/header-bg.jpg')",
         'footer': "url('/src/assets/images/backgrounds/footer-bg.jpg')",
         'calendar': "url('/src/assets/images/backgrounds/calendar-bg.png')",
-        'vote': "url('/src/assets/images/backgrounds/vote.svg')"
+        'vote': "url('/src/assets/images/backgrounds/vote.svg')",
+        'jury': "url('/src/assets/images/backgrounds/jury.jpg')",
+        'jury-m': "url('/src/assets/images/backgrounds/jury-m.jpg')"
+
       }
     },
     container: {

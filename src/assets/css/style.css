@@ -77,8 +77,15 @@
     -webkit-writing-mode: vertical-lr;
     -ms-writing-mode: vertical-lr;
   }
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+  .avatar-mobile {
+    width: 72px;
+    height: 72px;
+  }
 }
-
 
 .container {
   @apply lg:px-0 md:px-4 px-4;
@@ -196,6 +203,11 @@
 .btn-hover-5 {
   @apply border-b-white text-white fill-white hover:border-b-primary hover:text-primary hover:fill-primary cursor-pointer stroke-white hover:stroke-primary;
 }
+
+.btn-hover-6 {
+  @apply border-b-primary hover:border-b-black text-primary hover:text-black fill-primary hover:fill-black cursor-pointer;
+}
+
 
 .gallery__wrapper {
   @apply relative overflow-hidden lg:w-68 lg:h-47 md:w-56 md:h-36 w-42 h-29 cursor-pointer;
@@ -316,4 +328,24 @@
 
 /* Category */
 
+.pagination-menu__title {
+  @apply font-bold md:text-7xl text-mobile md:leading-12 leading-7.9;
+}
 
+.pagination-menu__btn p {
+  @apply md:text-sm text-uxs md:leading-4.6 leading-3.4;
+}
+
+/* Jury */
+
+.jury__wrapper {
+  @apply container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-9 lg:gap-y-16 gap-y-7.5;
+}
+
+.jury__item {
+  @apply sm:w-87.5 flex sm:text-xl text-lg sm:leading-5.2 leading-4.5;
+}
+
+.jury__image {
+  @apply rounded-full btn-hover-1 hover-scale sm:avatar avatar-mobile;
+}
