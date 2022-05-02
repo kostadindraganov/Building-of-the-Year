@@ -84,9 +84,12 @@ module.exports = {
         '173': '41.5rem',   // 664px
         '188': '46.563rem', // 745px
         '196': '50.625rem', // 810px
-        '198': '52.5rem',   // 840px
+        '198': '52.5rem',   // 840px,
+        '205': '60rem',   // 960px
+        '211': '62.375rem'   // 998px
       },
       height: {
+        '10.1': '2.625rem',  // 42px
         '13.5': '3.125rem',  // 50px
         '13.8': '3.438rem',  // 55px
         '13.9': '3.563rem',  // 57px
@@ -135,6 +138,7 @@ module.exports = {
       padding: {
         '1.2': '0.375rem',  // 6px
         '4.2': '1.063rem',  // 17px
+        '7.1': '1.875rem',  // 30px
         '13': '3.125rem',  // 50px
       },
       borderWidth: {
@@ -164,7 +168,8 @@ module.exports = {
         'splash': "url('/src/assets/images/backgrounds/splash-bg.jpg')",
         'header': "url('/src/assets/images/backgrounds/header-bg.jpg')",
         'footer': "url('/src/assets/images/backgrounds/footer-bg.jpg')",
-        'calendar': "url('/src/assets/images/backgrounds/calendar-bg.png')"
+        'calendar': "url('/src/assets/images/backgrounds/calendar-bg.png')",
+        'vote': "url('/src/assets/images/backgrounds/vote.svg')"
       }
     },
     container: {

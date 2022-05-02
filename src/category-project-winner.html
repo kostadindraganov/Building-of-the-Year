@@ -7,6 +7,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon/favicon.ico">
     <title>Building of the Year</title>
     <link href="/dist/style.css" rel="stylesheet">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
   </head>
   
   <body class="font-en font-normal bg-white">
@@ -64,10 +67,10 @@
       <div class="container sm:py-5.5 py-5"> 
         <div class="flex flex-wrap flex-row justify-between items-start w-full">
           <button type="button" class="back-btn btn-hover-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="10.484" height="9" viewBox="0 0 10.484 9">
-                <path d="M10.281,4.992l-3.8,3.8a.7.7,0,0,1-.984-.984L8.109,5.2H.7A.7.7,0,1,1,.7,3.8H8.109L5.492,1.188A.7.7,0,0,1,6.476.2l3.8,3.8a.7.7,0,0,1,0,.984" transform="translate(10.484 9) rotate(180)"/>
-              </svg>     
-              <p class="m-2"> Social Infrastructure and Special-Purpose Buildings </p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="10.484" height="9" viewBox="0 0 10.484 9">
+              <path  d="M10.281,4.992l-3.8,3.8a.7.7,0,0,1-.984-.984L8.109,5.2H.7A.7.7,0,1,1,.7,3.8H8.109L5.492,1.188A.7.7,0,0,1,6.476.2l3.8,3.8a.7.7,0,0,1,0,.984" transform="translate(10.484 9) rotate(180)"/>
+            </svg>
+            <p class="m-2"> Social Infrastructure and Special-Purpose Buildings </p>
           </button>
           <div class="inline-flex items-center justify-end md:w-auto w-full">
             <span class="text-sm text-gray-400">Sponsored by</span>
@@ -82,7 +85,7 @@
     <section class="container flex sm:flex-row flex-col sm:gap-y-7 relative">
 
       <!-- Title -->
-      <div class="sm:absolute right-0 bottom-64 z-10"> 
+      <div class="sm:absolute right-0 bottom-64 z-10 sm:mb-0 mb-3"> 
         <div class="sm:px-8 sm:py-2 bg-white sm:border-b-3 border-black sm:w-149">
           <h3 class="sm:leading-10 leading-5.5"> Supercomputer Center Petascale Bulgaria</h3>
           <p class="sm:text-xl sm:leading-5.2 text-lg leading-4.7">Sofia</p>
@@ -103,9 +106,9 @@
 
       <!-- Navigation -->
       <div class="flex md:justify-start sm:items-start items-end md:flex-row flex-col sm:w-198  sm:mb-0 mb-7"> 
-        <div class="flex bg-primary text-white uppercase sm:-ml-7.1 ml-0 sm:mr-0 mr-4">
+        <!-- <div class="flex bg-primary text-white uppercase sm:-ml-7.1 ml-0 sm:mr-0 mr-4">
           <span class="md:text-badge font-bold md:text-sm text-extra-small md:leading-4.6 leading-3.3 p-1.2">FIRST PRIZE</span>
-        </div>
+        </div> -->
 
         <div class="sm:w-198 sm:h-178 relative">
           <div class="sm:hidden flex absolute bottom-0 right-0 items-center w-30 h-12 bg-white px-2.5">
@@ -147,122 +150,53 @@
           </button>
 
           <button type="button" class="control-btn">
-            <span class="mr-2"> Hide Thumbnails </span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20.243" height="20.243" viewBox="0 0 20.243 20.243">
-              <g transform="translate(-1152.47 -700.47)">
-                <line x2="15.4" y2="15.4" transform="translate(1154.891 702.892)" fill="none"  stroke-linecap="round" stroke-width="3"/>
-                <line  x2="16" y2="16" transform="translate(1170.592 702.592) rotate(90)" fill="none"  stroke-linecap="round" stroke-width="3"/>
+            <span class="mr-2"> Show Thumbnails </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
+              <g  transform="translate(-975 -842)">
+                <rect width="8" height="6" transform="translate(985 842)"/>
+                <rect width="8" height="6" transform="translate(985 850)"/>
+                <rect width="8" height="6" transform="translate(975 842)"/>
+                <rect width="8" height="6" transform="translate(975 850)"/>
               </g>
             </svg>
-            
           </button>
         </div>
       </div>
 
     </section>
 
-     <!-- Gallery grid -->
-    <section class="container sm:mt-10 mt-5">
-      <div class="image-gallery grid sm:w-198  lg:grid-cols-9 grid-cols-4 sm:gap-x-3.8 gap-x-3.5  gap-y-3.5">
+     <!-- Audience Award -->
+    <section class="sm:mt-10 mt-5 sm:w-211  bg-vote sm:h-62 bg-no-repeat bg-cover flex justify-end ">
+      <div class="sm:w-188 sm:mr-[95px]  py-7.1  sm:px-0 px-4">
+        <h5 class="text-white">Audience Award</h5>
+        <div class="bottom-border-w"></div>
 
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t1.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t2.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t4.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t5.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t6.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t7.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t8.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t9.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t10.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t1.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t2.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t4.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t5.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t6.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t7.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t8.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t9.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t10.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t1.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t2.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t4.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t5.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t6.jpg" alt="t3" class="w-full" />
-        </div>
-
+        <div class="flex sm:justify-between sm:flex-row flex-col sm:mt-7.1">
+          <div class="text-white sm:w-68 sm:my-0 my-5">
+           <p class="text-xl">
+             Sofia Tech Park AD, leading partner in Supercomputer Petascale Consortium Bulgaria
+           </p>
+          </div>
+   
+          <div class="sm:w-94 text-black">
+           <form action="?" method="POST" class="">
+             <input type="email" placeholder="Your email" class="w-full h-10.1 pl-2" required>
+             <div class="flex justify-between  content-center mt-4">
+               <div class="g-recaptcha" data-theme="light" data-sitekey="6LdR0bofAAAAAAmjht3-wlr9xv97h0-lg1DOyT89" style="transform:scale(0.67);-webkit-transform:scale(0.67);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
+               <button type="submit" class="text-white bg-black sm:w-20 w-42 sm:h-10.1 h-11 cursor-pointer hover:text-primary">
+                 <span>Vote</span>
+               </button>
+             </div>
+           </form>
+          </div>
+         </div>
       </div>
+  
+      
     </section>
 
      <!-- Project Details -->
-     <section class="container sm:my-20 my-10">
+     <section class="container sm:my-10 my-5">
        <h5> Project Details </h5>
        <div class="bottom-border"></div>
        <div class="flex flex-wrap gap-x-3.5 justify-between gap-y-6 sm:mt-7.1 mt-5 sm:text-xl text-lg sm:leading-5.2 leading-4.5">
@@ -519,4 +453,6 @@
       </div>
     </footer>
   </body>
+
+  
 </html>

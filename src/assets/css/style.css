@@ -88,13 +88,18 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
 .hide-scroll-bar::-webkit-scrollbar {
   display: none;
 }
+
 .bottom-border {
   @apply sm:w-44 w-full transform  border-b-3 border-black;
 }
 
+.bottom-border-w {
+  @apply sm:w-44 w-full transform  border-b-3 border-white;
+}
 
 .enter-btn {
   display: flex;
