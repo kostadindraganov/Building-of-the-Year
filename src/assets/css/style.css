@@ -178,6 +178,10 @@
   @apply more-btn btn-hover-2 mt-2 sm:w-68 w-42;
 }
 
+.position-absolute-center {
+  @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+}
+
 
 
 .hover-scale {
@@ -189,7 +193,7 @@
 }
 
 .btn-hover-2 {
-  @apply border-b-black text-black fill-black hover:border-b-primary hover:text-primary hover:fill-primary cursor-pointer stroke-black hover:stroke-primary;
+  @apply border-b-black text-black fill-black hover:border-b-primary hover:text-primary hover:fill-primary cursor-pointer;
 }
 
 .btn-hover-3 {
@@ -201,12 +205,17 @@
 }
 
 .btn-hover-5 {
-  @apply border-b-white text-white fill-white hover:border-b-primary hover:text-primary hover:fill-primary cursor-pointer stroke-white hover:stroke-primary;
+  @apply border-b-white text-white fill-white hover:border-b-primary hover:text-primary hover:fill-primary cursor-pointer;
 }
 
 .btn-hover-6 {
   @apply border-b-primary hover:border-b-black text-primary hover:text-black fill-primary hover:fill-black cursor-pointer;
 }
+
+.mobile-btn-hover {
+  @apply stroke-white hover:stroke-primary cursor-pointer;
+}
+
 
 
 .gallery__wrapper {

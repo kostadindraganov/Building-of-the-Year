@@ -9,10 +9,11 @@
     <link href="/dist/style.css" rel="stylesheet">
   </head>
   
-  <body class="font-en font-normal bg-white">
+  <body class="font-en font-normal">
+
     <!-- Header -->
-    <header class="bg-header bg-cover bg-no-repeat bg-center sm:pt-5 py-4 pb-8">
-      <nav class="container flex flex-row items-start justify-between">
+    <header class="absolute w-full z-20 bg-gradient-to-b  from-black to-transparent">
+      <nav class="container flex flex-row items-start justify-between sm:mt-5 mt-4 pb-11">
         <img src="./assets/logo/logo.png" alt="logo" class="md:w-56 lg:w-68 w-56" />
         <div class="hidden md:flex text-white font-regular flex-col items-end justify-between h-29 mt-1">
           <div>
@@ -46,142 +47,61 @@
 
         <!-- Mobile menu button -->
         <div class=" md:hidden flex items-center mt-5">
-         <button id="mobile-menu-btn">
-           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="17" viewBox="0 0 25 17" class="mobile-btn-hover">
-             <g transform="translate(-333 -19)">
-               <line x1="25" transform="translate(333 20)"   stroke-width="2"/>
-               <line x1="25" transform="translate(333 27.5)"  stroke-width="2"/>
-               <line x1="25" transform="translate(333 35)"  stroke-width="2"/>
-             </g>
-           </svg>
-         </button>
+          <button id="mobile-menu-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="17" viewBox="0 0 25 17" class="mobile-btn-hover">
+              <g transform="translate(-333 -19)">
+                <line x1="25" transform="translate(333 20)"   stroke-width="2"/>
+                <line x1="25" transform="translate(333 27.5)"  stroke-width="2"/>
+                <line x1="25" transform="translate(333 35)"  stroke-width="2"/>
+              </g>
+            </svg>
+          </button>
         </div>
-
       </nav>
     </header>
 
-    <section class="container">
-      
-      <div class="sm:mt-5.5 mt-5 mb-10"> 
-        <button type="button" class="back-btn btn-hover-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="10.484" height="9" viewBox="0 0 10.484 9">
-            <path d="M10.281,4.992l-3.8,3.8a.7.7,0,0,1-.984-.984L8.109,5.2H.7A.7.7,0,1,1,.7,3.8H8.109L5.492,1.188A.7.7,0,0,1,6.476.2l3.8,3.8a.7.7,0,0,1,0,.984" transform="translate(10.484 9) rotate(180)"/>
-          </svg>     
-          <p class="m-2"> Gallery </p>
-        </button>
-        <h3>Gallery</h3>
-        <div class="inline-flex w-full sm:mt-10 mt-7.1">
-          <button type="button" class="tab-btn btn-hover-2">
-            <span class="sm:text-2xl text-1xl"> Photos </span>
-          </button>
-          <button type="button" class="tab-btn btn-hover-2 active">
-            <span class="sm:text-2xl text-1xl"> Video </span>
-          </button>
-          <i class="border-b-1 border-black md:flex hidden flex-1"></i>
-        </div>
-      </div>
-
-      <!-- Grid -->
-      <div class="video-gallery grid lg:grid-cols-3 grid-cols-1 lg:gap-27.5 gap-y-10 md:mb-30 mb-20">
-
-        <div class="video-gallery__item">
-          <div class="relative">
-            <img src="./assets/icon/icon-play.svg" alt="play" class="video-gallery__play-icon hover-scale" />
-            <div class="video-gallery__image-wrapper grid-zoom ">
-              <img src="./assets/images/gallery/t15.jpg" alt="t15" class="image-gallery__image hover-scale" />
-            </div>
-          </div>
-          <div class="video-gallery__wrapper">
-            <div class="video-gallery__title-wrapper">
-              <p class="video-gallery__title">
-                Запис на live stream на "Сграда на годината 2021", част 1
-               </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-gallery__item">
-          <div class="relative">
-            <img src="./assets/icon/icon-play.svg" alt="play" class="video-gallery__play-icon hover-scale" />
-            <div class="video-gallery__image-wrapper grid-zoom ">
-              <img src="./assets/images/gallery/t9.jpg" alt="t9" class="image-gallery__image hover-scale" />
-            </div>
-          </div>
-          <div class="video-gallery__wrapper">
-            <div class="video-gallery__title-wrapper">
-              <p class="video-gallery__title">
-                Запис на live stream на "Сграда на годината 2021", част 2
-               </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-gallery__item">
-          <div class="relative">
-            <img src="./assets/icon/icon-play.svg" alt="play" class="video-gallery__play-icon hover-scale" />
-            <div class="video-gallery__image-wrapper grid-zoom ">
-              <img src="./assets/images/gallery/t7.jpg" alt="t7" class="image-gallery__image hover-scale" />
-            </div>
-          </div>
-          <div class="video-gallery__wrapper">
-            <div class="video-gallery__title-wrapper">
-              <p class="video-gallery__title">
-                Посланията на уста колю фичето, "сграда на годината" 2010-2011
-               </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-gallery__item">
-          <div class="relative">
-            <img src="./assets/icon/icon-play.svg" alt="play" class="video-gallery__play-icon hover-scale" />
-            <div class="video-gallery__image-wrapper grid-zoom ">
-              <img src="./assets/images/gallery/t2.jpg" alt="t2" class="image-gallery__image hover-scale" />
-            </div>
-          </div>
-          <div class="video-gallery__wrapper">
-            <div class="video-gallery__title-wrapper">
-              <p class="video-gallery__title">
-                Запис на live stream на "Сграда на годината 2021", част 1
-               </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-gallery__item">
-          <div class="relative">
-            <img src="./assets/icon/icon-play.svg" alt="play" class="video-gallery__play-icon hover-scale" />
-            <div class="video-gallery__image-wrapper grid-zoom ">
-              <img src="./assets/images/gallery/t1.jpg" alt="t1" class="image-gallery__image hover-scale" />
-            </div>
-          </div>
-          <div class="video-gallery__wrapper">
-            <div class="video-gallery__title-wrapper">
-              <p class="video-gallery__title">
-                Запис на live stream на "Сграда на годината 2021", част 1
-               </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="video-gallery__item">
-          <div class="relative">
-            <img src="./assets/icon/icon-play.svg" alt="play" class="video-gallery__play-icon hover-scale" />
-            <div class="video-gallery__image-wrapper grid-zoom ">
-              <img src="./assets/images/gallery/t5.jpg" alt="t5" class="image-gallery__image hover-scale" />
-            </div>
-          </div>
-          <div class="video-gallery__wrapper">
-            <div class="video-gallery__title-wrapper">
-              <p class="video-gallery__title">
-                Съграждане на Храм "Св. Тривелий Български" в Мадрид, инициатива на Западно- и Средноевропейския Митрополит Антоний и Фондация "Трейс за Хората"
-               </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
+    <!-- Hero -->
+    <section class="relative md:h-190 h-67.5"> 
+      <img src="./assets/images/gallery/Kolio-Fitchet-Museum.jpg" alt="Kolio-Fitchet-Museum" class="md:h-190 h-67.5 absolute top-0 left-0 -z-20 w-full object-cover">
     </section>
+
+
+    <!-- Details -->
+    <section class="bg-primary text-white relative md:pb-15.5 pb-5">
+      <div class="relative md:-top-24 -top-16 bg-primary md:w-148 w-60 flex md:justify-end">
+        <div class="bg-primary md:w-94 w-66.8 md:mt-5 mt-2.5 md:ml-0 ml-4"> 
+          <button type="button" class="back-btn btn-hover-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10.484" height="9" viewBox="0 0 10.484 9">
+              <path d="M10.281,4.992l-3.8,3.8a.7.7,0,0,1-.984-.984L8.109,5.2H.7A.7.7,0,1,1,.7,3.8H8.109L5.492,1.188A.7.7,0,0,1,6.476.2l3.8,3.8a.7.7,0,0,1,0,.984" transform="translate(10.484 9) rotate(180)"/>
+            </svg>     
+            <p class="m-2"> Initiatives </p>
+          </button>
+          <p class="md:text-6xl text-3xl md:leading-10 leading-5.5 font-bold">Kolio Fitcheto Museum</p>
+        </div>
+      </div>
+
+      <div class="container flex flex-wrap md:flex-row flex-col-reverse md:justify-between md:items-start items-end md:-mt-9 -mt-23">
+        <div class="md:w-173 sm:mt-0 mt-8">
+          <p class="md:text-2xl text-1xl md:leading-7.5 leading-6 text-black"> Restoration of Kolyo Ficheto Museum in Drianovo by the initiative of national contest “Building of the year”. The 210th birthday of the biggest Bulgarian builder – Kolyo Ficheto - will be celebrated with an opening of official museum in his hometown Dryanovo. The museum is completely renovated by the initiative of the National Contest “Building of the Year”, Dryanovo municipality and Bulgarian Construction Chamber.</p>
+        </div>
+        <button type="button" class="share-btn btn-hover-4 mt-2 md:w-68 w-34 ">
+          <p class="mr-2"> Share Initiative</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17.869" viewBox="0 0 18 17.869">
+            <path d="M8.849,10.077l3,1.507a3.646,3.646,0,1,1-1.106,2.2L7.591,12.2a4.5,4.5,0,1,1,0-6.53l3.149-1.583a3.644,3.644,0,1,1,1.106,2.2l-3,1.507a4.513,4.513,0,0,1,0,2.285" transform="translate(0 0)"/>
+          </svg>          
+        </button>
+      </div>
+
+      <div class="container w-full h-155 md:mt-10 mt-5 relative">
+        <img src="./assets/icon/icon-play.svg" alt="play" class="md:w-18 w-14 position-absolute-center cursor-pointer hover-scale" />
+
+        <img src="./assets/images/gallery/Kolio-Fitcheto-video.jpg" alt="Kolio-Fitchet-Museum" class="w-full h-full object-cover">
+
+      </div>
+
+    </section>
+
+
 
     <!-- Footer -->
     <footer class="bg-footer h-full bg-no-repeat bg-bottom bg-cover	bg-black">
