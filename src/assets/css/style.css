@@ -220,7 +220,7 @@
 .grid-zoom:hover .gallery__image,
 .grid-zoom:hover .image-gallery__image
 {
-  @apply scale-150;
+  @apply scale-125;
 }
 
 /* Arhives */
