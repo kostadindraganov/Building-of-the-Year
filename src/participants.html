@@ -11,7 +11,7 @@
   
   <body class="font-en font-normal bg-white">
     <!-- Header -->
-    <header class="bg-header bg-cover bg-no-repeat bg-center sm:pt-5 py-4 pb-8">
+    <header class="sm:bg-participants bg-participants-m bg-cover bg-no-repeat bg-bottom sm:pt-5 py-4 sm:pb-15 pb-5 bg-grey-light-2">
       <nav class="container flex flex-row items-start justify-between">
         <img src="./assets/logo/logo.png" alt="logo" class="md:w-56 lg:w-68 w-56" />
         <div class="hidden md:flex text-white font-regular flex-col items-end justify-between h-29 mt-1">
@@ -43,7 +43,6 @@
             </ul>
           </div>
         </div>
-
         <!-- Mobile menu button -->
         <div class=" md:hidden flex items-center mt-5">
          <button id="mobile-menu-btn">
@@ -56,109 +55,249 @@
            </svg>
          </button>
         </div>
-
       </nav>
-    </header>
 
-    <section class="bg-grey-light-2">
-      <div class="container sm:pt-5.5 pt-5 sm:pb-10 pb-5"> 
-        <div class="flex flex-wrap flex-row items-center w-full gap-y-0 ">
-          <div class=" order-1 w-1/2">
-            <button type="button" class="back-btn btn-hover-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="10.484" height="9" viewBox="0 0 10.484 9">
-                <path d="M10.281,4.992l-3.8,3.8a.7.7,0,0,1-.984-.984L8.109,5.2H.7A.7.7,0,1,1,.7,3.8H8.109L5.492,1.188A.7.7,0,0,1,6.476.2l3.8,3.8a.7.7,0,0,1,0,.984" transform="translate(10.484 9) rotate(180)"/>
-              </svg>     
-              <p class="m-2"> Categories </p>
-            </button>
-          </div>
-          <div class="md:order-2 order-3 md:w-1/2 w-full inline-flex items-center justify-end">
-            <span class="text-sm text-gray-400">Sponsored by</span>
-            <img src="./assets/images/partners/knouf.png" alt="knouf" class="w-24 ml-4" />
-          </div>
-          <div class="sm:order-3 order-2">
-            <h3 class="lg:w-152 w-68 md:leading-12 leading-7">Social Infrastructure and Special Purpose Buildings</h3>
-          </div>
+      <div class="container flex flex-col justify-start text-white sm:mt-15.5 mt-10 ">
+        <div>
+          <button type="button" class="pagination-menu__btn back-btn btn-hover-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10.484" height="9" viewBox="0 0 10.484 9">
+              <path  d="M10.281,4.992l-3.8,3.8a.7.7,0,0,1-.984-.984L8.109,5.2H.7A.7.7,0,1,1,.7,3.8H8.109L5.492,1.188A.7.7,0,0,1,6.476.2l3.8,3.8a.7.7,0,0,1,0,.984" transform="translate(10.484 9) rotate(180)"/>
+            </svg>
+            <p class="m-2"> Home </p>
+          </button>
+        </div>
+        <div>
+          <p class="pagination-menu__title">Participants</p>
         </div>
       </div>
+    </header>
+
+    <section class=" bg-grey-light-2 text-sm">
+      <div class="container flex flex-wrap justify-between items-start relative -top-5 w-full">
+        <div class="w-87">
+         <h3 class="sm:my-8 my-10">Categories</h3>
+        </div>
+        <div>
+          <p class="sm:mb-9 mb-5">Exclusive Partner</p>
+          <img src="./assets/images/partners/euromarket.png" alt="euromarket" class="sm:w-47 w-32 cursor-pointer">
+        </div>
+        <div>
+          <p class="sm:mb-9 mb-5">Main Sponsor</p>
+          <img src="./assets/images/partners/agcapital.png" alt="agcapital" class="sm:w-44 w-25.5 cursor-pointer">
+        </div>
+        <div>
+          <p class="mb-2">Golden Sponsor</p>
+          <img src="./assets/images/partners/etem.png" alt="etem" class="sm:w-42 w-26 cursor-pointer">
+        </div>
+      </div>
+
     </section>
+
 
     <!-- Grid -->
     <section class="container md:mt-13.5 mt-5 md:mb-26.6 mb-20">
-      <div class=" grid lg:grid-cols-2 grid-cols-1 lg:gap-27.5 gap-y-10">
+      <div class=" grid lg:grid-cols-3 grid-cols-2 lg:gap-x-12.8 gap-x-4 sm:gap-y-14 gap-y-12">
 
 
-        <div class="flex md:justify-start items-start md:flex-row flex-col"> 
-          <div class="flex bg-primary text-white uppercase">
-            <span class="md:text-badge font-bold md:text-sm text-extra-small md:leading-4.6 leading-3.3 p-1.2">FIRST PRIZE</span>
+        <div class="sm:w-87 w-42 relative cursor-pointer">
+          <div class="flex items-center sm:justify-end justify-between mb-2">
+            <span class="sm:text-sm text-extra-small text-gray-400">Sponsored by</span>
+            <img src="./assets/images/partners/knouf.png" alt="knouf" class="sm:w-20 w-16 sm:ml-4" />
           </div>
-          <div class="image-gallery__item relative">
-            <div class="image-gallery__image-wrapper sm:h-68 grid-zoom">
-              <img src="./assets/images/gallery/t22.jpg" alt="t22" class="image-gallery__image" />
-            </div>
-            <div class="image-gallery__title">
-              <div class="image-gallery__title-wrapper">
-                <h6 class="pt-2">Supercomputer Center Petascale Bulgaria</h6>
-              </div>
-              <div class="image-gallery__navigation w-full">
-                <div>
-                  <p class="text-lg leading-4.7">Sofia</p>
-                </div>
-                <button type="button" class="image-gallery__navigation-btn">
-                  <span class="mr-2"> Project Details </span>
-                  <svg xmlns="http://www.w3.org/2000/svg"width="14.145" height="12.142" viewBox="0 0 14.145 12.142"><path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(0 0)"/></svg>
-                </button>
-              </div>
+          <div class="max-h-28.6 h-28.6 grayscale bg-white opacity-20">
+              <img src="./assets/images/participants/p1.jpg" alt="p1" class="w-full h-full object-cover" />
+          </div>
+          <div class="relative w-full -mt-7">
+            <div class="bg-white sm:w-67.2 w-34.8">
+              <h6 class="pt-2 mb-2.5">Social Infrastructure and Special Purpose Buildings</h6>
+              <div class="bottom-border sm:w-34.7"> </div>
             </div>
           </div>
         </div>
 
-        <div class="flex md:justify-start items-start md:flex-row flex-col"> 
-          <div class="flex bg-grey-custom text-white uppercase">
-            <span class="md:text-badge font-bold md:text-sm text-extra-small md:leading-4.6 leading-3.3 p-1.2">SPECIAL PRIZE</span>
+        <div class="sm:w-87 w-42 relative cursor-pointer">
+          <div class="flex items-center sm:justify-end justify-between mb-2">
+            <span class="sm:text-sm text-extra-small text-gray-400">Sponsored by</span>
+            <img src="./assets/images/partners/sisecam.png" alt="knouf" class="sm:w-20 w-16 sm:ml-4" />
           </div>
-        <div class="image-gallery__item">
-          <div class="image-gallery__image-wrapper sm:h-68 grid-zoom">
-            <img src="./assets/images/gallery/t24.jpg" alt="t24" class="image-gallery__image" />
+          <div class="max-h-28.6 h-28.6 grayscale bg-white opacity-20">
+            <img src="./assets/images/participants/p2.jpg" alt="p1" class="w-full h-full object-cover" />
           </div>
-          <div class="image-gallery__title">
-            <div class="image-gallery__title-wrapper">
-              <h6 class="pt-2">First District Service "Fire Safety and Protection of the Population" - Main Renovation and Reconstruction of Buildings</h6>
-            </div>
-            <div class="image-gallery__navigation w-full">
-              <div>
-                <p class="text-lg leading-4.7">Ruse</p>
-              </div>
-              <button type="button" class="image-gallery__navigation-btn">
-                <span class="mr-2"> Project Details </span>
-                <svg xmlns="http://www.w3.org/2000/svg"width="14.145" height="12.142" viewBox="0 0 14.145 12.142"><path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(0 0)"/></svg>
-              </button>
+          <div class="relative w-full -mt-7">
+            <div class="bg-white sm:w-67.2 w-34.8">
+              <h6 class="pt-2 mb-2.5">Social Infrastructure: Healthcare</h6>
+              <div class="bottom-border sm:w-34.7"> </div>
             </div>
           </div>
-        </div>
         </div>
 
-        <div class="image-gallery__item md:ml-7.1">
-          <div class="image-gallery__image-wrapper sm:h-68 grid-zoom">
-            <img src="./assets/images/gallery/t22.jpg" alt="t22" class="image-gallery__image" />
+        <div class="sm:w-87 w-42 relative cursor-pointer">
+          <div class="flex items-center sm:justify-end justify-between mb-2">
+            <span class="sm:text-sm text-extra-small text-gray-400">Sponsored by</span>
+            <img src="./assets/images/partners/euromarket.png" alt="knouf" class="sm:w-20 w-16 sm:ml-4" />
           </div>
-          <div class="image-gallery__title">
-            <div class="image-gallery__title-wrapper">
-              <h6 class="pt-2">Supercomputer Center Petascale Bulgaria</h6>
-            </div>
-            <div class="image-gallery__navigation w-full">
-              <div>
-                <p class="text-lg leading-4.7">Sofia</p>
-              </div>
-              <button type="button" class="image-gallery__navigation-btn">
-                <span class="mr-2"> Project Details </span>
-                <svg xmlns="http://www.w3.org/2000/svg"width="14.145" height="12.142" viewBox="0 0 14.145 12.142"><path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(0 0)"/></svg>
-              </button>
+          <div class="max-h-28.6 h-28.6 grayscale bg-white opacity-20">
+            <img src="./assets/images/participants/p3.jpg" alt="p1" class="w-full h-full object-cover" />
+          </div>
+          <div class="relative w-full -mt-7">
+            <div class="bg-white sm:w-67.2 w-34.8">
+              <h6 class="pt-2 mb-2.5">Sofia Metro</h6>
+              <div class="bottom-border sm:w-34.7"> </div>
             </div>
           </div>
         </div>
+
+        <div class="sm:w-87 w-42 relative cursor-pointer">
+          <div class="flex items-center sm:justify-end justify-between mb-2">
+            <span class="sm:text-sm text-extra-small text-gray-400">Sponsored by</span>
+            <img src="./assets/images/partners/schnider.png" alt="logo" class="sm:w-20 w-16 sm:ml-4" />
+          </div>
+          <div class="max-h-28.6 h-28.6 grayscale bg-white opacity-20">
+            <img src="./assets/images/participants/p4.jpg" alt="p1" class="w-full h-full object-cover" />
+          </div>
+          <div class="relative w-full -mt-7">
+            <div class="bg-white sm:w-67.2 w-34.8">
+              <h6 class="pt-2 mb-2.5">City Development Projects</h6>
+              <div class="bottom-border sm:w-34.7"> </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sm:w-87 w-42 relative cursor-pointer">
+          <div class="flex items-center sm:justify-end justify-between mb-2">
+            <span class="sm:text-sm text-extra-small text-gray-400">Sponsored by</span>
+            <img src="./assets/images/partners/alukoning.png" alt="logo" class="sm:w-20 w-16 sm:ml-4" />
+          </div>
+          <div class="max-h-28.6 h-28.6 grayscale bg-white opacity-20">
+            <img src="./assets/images/participants/p5.jpg" alt="p1" class="w-full h-full object-cover" />
+          </div>
+          <div class="relative w-full -mt-7">
+            <div class="bg-white sm:w-67.2 w-34.8">
+              <h6 class="pt-2 mb-2.5">Office and Corporate Buildings</h6>
+              <div class="bottom-border sm:w-34.7"> </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sm:w-87 w-42 relative cursor-pointer">
+          <div class="flex items-center sm:justify-end justify-between mb-2">
+            <span class="sm:text-sm text-extra-small text-gray-400">Sponsored by</span>
+            <img src="./assets/images/partners/amax.png" alt="logo" class="sm:w-20 w-16 sm:ml-4" />
+          </div>
+          <div class="max-h-28.6 h-28.6 grayscale bg-white opacity-20">
+            <img src="./assets/images/participants/p6.jpg" alt="p1" class="w-full h-full object-cover" />
+          </div>
+          <div class="relative w-full -mt-7">
+            <div class="bg-white sm:w-67.2 w-34.8"> 
+              <h6 class="pt-2 mb-2.5">Residential Buildings 10 000 m2 or Less</h6>
+              <div class="bottom-border sm:w-34.7"> </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sm:w-87 w-42 relative cursor-pointer">
+          <div class="flex items-center sm:justify-end justify-between mb-2">
+            <span class="sm:text-sm text-extra-small text-gray-400">Sponsored by</span>
+            <img src="./assets/images/partners/rollplast.png" alt="logo" class="sm:w-9 w-8 sm:ml-4" />
+          </div>
+          <div class="max-h-28.6 h-28.6 grayscale bg-white opacity-20">
+            <img src="./assets/images/participants/p7.jpg" alt="p1" class="w-full h-full object-cover" />
+          </div>
+          <div class="relative w-full -mt-7">
+            <div class="bg-white sm:w-67.2 w-34.8"> 
+              <h6 class="pt-2 mb-2.5">Residential Buildings 10 000 m2 or More</h6>
+              <div class="bottom-border sm:w-34.7"> </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sm:w-87 w-42 relative cursor-pointer">
+          <div class="flex items-center sm:justify-end justify-between mb-2">
+            <span class="sm:text-sm text-extra-small text-gray-400">Sponsored by</span>
+            <img src="./assets/images/partners/ideal-standart.png" alt="logo" class="w-16 sm:ml-4" />
+          </div>
+          <div class="max-h-28.6 h-28.6 grayscale bg-white opacity-20">
+            <img src="./assets/images/participants/p8.jpg" alt="p1" class="w-full h-full object-cover" />
+          </div>
+          <div class="relative w-full -mt-7">
+            <div class="bg-white sm:w-67.2 w-34.8"> 
+              <h6 class="pt-2 mb-2.5">Hotels and Holiday Complexes</h6>
+              <div class="bottom-border sm:w-34.7"> </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sm:w-87 w-42 relative cursor-pointer">
+          <div class="flex items-center sm:justify-end justify-between mb-2">
+            <span class="sm:text-sm text-extra-small text-gray-400">Sponsored by</span>
+            <img src="./assets/images/partners/etem.png" alt="logo" class="w-16 sm:ml-4" />
+          </div>
+          <div class="max-h-28.6 h-28.6 grayscale bg-white opacity-20">
+            <img src="./assets/images/participants/p9.jpg" alt="p1" class="w-full h-full object-cover" />
+          </div>
+          <div class="relative w-full -mt-7">
+            <div class="bg-white sm:w-67.2 w-34.8"> 
+              <h6 class="pt-2 mb-2.5">Commercial Buildings</h6>
+              <div class="bottom-border sm:w-34.7"> </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sm:w-87 w-42 relative cursor-pointer">
+          <div class="flex items-center sm:justify-end justify-between mb-2">
+            <span class="sm:text-sm text-extra-small text-gray-400">Sponsored by</span>
+            <img src="./assets/images/partners/doors-center.png" alt="logo" class="sm:w-20 w-16 sm:ml-4" />
+          </div>
+          <div class="max-h-28.6 h-28.6 grayscale bg-white opacity-20">
+            <img src="./assets/images/participants/p10.jpg" alt="p1" class="w-full h-full object-cover" />
+          </div>
+          <div class="relative w-full -mt-7">
+            <div class="bg-white sm:w-67.2 w-34.8"> 
+              <h6 class="pt-2 mb-2.5">Production Buildings</h6>
+              <div class="bottom-border sm:w-34.7"> </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sm:w-87 w-42 relative cursor-pointer">
+          <div class="flex items-center sm:justify-end justify-between mb-2">
+            <span class="sm:text-sm text-extra-small text-gray-400">Sponsored by</span>
+            <img src="./assets/images/partners/forton.svg" alt="logo" class="sm:w-34 w-20 sm:ml-4" />
+          </div>
+          <div class="max-h-28.6 h-28.6 grayscale bg-white opacity-20">
+            <img src="./assets/images/participants/p11.jpg" alt="p1" class="w-full h-full object-cover" />
+          </div>
+          <div class="relative w-full -mt-7">
+            <div class="bg-white sm:w-67.2 w-34.8"> 
+              <h6 class="pt-2 mb-2.5">Logistics Buildings</h6>
+              <div class="bottom-border sm:w-34.7"> </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sm:w-87 w-42 relative cursor-pointer">
+          <div class="flex items-center sm:justify-end justify-between mb-2">
+            <span class="sm:text-sm text-extra-small text-gray-400">Sponsored by</span>
+            <img src="./assets/images/partners/schnider.png" alt="logo" class="sm:w-18 w-16 sm:ml-4" />
+          </div>
+          <div class="max-h-28.6 h-28.6 grayscale bg-white opacity-20">
+            <img src="./assets/images/participants/p12.jpg" alt="p1" class="w-full h-full object-cover" />
+          </div>
+          <div class="relative w-full -mt-7">
+            <div class="bg-white sm:w-67.2 w-34.8"> 
+              <h6 class="pt-2 mb-2.5">Buildings with Elements of Green Architecture and Innovation</h6>
+              <div class="bottom-border sm:w-34.7"> </div>
+            </div>
+          </div>
+        </div>
+
 
       </div>
     </section>
+
+
+
+
 
     <!-- Footer -->
     <footer class="bg-footer h-full bg-no-repeat bg-bottom bg-cover	bg-black">

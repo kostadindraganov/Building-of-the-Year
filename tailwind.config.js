@@ -64,10 +64,13 @@ module.exports = {
         '30': '7.5rem',     // 120px
         '34': '8.5rem',     // 136px
         '34.5': '8.75rem',  // 140px
+        '34.7': '9.125rem',  // 146px
+        '34.8': '9.313rem',  // 149px
         '42': '10.25rem',   // 164px
         '45': '11.25rem',   // 180px
         '47': '11.875rem',  // 190px
         '47.6': '12.375rem',// 198px
+        '67.2': '15.563rem',// 249px
         '67.5': '16.563rem',// 265px
         '68': '16.875rem',  // 270px
         '71': '17.75rem',   // 284px
@@ -96,6 +99,7 @@ module.exports = {
         '13.5': '3.125rem',  // 50px
         '13.8': '3.438rem',  // 55px
         '13.9': '3.563rem',  // 57px
+        '28.6': '6.438rem',  // 103px
         '28.7': '6.813rem',  // 109px
         '29': '7.063rem',    // 113px
         '29.3': '7.25rem',   // 116px
@@ -143,6 +147,7 @@ module.exports = {
         '4.2': '1.063rem',  // 17px
         '7.1': '1.875rem',  // 30px
         '13': '3.125rem',  // 50px
+        '15': '3.75rem'    //60px
       },
       borderWidth: {
         '1': '1px',
@@ -175,7 +180,10 @@ module.exports = {
         'calendar': "url('/src/assets/images/backgrounds/calendar-bg.png')",
         'vote': "url('/src/assets/images/backgrounds/vote.svg')",
         'jury': "url('/src/assets/images/backgrounds/jury.jpg')",
-        'jury-m': "url('/src/assets/images/backgrounds/jury-m.jpg')"
+        'jury-m': "url('/src/assets/images/backgrounds/jury-m.jpg')",
+        'participants': "url('/src/assets/images/backgrounds/participants.jpg')",
+        'participants-m': "url('/src/assets/images/backgrounds/participants-m.jpg')"
+
 
       }
     },
