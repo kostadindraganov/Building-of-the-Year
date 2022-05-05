@@ -9,11 +9,10 @@
     <link href="/dist/style.css" rel="stylesheet">
   </head>
   
-  <body class="font-en font-normal">
-
+  <body class="font-en font-normal bg-black">
     <!-- Header -->
-    <header class="absolute w-full z-20 bg-gradient-to-b  from-black to-transparent">
-      <nav class="container flex flex-row items-start justify-between sm:mt-5 mt-4 pb-11">
+    <header class="bg-header bg-cover bg-no-repeat bg-center sm:pt-5 py-4 pb-8">
+      <nav class="container flex flex-row items-start justify-between">
         <img src="./assets/logo/logo.png" alt="logo" class="md:w-56 lg:w-68 w-56" />
         <div class="hidden md:flex text-white font-regular flex-col items-end justify-between h-29 mt-1">
           <div>
@@ -47,163 +46,49 @@
 
         <!-- Mobile menu button -->
         <div class=" md:hidden flex items-center mt-5">
-          <button id="mobile-menu-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="17" viewBox="0 0 25 17" class="mobile-btn-hover">
-              <g transform="translate(-333 -19)">
-                <line x1="25" transform="translate(333 20)"   stroke-width="2"/>
-                <line x1="25" transform="translate(333 27.5)"  stroke-width="2"/>
-                <line x1="25" transform="translate(333 35)"  stroke-width="2"/>
-              </g>
-            </svg>
-          </button>
+         <button id="mobile-menu-btn">
+           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="17" viewBox="0 0 25 17" class="mobile-btn-hover">
+             <g transform="translate(-333 -19)">
+               <line x1="25" transform="translate(333 20)"   stroke-width="2"/>
+               <line x1="25" transform="translate(333 27.5)"  stroke-width="2"/>
+               <line x1="25" transform="translate(333 35)"  stroke-width="2"/>
+             </g>
+           </svg>
+         </button>
         </div>
+
       </nav>
     </header>
 
-    <!-- Hero -->
-    <section class="relative md:h-190 h-67.5"> 
-      <img src="./assets/images/gallery/Kolio-Fitchet-Museum.jpg" alt="Kolio-Fitchet-Museum" class="md:h-190 h-67.5 absolute top-0 left-0 -z-20 w-full object-cover">
-    </section>
-
-
-    <!-- Details -->
-    <section class="bg-primary text-white relative md:pb-15.5 pb-5">
-      <div class="relative md:-top-24 -top-16 bg-primary md:w-148 w-60 flex md:justify-end">
-        <div class="bg-primary md:w-94 w-66.8 md:mt-5 mt-2.5 md:ml-0 ml-4"> 
-          <button type="button" class="back-btn btn-hover-4">
-            <svg xmlns="http://www.w3.org/2000/svg" width="10.484" height="9" viewBox="0 0 10.484 9">
-              <path d="M10.281,4.992l-3.8,3.8a.7.7,0,0,1-.984-.984L8.109,5.2H.7A.7.7,0,1,1,.7,3.8H8.109L5.492,1.188A.7.7,0,0,1,6.476.2l3.8,3.8a.7.7,0,0,1,0,.984" transform="translate(10.484 9) rotate(180)"/>
-            </svg>     
-            <p class="m-2"> Initiatives </p>
-          </button>
-          <p class="md:text-6xl text-3xl md:leading-10 leading-5.5 font-bold">Kolio Fitcheto Museum</p>
-        </div>
-      </div>
-
-      <div class="container flex flex-wrap md:flex-row flex-col-reverse md:justify-between md:items-start items-end md:-mt-9 -mt-23">
-        <div class="md:w-173 sm:mt-0 mt-8">
-          <p class="md:text-2xl text-1xl md:leading-7.5 leading-6 text-black"> Restoration of Kolyo Ficheto Museum in Drianovo by the initiative of national contest “Building of the year”. The 210th birthday of the biggest Bulgarian builder – Kolyo Ficheto - will be celebrated with an opening of official museum in his hometown Dryanovo. The museum is completely renovated by the initiative of the National Contest “Building of the Year”, Dryanovo municipality and Bulgarian Construction Chamber.</p>
-        </div>
-        <button type="button" class="share-btn btn-hover-4 md:mt-0 mt-2 md:w-68 w-34 ">
-          <p class="mr-2"> Share Initiative</p>
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17.869" viewBox="0 0 18 17.869">
-            <path d="M8.849,10.077l3,1.507a3.646,3.646,0,1,1-1.106,2.2L7.591,12.2a4.5,4.5,0,1,1,0-6.53l3.149-1.583a3.644,3.644,0,1,1,1.106,2.2l-3,1.507a4.513,4.513,0,0,1,0,2.285" transform="translate(0 0)"/>
-          </svg>          
+    <section class="container text-white">
+      
+      <div class="sm:mt-5.5 mt-5 sm:mb-26.6 mb-10 flex flex-col"> 
+        <button type="button" class="back-btn btn-hover-5 order-1">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10.484" height="9" viewBox="0 0 10.484 9">
+            <path d="M10.281,4.992l-3.8,3.8a.7.7,0,0,1-.984-.984L8.109,5.2H.7A.7.7,0,1,1,.7,3.8H8.109L5.492,1.188A.7.7,0,0,1,6.476.2l3.8,3.8a.7.7,0,0,1,0,.984" transform="translate(10.484 9) rotate(180)"/>
+          </svg>     
+          <p class="m-2"> Back to Videos </p>
         </button>
-      </div>
-
-      <div class="container w-full md:h-155 h-44.8 md:mt-10 mt-5 relative">
-        <img src="./assets/icon/icon-play.svg" alt="play" class="md:w-18 w-14 position-absolute-center cursor-pointer hover-scale" />
-        <img src="./assets/images/gallery/Kolio-Fitcheto-video.jpg" alt="Kolio-Fitchet-Museum" class="w-full h-full object-cover">
-      </div>
-
-    </section>
-
-    <!-- The Initiative -->
-    <section class="container my-10">
-      <div class="flex flex-wrap content-start justify-between gap-y-6 sm:text-xl text-lg sm:leading-5.2 leading-4.5">
-        <div class="sm:w-172">
-          <h5> The Initiative </h5>
-          <div class="bottom-border sm:mb-7.1 mb-5"></div>
-          <p> The poor condition of the museum 40 years after his build up was a reason to launch renovation campaign during the official awarding ceremony of the eight edition of the contest, achieving the best buildings in Bulgaria in the end of 2009. Kolyo Ficheto is a name associated with a talented Bulgarian architect and constructor. He has managed to preserve the precious features of the Bulgarian construction and at the same time add new forms to it. Kolyo Ficheto has a unique style; he has built Christian temples, public and private buildings, church towers and solid bridges. The works of Kolyo Ficheto have always filled the lovers of Bulgarian art with admiration. The museum in his home town Dryanovo and the monuments in Veliko Tarnovo, Byala and Dryanovo dedicated to the architect are expressing the adoration of the generations. His works still impress the lovers of cultural and historic heritage. </p>
-          <button type="button" id="show-more-btn" class="more-btn btn-hover-2 mt-5 w-full">
-            <span class="mr-2"> Show more </span>
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="12.142" height="14.145" viewBox="0 0 12.142 14.145">
-              <path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(0 14.145) rotate(-90)"/>
-            </svg> -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="12.142" height="14.145" viewBox="0 0 12.142 14.145">
-              <path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(12.142) rotate(90)"/>
-            </svg>            
+        <p class="order-2 w-10/12 font-bold md:text-6xl text-title md:leading-10 leading-4.6">Съграждане на Храм "Св. Тривелий Български" в Мадрид, инициатива на Западно- и Средноевропейския Митрополит Антоний и Фондация "Трейс за Хората"</p>
+       
+        <div class="md:order-3 order-5 my-7.1 flex md:justify-start justify-end">
+          <button type="button" class="share-btn-white">
+            <span class="mr-2"> Share Video </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17.869" viewBox="0 0 18 17.869">
+              <path d="M8.849,10.077l3,1.507a3.646,3.646,0,1,1-1.106,2.2L7.591,12.2a4.5,4.5,0,1,1,0-6.53l3.149-1.583a3.644,3.644,0,1,1,1.106,2.2l-3,1.507a4.513,4.513,0,0,1,0,2.285" transform="translate(0 0)"/>
+            </svg>        
           </button>
         </div>
-        <div class="sm:w-67.5">
-          <h5> We need your help </h5>
-          <div class="bottom-border sm:mb-7.1 mb-5"></div>
-          <div class="sm:text-xl text-lg sm:leading-5.2 leading-4.5">
-            <p>Our restoration work requires a lot of effort, both in time and financial. Please contact us if you want to help.</p>
-          </div>
+
+
+        <div class="order-4 w-full md:h-155 h-44.8 relative sm:mt-0 mt-7.1">
+          <img src="./assets/icon/icon-play.svg" alt="play" class="md:w-25.5 w-10 position-absolute-center cursor-pointer hover-scale" />
+          <img src="./assets/images/gallery/video_1.jpg" alt="Kolio-Fitchet-Museum" class="w-full h-full object-contain">
+          <!-- <img src="./assets/images/gallery/video_1.jpg" alt="Kolio-Fitchet-Museum" class="w-full h-full object-cover"> -->
         </div>
-      </div>
-    </section>
-
-    <!-- Gallery -->
-    <section class="container md:pb-15.5 pb-10">
-      <h5> Gallery </h5>
-      <div class="bottom-border sm:mb-7.1 mb-5"></div>
-
-      <div class="flex md:justify-start sm:items-start items-end md:flex-row flex-col sm:mb-0 mb-7"> 
-        <div class="md:h-193 h-62 w-full relative">
-          <div class="flex absolute bottom-0 right-0 items-center w-30 h-12 bg-white px-2.5">
-            <button class="btn-hover-2 h-full px-2.5"> 
-              <svg xmlns="http://www.w3.org/2000/svg" width="32.618" height="28" viewBox="0 0 32.618 28">
-                <path d="M31.984,15.53,20.149,27.365A2.165,2.165,0,0,1,17.087,24.3l8.14-8.139H2.165a2.165,2.165,0,0,1,0-4.33H25.227L17.087,3.7A2.165,2.165,0,0,1,20.149.634L31.984,12.469a2.164,2.164,0,0,1,0,3.061" transform="translate(32.618 28) rotate(180)"/>
-              </svg>
-            </button>
-            <button class="btn-hover-2 h-full px-2.5"> 
-              <svg xmlns="http://www.w3.org/2000/svg" width="32.618" height="28" viewBox="0 0 32.618 28">
-                <path  d="M31.984,15.53,20.149,27.365A2.165,2.165,0,0,1,17.087,24.3l8.14-8.139H2.165a2.165,2.165,0,0,1,0-4.33H25.227L17.087,3.7A2.165,2.165,0,0,1,20.149.634L31.984,12.469a2.164,2.164,0,0,1,0,3.061" transform="translate(0 0)"/>
-              </svg>
-            </button>
-          </div>
-          <img src="./assets/images/gallery/Kolio-Fitchet-Museum.jpg" alt="t33" class="w-full h-full object-cover" />
-        </div>
-      </div>
-
-      <div class="grid lg:grid-cols-12 md:grid-cols-8 grid-cols-4 sm:gap-x-3.8 gap-x-3.5 gap-y-3.5 md:my-10 place-content-center w-full my-5 ">
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t1.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t2.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t4.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t5.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t6.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t7.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t8.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t9.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t10.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t1.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t2.jpg" alt="t3" class="w-full" />
-        </div>
-
-        <div class="sm:w-20 w-18.1 sm:h-13.9 h-13.8 cursor-pointer">
-          <img src="./assets/images/gallery/t6.jpg" alt="t3" class="w-full" />
-        </div>
-
       </div>
 
     </section>
-
-
 
     <!-- Footer -->
     <footer class="bg-footer h-full bg-no-repeat bg-bottom bg-cover	bg-black">

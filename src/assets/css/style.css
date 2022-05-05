@@ -151,7 +151,7 @@
 }
 
 .back-btn {
-  @apply flex items-baseline justify-between ;
+  @apply flex items-baseline justify-start ;
 }
 
 .back-btn p {
@@ -176,6 +176,10 @@
 
 .control-btn {
   @apply more-btn btn-hover-2 mt-2 sm:w-68 w-42;
+}
+
+.share-btn-white {
+  @apply more-btn btn-hover-5 mt-2 sm:w-68 w-42;
 }
 
 .position-absolute-center {
@@ -261,6 +265,25 @@
 .expanded   {
   @apply  sm:mb-0 mb-18.5;
 }
+
+
+/* Form Floating Labels */
+
+/* For validation input */
+/* focus:invalid:border-pink-500 focus:invalid:ring-pink-500 */ 
+
+.float-input {
+  @apply h-10 border-b-2 border-gray-300 text-gray-700 placeholder-transparent focus:outline-none focus:border-black;  
+}
+
+.float-label {
+  @apply absolute left-0 -top-3.5 text-gray-500 text-xl peer-focus:uppercase peer-focus:text-uxs transition-all peer-placeholder-shown:text-xl peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600;
+}
+
+.required-label {
+  @apply after:content-['*'] after:ml-0.5 after:text-red-500;
+}
+
 
 
 /* Album */
