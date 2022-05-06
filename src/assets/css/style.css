@@ -273,15 +273,19 @@
 /* focus:invalid:border-pink-500 focus:invalid:ring-pink-500 */ 
 
 .float-input {
-  @apply h-10 border-b-2 border-gray-300 text-gray-700 placeholder-transparent focus:outline-none focus:border-black;  
+  @apply h-10 border-b-2 border-gray-300 text-gray-700 placeholder-transparent focus:ring-0 outline-none focus:border-black focus:invalid:border-red-500  border-x-0 border-t-0;  
 }
 
 .float-label {
-  @apply absolute left-0 -top-3.5 text-gray-500 text-xl peer-focus:uppercase peer-focus:text-uxs transition-all peer-placeholder-shown:text-xl peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 cursor-pointer;
+  @apply absolute left-0 -top-3.5 text-gray-500 text-xl peer-focus:uppercase peer-focus:text-uxs transition-all peer-placeholder-shown:text-xl peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 cursor-pointer peer-focus:peer-invalid:text-red-500;
 }
 
 .required-label {
   @apply after:content-['*'] after:ml-0.5 after:text-red-500;
+}
+
+.textarea-custom {
+  @apply shadow-none focus:ring-transparent resize border-2 border-gray-300 text-gray-700 placeholder-gray-400 px-4 text-xl focus:outline-none focus:border-black;
 }
 
 
@@ -380,4 +384,11 @@
 
 .jury__image {
   @apply rounded-full btn-hover-1 hover-scale sm:avatar avatar-mobile;
+}
+
+
+/* Registration form */
+
+.registration-form__title {
+  @apply md:text-3xl text-2xl md:leading-5.5 leading-7.5 text-black font-bold md:mt-13 mt-7.1 md:mb-1.5 mb-1;
 }

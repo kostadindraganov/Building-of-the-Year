@@ -122,9 +122,10 @@ module.exports = {
         '77.5': '18.125rem', // 290px 
         '78': '18.375rem',   // 294px  
         '94': '23.438rem',   // 375px 
-        '97': '24.75rem',    // 396px   
+        '97': '24.75rem',    // 396px 
+        '98': '25.438rem',   // 407px   
         '141': '27.813rem',  // 445px
-        '155': '37rem',     // 592px
+        '155': '37rem',      // 592px
         '170': '31.25rem',   // 500px 
         '178': '37.188rem',  // 595px   
         '188': '43.438rem',  // 695px
@@ -150,7 +151,7 @@ module.exports = {
         '27': '6.75rem',   // 108px
         '30': '7.5rem',    // 120px
         '38': '9.688rem',  // 155px
-        '41': '10.375rem'   // 166px
+        '41': '10.375rem'  // 166px
       },
       padding: {
         '1.2': '0.375rem',  // 6px
@@ -193,7 +194,8 @@ module.exports = {
         'jury': "url('/src/assets/images/backgrounds/jury.jpg')",
         'jury-m': "url('/src/assets/images/backgrounds/jury-m.jpg')",
         'participants': "url('/src/assets/images/backgrounds/participants.jpg')",
-        'participants-m': "url('/src/assets/images/backgrounds/participants-m.jpg')"
+        'participants-m': "url('/src/assets/images/backgrounds/participants-m.jpg')",
+        'contact': "url('/src/assets/images/backgrounds/contact-bg2.svg')"
 
 
       }
@@ -211,5 +213,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 }

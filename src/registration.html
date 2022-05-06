@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon/favicon.ico">
+    <title>Building of the Year</title>
+    <link href="/dist/style.css" rel="stylesheet">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  </head>
+  
+  <body class="font-en font-normal bg-white">
+    <!-- Header -->
+    <header class="bg-header bg-cover bg-no-repeat bg-center md:pt-5 py-4 pb-8">
+      <nav class="container flex flex-row items-start justify-between">
+        <img src="./assets/logo/logo.png" alt="logo" class="md:w-56 lg:w-68 w-56" />
+        <div class="hidden md:flex text-white font-regular flex-col items-end justify-between h-29 mt-1">
+          <div>
+            <ul class="flex items-center lg:gap-5 gap-3 text-sm">
+              <li class="btn-hover-5">Home</li>
+              <li class="btn-hover-5">About</li>
+              <li class="btn-hover-5">Archive</li>
+              <li class="btn-hover-5">Archive</li>
+              <li class="btn-hover-5">Contacts</li>
+              <li class="flex items-center btn-hover-5"> 
+                <img src="./assets/icon/globe.svg" alt="globe" class="w-5" />
+                <span class="ml-1.5">bg</span>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="flex flex-1 justify-end items-center mt-2">
+            <ul class="flex flex-1 items-start lg:gap-5 gap-3 text-xl">
+              <li class="btn-hover-5">Participants</li>
+              <li class="btn-hover-5">Jury</li>
+              <li class="btn-hover-5">Gallery</li>
+              <li class="btn-hover-5">Initiatives</li>
+              <li class="btn-hover-5">Rules</li>
+                <button type="button" class="more-btn btn-hover-1">
+                  <span class="mr-2"> Online Application </span>
+                  <svg xmlns="http://www.w3.org/2000/svg"width="14.145" height="12.142" viewBox="0 0 14.145 12.142"><path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(0 0)" /></svg>
+                </button>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class=" md:hidden flex items-center mt-5">
+         <button id="mobile-menu-btn">
+           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="17" viewBox="0 0 25 17" class="mobile-btn-hover">
+             <g transform="translate(-333 -19)">
+               <line x1="25" transform="translate(333 20)"   stroke-width="2"/>
+               <line x1="25" transform="translate(333 27.5)"  stroke-width="2"/>
+               <line x1="25" transform="translate(333 35)"  stroke-width="2"/>
+             </g>
+           </svg>
+         </button>
+        </div>
+
+      </nav>
+    </header>
+
+    <form  action="" method="POST" class="registration-form md:mb-41 mb-48">
+
+      <!-- Title -->
+      <section class="container md:mt-5.5 mt-5"> 
+        <button type="button" class="back-btn btn-hover-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10.484" height="9" viewBox="0 0 10.484 9">
+            <path d="M10.281,4.992l-3.8,3.8a.7.7,0,0,1-.984-.984L8.109,5.2H.7A.7.7,0,1,1,.7,3.8H8.109L5.492,1.188A.7.7,0,0,1,6.476.2l3.8,3.8a.7.7,0,0,1,0,.984" transform="translate(10.484 9) rotate(180)"/>
+          </svg>     
+          <p class="m-2"> Home </p>
+        </button>
+        <h4>Online Application</h4>
+      </section>
+
+       <!-- See regulation -->
+      <section class="bg-contact bg-cover w-full  md:mt-7.1 mt-5 md:pb-13 pb-9 text-white">
+        <div class="container md:pt-8 pt-10">
+          <p class="md:text-xl md:leading-5.2 text-lg leading-4.5 md:pr-10">Попълването на регистрационната форма отнема около 10 минути и изисква да имате подготвена основна информация за сградата и данни на всички участници в проекта. Допълнителната информация във формуляра може да изпратите по-късно, като се свържете с нас.</p>
+          <button type="button" class="more-btn btn-hover-4 md:mt-5 mt-10 md:w-146 w-full ">
+            <span class="mr-2"> Вижте регламента </span>
+            <svg xmlns="http://www.w3.org/2000/svg"width="14.145" height="12.142" viewBox="0 0 14.145 12.142"><path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(0 0)"/></svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- Building -->
+      <section class="container">
+        <p class="registration-form__title">
+          Сграда
+        </p>
+        <div class="flex flex-wrap content-start justify-between">
+          <div class="md:w-146 w-full">
+
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="name-bg" name="name-bg" type="text" class="float-input peer w-full " placeholder="Наименование" required />
+              <label for="name-bg" class="float-label peer-focus:after:content-['(БЪЛГАРСКИ)'] after:ml-0.5">Наименование</label>
+            </div>
+  
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="Location" name="Location" type="text" class="float-input peer w-full " placeholder="Местоположение" required />
+              <label for="Location" class="float-label">Местоположение</label>
+            </div>
+          </div>
+  
+          <div class="md:w-146 w-full">
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="name-en" name="name-en" type="text" class="float-input peer w-full " placeholder="Наименование" required />
+              <label for="name-en" class="float-label peer-focus:after:content-['(английски)'] after:ml-0.5">Наименование</label>
+            </div>
+
+            <div class="relative md:mt-7.1 mt-6 group">
+              <button class="group inline-flex items-center justify-between w-full h-10 border-b-2 border-gray-300 hover:border-none" type="button" data-dropdown-toggle="dropdown">
+                <p class="text-gray-400 text-xl">Изберете 1 или повече категории </p>
+                <svg class="transition-all group-hover:rotate-180 " xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6">
+                  <path d="M5,0l5,6H0Z" transform="translate(10 6) rotate(180)"/>
+                </svg>
+              </button>
+
+              <!-- Dropdown menu -->
+              <div class="group-hover:block hidden      border-b-3 border-black bg-white text-base z-50 list-none" id="dropdown">
+                  <ul class="py-1 pb-2 text-xl text-black" aria-labelledby="dropdown">
+                    <li class="text-sm hover:bg-gray-100 text-gray-700 inline-flex items-start px-4 py-1 w-full cursor-pointer">
+                      <input type="checkbox" class="form-checkbox mr-2 border-black text-black focus:ring-0 w-3.8 h-3.8" >
+                      <span>Офисни сгради </span>
+                    </li>
+                    <li class="text-sm hover:bg-gray-100 text-gray-700 inline-flex items-start px-4 py-1  w-full cursor-pointer">
+                      <input type="checkbox" class="form-checkbox mr-2 border-black text-black focus:ring-0 w-3.8 h-3.8" >
+                      <span>Корпоративни сгради </span>
+                    </li>
+                    <li class="text-sm hover:bg-gray-100 text-gray-700 inline-flex items-start px-4 py-1  w-full cursor-pointer">
+                      <input type="checkbox" class="form-checkbox mr-2 border-black text-black focus:ring-0 w-3.8 h-3.8" checked>
+                      <span>Жилищни сгради до 10 000 кв.м. РЗП </span>
+                    </li>
+                    <li class="text-sm hover:bg-gray-100 text-gray-700 inline-flex items-start px-4 py-1  w-full cursor-pointer">
+                      <input type="checkbox" class="form-checkbox mr-2 border-black text-black focus:ring-0 w-3.8 h-3.8" checked>
+                      <span>Жилищни сгради над 10 000 кв.м. РЗП </span>
+                    </li>
+                    <li class="text-sm hover:bg-gray-100 text-gray-700 inline-flex items-start px-4 py-1  w-full cursor-pointer">
+                      <input type="checkbox" class="form-checkbox mr-2 border-black text-black focus:ring-0 w-3.8 h-3.8" checked>
+                      <span>Жилищни комплекси от многофамилни сгради </span>
+                    </li>
+                    <li class="text-sm hover:bg-gray-100 text-gray-700 inline-flex items-start px-4 py-1  w-full cursor-pointer">
+                      <input type="checkbox" class="form-checkbox mr-2 border-black text-black focus:ring-0 w-3.8 h-3.8" checked>
+                      <span>Еднофамилни жилищни сгради и комплекси от еднофамилни сгради</span>
+                    </li>
+                    <li class="text-sm hover:bg-gray-100 text-gray-700 inline-flex items-start px-4 py-1  w-full cursor-pointer">
+                      <input type="checkbox" class="form-checkbox mr-2 border-black text-black focus:ring-0 w-3.8 h-3.8" checked>
+                      <span>Хотели и ваканционни комплекси </span>
+                    </li>
+                    <li class="text-sm hover:bg-gray-100 text-gray-700 inline-flex items-start px-4 py-1  w-full cursor-pointer">
+                      <input type="checkbox" class="form-checkbox mr-2 border-black text-black focus:ring-0 w-3.8 h-3.8" checked>
+                      <span>Търговски сгради </span>
+                    </li>
+                    <li class="text-sm hover:bg-gray-100 text-gray-700 inline-flex items-start px-4 py-1  w-full cursor-pointer">
+                      <input type="checkbox" class="form-checkbox mr-2 border-black text-black focus:ring-0 w-3.8 h-3.8" checked>
+                      <span>Производствени и логистични сгради </span>
+                    </li>
+                    <li class="text-sm hover:bg-gray-100 text-gray-700 inline-flex items-start px-4 py-1  w-full cursor-pointer">
+                      <input type="checkbox" class="form-checkbox mr-2 border-black text-black focus:ring-0 w-3.8 h-3.8" checked>
+                      <span>Сгради култура, образование и спорт </span>
+                    </li>
+                    <li class="text-sm hover:bg-gray-100 text-gray-700 inline-flex items-start px-4 py-1  w-full cursor-pointer">
+                      <input type="checkbox" class="form-checkbox mr-2 border-black text-black focus:ring-0 w-3.8 h-3.8" checked>
+                      <span>Building innovation award </span>
+                    </li>
+                    <li class="text-sm hover:bg-gray-100 text-gray-700 inline-flex items-start px-4 py-1  w-full cursor-pointer">
+                      <input type="checkbox" class="form-checkbox mr-2 border-black text-black focus:ring-0 w-3.8 h-3.8" checked>
+                      <span>Сгради с елементи на „зелена“ архитектура</span>
+                    </li>
+                    <li class="text-sm hover:bg-gray-100 text-gray-700 inline-flex items-start px-4 py-1  w-full cursor-pointer">
+                      <input type="checkbox" class="form-checkbox mr-2 border-black text-black focus:ring-0 w-3.8 h-3.8" checked>
+                      <span>Проекти, свързани с развитието на градовете </span>
+                    </li>
+                    <li class="text-sm hover:bg-gray-100 text-gray-700 inline-flex items-start px-4 py-1  w-full cursor-pointer">
+                      <input type="checkbox" class="form-checkbox mr-2 border-black text-black focus:ring-0 w-3.8 h-3.8" checked>
+                      <span>Награда "Сграда на публиката"</span>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Submitter of the project -->
+      <section class="container">
+        <p class="registration-form__title">
+          Вносител на проекта
+        </p>
+        <div class="flex flex-wrap content-start justify-between">
+          <div class="md:w-146 w-full">
+      
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="submitter-name-bg" name="submitter-name-bg" type="text" class="float-input peer w-full " placeholder="Име" required />
+              <label for="submitter-name-bg" class="float-label">Име</label>
+            </div>
+        
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="submitter-company" name="submitter-company" type="text" class="float-input peer w-full " placeholder="Компания" required />
+              <label for="submitter-company" class="float-label">Компания</label>
+            </div>
+
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="submitter-phone" name="submitter-phone" type="tel" class="float-input peer w-full " placeholder="Телефон" required />
+              <label for="submitter-phone" class="float-label">Телефон</label>
+            </div>
+          </div>
+        
+          <div class="md:w-146 w-full">
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="submitter-last-name-en" name="submitter-last-name-en" type="text" class="float-input peer w-full " placeholder="Фамилия" required />
+              <label for="submitter-last-name-en" class="float-label">Фамилия</label>
+            </div>
+      
+            <div class="relative md:mt-7.1 mt-6 group">
+              <button class="group inline-flex items-center justify-between w-full h-10 border-b-2 border-gray-300 hover:border-none" type="button" data-dropdown-toggle="dropdown">
+                <p class="text-gray-400 text-xl">Роля в проекта</p>
+                <svg class="transition-all group-hover:rotate-180 " xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6">
+                  <path d="M5,0l5,6H0Z" transform="translate(10 6) rotate(180)"/>
+                </svg>
+              </button>
+            </div>
+
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="submitter-email-en" name="submitter-email-en" type="email" class="float-input peer w-full " placeholder="Email" required />
+              <label for="submitter-email-en" class="float-label">Email</label>
+            </div>
+          </div>
+
+          <div class="w-full">
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="submitter-address-en" name="submitter-address-en" type="text" class="float-input peer w-full " placeholder="Адрес" required />
+              <label for="submitter-address-en" class="float-label">Адрес</label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Investor -->
+      <section class="container">
+        <p class="registration-form__title">
+          Инвеститор
+        </p>
+        <div class="flex flex-wrap content-start justify-between">
+          <div class="md:w-146 w-full">
+      
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="investor-company-name-bg" name="investor-company-name-bg" type="text" class="float-input peer w-full " placeholder="Име на компанията" required />
+              <label for="investor-company-name-bg" class="float-label peer-focus:after:content-['(БЪЛГАРСКИ)'] after:ml-0.5">Име на компанията</label>
+            </div>
+
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="investor-phone-bg" name="investor-phone-bg" type="tel" class="float-input peer w-full " placeholder="Телефон" required />
+              <label for="investor-phone-bg" class="float-label">Телефон</label>
+            </div>
+        
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="investor-website" name="investor-website" type="url" class="float-input peer w-full " placeholder="www.website.com" required />
+              <label for="investor-website" class="float-label">Уебсайт</label>
+            </div>
+   
+          </div>
+        
+          <div class="md:w-146 w-full">
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="investor-company-name-en" name="investor-company-name-en" type="text" class="float-input peer w-full " placeholder="Име на компанията" required />
+              <label for="investor-company-name-en" class="float-label peer-focus:after:content-['(английски)'] after:ml-0.5">Име на компанията</label>
+            </div>
+
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="investor-email" name="submitter-email" type="email" class="float-input peer w-full " placeholder="Email" required />
+              <label for="investor-email" class="float-label">Email</label>
+            </div>
+
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="investor-address" name="submitter-address" type="text" class="float-input peer w-full " placeholder="Адрес" required />
+              <label for="investor-address" class="float-label">Адрес</label>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Designer -->
+      <section class="container">
+        <p class="registration-form__title">
+          Проектант
+        </p>
+        <div class="flex flex-wrap content-start justify-between">
+          <div class="md:w-146 w-full">
+      
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="designer-company-name-bg" name="designer-company-name-bg" type="text" class="float-input peer w-full " placeholder="Име на компанията" required />
+              <label for="designer-company-name-bg" class="float-label peer-focus:after:content-['(БЪЛГАРСКИ)'] after:ml-0.5">Име на компанията</label>
+            </div>
+
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="designer-phone-bg" name="designer-phone-bg" type="tel" class="float-input peer w-full " placeholder="Телефон" required />
+              <label for="designer-phone-bg" class="float-label">Телефон</label>
+            </div>
+        
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="designer-website" name="designer-website" type="url" class="float-input peer w-full " placeholder="www.website.com" required />
+              <label for="designer-website" class="float-label">Уебсайт</label>
+            </div>
+   
+          </div>
+        
+          <div class="md:w-146 w-full">
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="designer-company-name-en" name="designer-company-name-en" type="text" class="float-input peer w-full " placeholder="Име на компанията" required />
+              <label for="designer-company-name-en" class="float-label peer-focus:after:content-['(английски)'] after:ml-0.5">Име на компанията</label>
+            </div>
+
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="designer-email" name="designer-email" type="email" class="float-input peer w-full " placeholder="Email" required />
+              <label for="designer-email" class="float-label">Email</label>
+            </div>
+
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="designer-address" name="designer-address" type="text" class="float-input peer w-full " placeholder="Адрес" required />
+              <label for="designer-address" class="float-label">Адрес</label>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Constructor -->
+      <section class="container">
+        <p class="registration-form__title">
+          Конструктор
+        </p>
+        <div class="flex flex-wrap content-start justify-between">
+          <div class="md:w-146 w-full">
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="constructor-company-name-bg" name="constructor-company-name-bg" type="text" class="float-input peer w-full " placeholder="Име на компанията" required />
+              <label for="constructor-company-name-bg" class="float-label peer-focus:after:content-['(БЪЛГАРСКИ)'] after:ml-0.5">Име на компанията</label>
+            </div>
+          </div>
+        
+          <div class="md:w-146 w-full">
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="constructor-company-name-en" name="constructor-company-name-en" type="text" class="float-input peer w-full " placeholder="Име на компанията" required />
+              <label for="constructor-company-name-en" class="float-label peer-focus:after:content-['(английски)'] after:ml-0.5">Име на компанията</label>
+            </div>
+        </div>
+      </section>
+
+       <!-- More information -->
+       <section class="bg-contact bg-cover w-full  md:mt-16 mt-10 md:pb-13 pb-9 md:pt-9 pt-10 text-white object-bottom">
+        <div class="container">
+          <p class="md:text-6xl text-2xl ms:leading-5.5 leading-7.5 md:mb-4 mb-2.5"> Допълнителна информация </p>
+          <p class="md:text-xl md:leading-5.2 text-lg leading-4.5">Информацията по-долу не е задължителна към момента на регистрация.</p>
+          <p class="md:text-xl md:leading-5.2 text-lg leading-4.5">Може да я попълните по-късно след контакт с наш сътрудник.</p>
+        </div>
+      </section>
+
+      <!-- Permission -->
+      <section class="container">
+        <div class="flex flex-wrap content-start justify-between">
+          <div class="md:w-146 w-full">
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="rzp" name="rzp" type="text" class="float-input peer w-full " placeholder="РЗП" required />
+              <label for="rzp" class="float-label">РЗП</label>
+            </div>
+          </div>
+        
+          <div class="md:w-146 w-full">
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="permission" name="permission" type="text" class="float-input peer w-full" placeholder="Разрешение" required />
+              <label for="permission" class="float-label">Разрешение (номер / дата)</label>
+            </div>
+        </div>
+      </section>
+
+      <!-- Description of the building -->
+      <section class="container">
+        <p class="registration-form__title">
+          Описание на сградата
+        </p>
+        <div class="flex flex-wrap content-start justify-between mt-10 gap-y-2.5">
+          <div class="md:w-146 w-full">
+            <textarea name="building-description-bg" id="building-description-bg" placeholder="Български" class="textarea-custom w-full md:h-98 h-62" required></textarea>
+          </div>
+        
+          <div class="md:w-146 w-full">
+            <textarea name="building-description-en" id="building-description-en" placeholder="Английски" class="textarea-custom w-full md:h-98 h-62" required></textarea>
+        </div>
+      </section>
+
+      <!-- Files  ????? -->
+      <section class="container">
+        <p class="registration-form__title">
+          Приложени файлове
+        </p>
+        <div class="flex flex-wrap content-start justify-between md:mt-7.1 mt-6 gap-y-7.5 md:flex-row flex-col-reverse ">
+          <div class="md:w-146 w-full">
+
+            <!-- ?????????? -->
+            <div class="relative">
+              <input id=files-plan" name="files-plan" type="text" class="float-input peer w-full" placeholder="Мастер план и разпределения" required />
+              <label for="files-plan" class="float-label">Мастер план и разпределения</label>
+            </div>
+
+            <!-- ?????????? -->
+            <div class="relative mt-6">
+              <input id=files-pictures" name="files-pictures" type="text" class="float-input peer w-full " placeholder="Професионални снимки" required />
+              <label for="files-pictures" class="float-label">Професионални снимки</label>
+            </div>
+
+             <!-- ?????????? -->
+             <div class="relative  mt-6">
+              <input id=files-permission" name="files-permission" type="text" class="float-input peer w-full " placeholder="Копие от разрешение за експлоатация" required />
+              <label for="files-permission" class="float-label">Копие от разрешение за експлоатация</label>
+            </div>
+
+          </div>
+        
+          <div class="md:w-146 w-full md:text-xl md:leading-5.2 text-lg leading-4.5">
+            <p class="mb-6">
+              Моля, подгответе графичните материали, съпровождащи вашия проект, като JPEG изображения с размер минимум 2048х2048 пиксела и ги добавете в публично достъпна папка в Google Drive или друга file hosting услуга.
+            </p>
+            <p>В случай, че имаме проблем със свалянето и обработката им, ще се свържем с вас за корекции.</p>
+        </div>
+      </section>
+
+      <div class="border-10 border-primary md:my-13 my-9"></div>
+
+      <section class="container">
+        <ul class="text-xl text-black md:mb-13 mb-8">
+          <li class="text-sm  text-gray-700 inline-flex items-center py-2.5 w-full cursor-pointer">
+            <input type="checkbox" class="form-checkbox mr-2 border-black text-black focus:ring-0 w-5 h-5" >
+            <span>
+              Запознат съм с  
+              <a href="#" target="_blank" rel="noopener noreferrer" class="hover:text-black font-bold text-primary ">Условията на Конкурса</a>
+            </span>
+          </li>
+          <li class="text-sm  text-gray-700 inline-flex items-center py-2.5 w-full cursor-pointer">
+            <input type="checkbox" class="form-checkbox mr-2 border-black text-black focus:ring-0 w-5 h-5" >
+            <span> Декларирам, че ... </span>
+          </li>
+        </ul>
+
+        <button type="submit" class="text-white bg-black md:w-146 w-full h-13.5 cursor-pointer hover:text-primary">
+          <span>Изпращане</span>
+        </button>
+      </section>
+
+    </form>
+
+
+    <!-- Footer -->
+    <footer class="bg-footer h-full bg-no-repeat bg-bottom bg-cover	bg-black">
+      <div class="container flex flex-col flex-1">
+
+        <div class="flex justify-between items-start text-white">
+          <a href="#" target="_blank" class="cursor-pointer">
+            <img src="./assets/logo/footer-logo.png" alt="Logo" class="sm:w-44 w-26 my-5" />
+          </a>
+          <div class="flex justify-between items-center gap-4 border-t-10 border-t-primary sm:pt-8 pt-5">
+            <a href="#" target="_blank" class="sm:w-8 w-6 btn-hover-1 hover-scale"> 
+              <!-- <img src="./assets/icon/youtube.svg" alt="youtube" class="sm:w-8 w-6" /> -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                <path d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0M26.06,18.828l-.112,1.628a3.286,3.286,0,0,1-3.025,2.973l-4.093.21c-1.557.08-4.1.08-5.662,0l-4.093-.21a3.286,3.286,0,0,1-3.025-2.973l-.112-1.628a49.869,49.869,0,0,1,0-5.656l.112-1.628A3.286,3.286,0,0,1,9.076,8.571l4.093-.21c1.557-.08,4.105-.08,5.662,0l4.093.21a3.286,3.286,0,0,1,3.025,2.973l.112,1.628a50.1,50.1,0,0,1,0,5.656m-14.618,2.38,10.7-5.241-10.7-5.174Z"/>
+              </svg>
+            </a>
+            <a href="#" target="_blank" class="sm:w-8 w-6 btn-hover-1 hover-scale"> 
+              <!-- <img src="./assets/icon/instagram.svg" alt="instagram" class="sm:w-8 w-6" /> -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"> <defs> <clipPath> <rect width="32" height="32"/> </clipPath> </defs> <g clip-path="url(#clip-path)"> <path d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0M26,23.5A2.5,2.5,0,0,1,23.5,26H8.5A2.5,2.5,0,0,1,6,23.5V8.5A2.5,2.5,0,0,1,8.5,6h15A2.5,2.5,0,0,1,26,8.5Z" /> <path d="M29.5,27A2.5,2.5,0,1,0,32,29.5,2.5,2.5,0,0,0,29.5,27" transform="translate(-13.5 -13.5)"/> <path d="M31.125,18H18.875a.875.875,0,0,0-.875.875v12.25a.875.875,0,0,0,.875.875h12.25A.875.875,0,0,0,32,31.125V18.875A.875.875,0,0,0,31.125,18M25,30a5,5,0,1,1,5-5,5,5,0,0,1-5,5m5-9a1,1,0,1,1,1-1,1,1,0,0,1-1,1" transform="translate(-9 -9)"/> </g> </svg>
+            </a>
+            <a href="#" target="_blank" class="sm:w-8 w-6 btn-hover-1 hover-scale"> 
+              <!-- <img src="./assets/icon/facebook.svg" alt="facebook" class="sm:w-8 w-6" /> -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="31.871" viewBox="0 0 32 31.871"> <defs> <clipPath> <rect width="32" height="31.871"/> </clipPath> </defs> <g transform="translate(0 0)"> <g transform="translate(0 0)" clip-path="url(#clip-path)"> <path d="M16,0a16,16,0,0,0-2,31.871V20.68H10v-4h4V13a5.972,5.972,0,0,1,2.248-5.078c2.769-2.08,6.854-.976,7.311-.842l-1.11,3.843c-.841-.238-2.877-.5-3.8.2-.16.121-.645.489-.645,1.877v3.68h4v4H18V31.871A16,16,0,0,0,16,0" transform="translate(0 0)"/> </g> </g> </svg>            </a>
+            <a href="#" target="_blank" class="sm:w-8 w-6 btn-hover-1 hover-scale"> 
+              <!-- <img src="./assets/icon/linkedin.svg" alt="linkedin" class="sm:w-8 w-6" /> -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"> <defs> <clipPath> <rect width="32" height="32"/> </clipPath> </defs> <g clip-path="url(#clip-path)"> <path  d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0M12.154,23.886c0,.29-.053.368-.369.368H9.175c-.316,0-.368-.078-.368-.368v-10.2H6.778c-.317,0-.37-.078-.37-.369V11.6c0-.29.052-.369.37-.369h5.008c.316,0,.369.079.369.369ZM10.467,9.521A2.183,2.183,0,0,1,8.279,7.333a2.175,2.175,0,1,1,2.188,2.188M24.489,23.886c0,.29-.052.368-.369.368H21.51c-.316,0-.368-.078-.368-.368V15.768c0-1-.132-2.214-1.476-2.214a3.609,3.609,0,0,0-2.319,1.08v9.252c0,.29-.053.368-.369.368h-2.61c-.316,0-.368-.078-.368-.368V15.925a10.585,10.585,0,0,0-.5-4.111c0-.132.105-.237.29-.29l2-.659a1.322,1.322,0,0,1,.4-.079c.342,0,.553.58.843,1.819a5.685,5.685,0,0,1,4.033-1.819c1.449,0,3.427.658,3.427,3.847Z"/> </g> </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="text-white h-full">
+          <div class="flex flex-row justify-start flex-nowrap sm:text-xl text-lg sm:leading-5 leading-4">
+            <div class="sm:mr-0 mr-4">
+              <ul class="flex flex-col gap-6 text-white font-bold lg:w-68 md:w-47 w-26 sm:w-min-26">
+                <li class="btn-hover-5">Jury</li>
+                <li class="btn-hover-5">Contacts</li>
+                <li class="btn-hover-5">Gallery</li>
+                <li class="btn-hover-5">Initiatives</li>
+                <li class="btn-hover-5">Archive</li>
+                <li class="btn-hover-5 sm:hidden">Apply Online</li>
+                <li class="btn-hover-5 hidden sm:block">Online Application</li>
+              </ul>  
+            </div>
+
+
+            <div class="hidden sm:block"> 
+              <p class="font-bold mb-7"> Categories </p>
+              <div class="flex flex-row flex-wrap font-regular">
+                <div class="sm:w-68 w-56">
+                  <ul class="flex flex-col">
+                    <li class="btn-hover-5 mb-2.5">Social Infrastructure and Special Purpose Buildings</li>
+                    <li class="btn-hover-5 lg:mb-7.1 mb-2.5">City Development Projects</li>
+                    <li class="btn-hover-5 mb-2.5">Residential Buildings </br> 10 000 m2 or More</li>
+                    <li class="btn-hover-5 mb-2.5">Production Buildings</li>
+                  </ul> 
+                </div>
+                <div class="sm:w-68 w-56">
+                  <ul class="flex flex-col ">
+                    <li class="btn-hover-5 lg:mb-7.1 mb-2.5">Social Infrastructure: Healthcare</li>
+                    <li class="btn-hover-5 lg:mb-7.1 mb-2.5">Office and Corporate Buildings</li>
+                    <li class="btn-hover-5 lg:mb-7.1 mb-2.5">Hotels and Holiday Complexes</li>
+                    <li class="btn-hover-5 lg:mb-7.1 mb-2.5">Logistics Buildings</li>
+                  </ul> 
+                </div>
+                <div class="sm:w-68 w-56">
+                  <ul class="flex flex-col ">
+                    <li class="btn-hover-5 lg:mb-7.1 mb-2.5">Sofia Metro</li>
+                    <li class="btn-hover-5 mb-2.5">Residential Buildings </br> 10 000 m2 or Less</li>
+                    <li class="btn-hover-5 lg:mb-7.1 mb-2.5">Commercial Buildings</li>
+                    <li class="btn-hover-5 mb-2.5">Buildings with Elements of Green Architecture and Innovation</li>
+                  </ul> 
+                </div>
+              </div>
+            </div>
+            
+            <div class="sm:hidden pr-4">
+              <p class="font-bold mb-5"> Categories </p>
+              <ul class="flex flex-col sm:w-68 w-56 gap-3 mb-4">
+                <li class="btn-hover-5">Social Infrastructure and Special Purpose Buildings</li>
+                <li class="btn-hover-5">Social Infrastructure: Healthcare</li>
+                <li class="btn-hover-5">Sofia Metro</li>
+                <li class="btn-hover-5">City Development Projects</li>
+                <li class="btn-hover-5">Office and Corporate Buildings</li>
+                <li class="btn-hover-5">Residential Buildings 10 000 m2 or Less</li>
+                <li class="btn-hover-5">Residential Buildings 10 000 m2 or More</li>
+                <li class="btn-hover-5">Hotels and Holiday Complexes</li>
+                <li class="btn-hover-5">Commercial Buildings</li>
+                <li class="btn-hover-5">Production Buildings</li>
+                <li class="btn-hover-5">Logistics Buildings</li>
+                <li class="btn-hover-5">Buildings with Elements of Green Architecture and Innovation</li>
+              </ul> 
+            </div>
+        </div>
+      </div>
+
+        
+        <div class="flex justify-between items-start relative md:mt-14 mt-10">
+          <div class="border-t-1 border-t-white/50 w-9/12 sm:mb-16 mb-4">
+            <div class="sm:w-155 w-78 mt-2.5">
+              <p class="font-regular sm:text-xl text-lg opacity-50 text-white sm:leading-5 leading-4">
+                Established in 2002, National Contest “Building of the Year” is the most prestigious event in the field of investment 
+                activities, construction and architecture and distinguishes the best achievements for the past year.
+              </p>
+            </div>
+          </div>
+          <div> 
+            <a href="#" target="_blank" class="cursor-pointer">
+              <img src="./assets/logo/cog-logo.svg" alt="design by cog" class="sm:w-4.5 w-3.8 opacity-30"/>
+            </a>
+          </div>
+        </div>
+        <div class="flex justify-between items-end text-white font-bold sm:text-sm text-xs">
+          <div class="flex justify-between items-center sm:w-44 w-42 border-b-10 border-b-primary pb-5">
+            <div class="flex items-center btn-hover-5">
+              <img src="./assets/icon/globe.svg" alt="globe" class="w-4" />
+              <span class="mx-1.5">bg</span>
+            </div>
+            <a href="#" class="btn-hover-5"><p>Privacy Policy</p></a>
+          </div>
+          <div class="flex flex-col items-end text-white mb-7.1">
+            <img src="./assets/logo/town-logo.svg" alt="Gradat Media Group" class="sm:w-26 w-23 mb-2.5" />
+            <p class="font-regular opacity-50">© Gradat Media Group</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

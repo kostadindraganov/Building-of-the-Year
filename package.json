@@ -19,5 +19,8 @@
   "homepage": "https://github.com/kostadindraganov/Building-of-the-Year",
   "devDependencies": {
     "tailwindcss": "^3.0.23"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.1"
   }
 }
