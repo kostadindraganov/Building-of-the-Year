@@ -101,11 +101,11 @@
 }
 
 .bottom-border {
-  @apply sm:w-44 w-full transform  border-b-3 border-black;
+  @apply md:w-44 w-full transform  border-b-3 border-black;
 }
 
 .bottom-border-w {
-  @apply sm:w-44 w-full transform  border-b-3 border-white;
+  @apply md:w-44 w-full transform  border-b-3 border-white;
 }
 
 .enter-btn {
@@ -277,7 +277,7 @@
 }
 
 .float-label {
-  @apply absolute left-0 -top-3.5 text-gray-500 text-xl peer-focus:uppercase peer-focus:text-uxs transition-all peer-placeholder-shown:text-xl peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600;
+  @apply absolute left-0 -top-3.5 text-gray-500 text-xl peer-focus:uppercase peer-focus:text-uxs transition-all peer-placeholder-shown:text-xl peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 cursor-pointer;
 }
 
 .required-label {
