@@ -1,6 +1,5 @@
 @tailwind base;
 
-
 @layer base {
   @font-face {
     font-family: 'Neue-bold';
@@ -109,18 +108,7 @@
 }
 
 .enter-btn {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  color: white;
-  position: relative;
-  outline: 0;
-  overflow:hidden;
-  background: none;
-  z-index: 1;
-  cursor: pointer;
-  border-bottom: solid 2px white;
-
+  @apply flex justify-end items-center text-white relative outline-none overflow-hidden z-10 cursor-pointer border-b-2 border-white bg-none;
 }
 
 .enter-btn .spacer{
@@ -147,7 +135,7 @@
 }
 
 .enter-btn:hover:before {
-  top: 0;
+  @apply top-0;
 }
 
 .back-btn {
@@ -186,8 +174,6 @@
   @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
 }
 
-
-
 .hover-scale {
   @apply transform transition duration-500 hover:scale-110;
 }
@@ -220,7 +206,7 @@
   @apply stroke-white hover:stroke-primary cursor-pointer;
 }
 
-
+/* Gallery */
 
 .gallery__wrapper {
   @apply relative overflow-hidden lg:w-68 lg:h-47 md:w-56 md:h-36 w-42 h-29 cursor-pointer;
@@ -288,14 +274,11 @@
   @apply shadow-none focus:ring-transparent resize border-2 border-gray-300 text-gray-700 placeholder-gray-400 px-4 text-xl focus:outline-none focus:border-black;
 }
 
-
-
 /* Album */
 
 .album_wrapper {
   @apply relative overflow-hidden  md:w-68 md:h-48.2 w-18.1 h-13.8 cursor-pointer;
 }
-
 
 /* Image gallery */
 
@@ -336,7 +319,6 @@
 }
 
 /* Video gallery */
-
 
 .video-gallery__item {
   @apply flex md:flex-col flex-row items-start gap-3;
@@ -385,7 +367,6 @@
 .jury__image {
   @apply rounded-full btn-hover-1 hover-scale sm:avatar avatar-mobile;
 }
-
 
 /* Registration form */
 
