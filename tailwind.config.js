@@ -147,6 +147,7 @@ module.exports = {
         '18.5': '4.813rem',// 77px
         '21': '5.188rem',  // 83px
         '23': '5.625rem',  // 90px
+        '23.5': '5.938rem',  // 95px
         '26.6': '6.25rem', // 100px
         '27': '6.75rem',   // 108px
         '30': '7.5rem',    // 120px
@@ -213,5 +214,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [
+    require("@tailwindcss/forms"),
+    require('autoprefixer'),
+  ],
 }

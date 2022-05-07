@@ -76,18 +76,18 @@
       </div>
 
       <div>
-        <p class="md:text-2xl md:leading-7.5 text-title leading-4.6 font-bold md:w-4/6">
+        <p class="md:text-2xl md:leading-7.5 text-title leading-4.6 font-bold lg:w-4/6 w-full">
           Established in 2002, National Contest “Building of the Year” is the most prestigious event in the field of investment activities, construction and architecture and distinguishes the best achievements for the past year.
         </p>
 
-        <p class="md:text-xl md:leading-5.2 text-lg leading-4.5  md:w-4/6 md:mt-10 mt-7.1">
+        <p class="md:text-xl md:leading-5.2 text-lg leading-4.5  lg:w-4/6 w-full  md:mt-10 mt-7.1">
           The most significant realizations in Bulgaria that have been certified and approved throughout the year, apply and go through an assessment by a prominent jury of respected representatives of the professional communities. The award ceremony takes place at a gala dinner in December, gathering the leading investors, construction companies, architects and other participants in the construction-investment process. Access to the event is only for individuals over 18 years of age.
         </p>
       </div>
 
 
 
-      <form class="md:mt-8 mt-11 md:w-146" action="" method="POST">
+      <form class="md:mt-8 mt-11 lg:w-146 w-full" action="" method="POST">
 
         <div class="relative my-10">
           <input id="name" name="name" type="text" class="float-input peer w-full " placeholder="john doe" required />
@@ -108,9 +108,11 @@
         <textarea name="message" id="message" class="textarea-custom w-full h-36" placeholder="Your message" required></textarea>
 
         <div class="flex justify-between  content-center mt-4">
-          <div class="g-recaptcha" data-theme="light" data-sitekey="6LdR0bofAAAAAAmjht3-wlr9xv97h0-lg1DOyT89" style="transform:scale(0.67);-webkit-transform:scale(0.67);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
-          <button type="submit" class="text-white bg-black sm:w-20 w-42 sm:h-10.1 h-11 cursor-pointer hover:text-primary">
-            <span>Send</span>
+          <div class="w-45">
+            <div class="g-recaptcha" data-theme="light" data-sitekey="6LdR0bofAAAAAAmjht3-wlr9xv97h0-lg1DOyT89" style="transform:scale(0.67);-webkit-transform:scale(0.67);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
+          </div>
+          <button type="submit" class="text-white bg-black min-w-20 w-20 sm:h-10.1 h-11 cursor-pointer hover:text-primary">
+            <span class="px-2">Send</span>
           </button>
         </div>
       </form>

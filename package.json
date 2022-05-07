@@ -4,23 +4,26 @@
   "description": "building-of-the-year",
   "scripts": {
     "dev": "npx tailwindcss -i ./src/assets/css/style.css -o ./dist/style.css --watch",
-    "build": "npx tailwindcss -o ./dist/style.min.css --minify"
+    "build": "npx tailwindcss -i ./src/assets/css/style.css -o ./dist/style.min.css --minify",
+    "publish": "surge --domain Building-of-the-Year.surge.sh"
   },
   "repository": {
     "type": "git",
     "url": "git@github.com:kostadindraganov/Building-of-the-Year.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "K.Draganov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kostadindraganov/Building-of-the-Year/issues"
   },
   "homepage": "https://github.com/kostadindraganov/Building-of-the-Year",
   "devDependencies": {
+    "autoprefixer": "^10.4.7",
     "tailwindcss": "^3.0.23"
   },
   "dependencies": {
-    "@tailwindcss/forms": "^0.5.1"
+    "@tailwindcss/forms": "^0.5.1",
+    "surge": "^0.23.1"
   }
 }

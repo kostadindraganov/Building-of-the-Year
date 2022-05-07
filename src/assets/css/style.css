@@ -41,7 +41,7 @@
   html {
     scroll-behavior: smooth;
   }
-  
+
   h1 {
     @apply font-bold md:text-8xl text-5xl text-white md:leading-14 leading-9;
   }
@@ -51,7 +51,7 @@
   }
   
   h3 {
-    @apply font-bold md:text-6xl text-4xl md:leading-15 leading-7;
+    @apply font-bold lg:text-6xl text-4xl lg:leading-15 leading-7;
   }
   
   h4 {
@@ -85,6 +85,21 @@
     height: 72px;
   }
 }
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+  box-shadow: 0 0 0 30px white inset;
+}
+
 
 .container {
   @apply lg:px-0 md:px-4 px-4;
@@ -259,7 +274,7 @@
 /* focus:invalid:border-pink-500 focus:invalid:ring-pink-500 */ 
 
 .float-input {
-  @apply h-10 border-b-2 border-gray-300 text-gray-700 placeholder-transparent focus:ring-0 outline-none focus:border-black focus:invalid:border-red-500  border-x-0 border-t-0;  
+  @apply h-10 border-b-2 focus:pl-2 pl-0 transition-all autofill:bg-transparent border-gray-300 text-gray-700 placeholder-transparent focus:ring-0 outline-none focus:border-black focus:invalid:border-red-500 focus:shadow-white  border-x-0 border-t-0;  
 }
 
 .float-label {
@@ -277,13 +292,13 @@
 /* Album */
 
 .album_wrapper {
-  @apply relative overflow-hidden  md:w-68 md:h-48.2 w-18.1 h-13.8 cursor-pointer;
+  @apply relative overflow-hidden lg:w-68 lg:h-48.2 md:w-45 md:h-28 w-18.1 h-13.8 cursor-pointer;
 }
 
 /* Image gallery */
 
 .tab-btn {
-  @apply sm:w-68 w-42 text-left border-b-1 sm:pb-3.5 pb-4.2 border-black;
+  @apply sm:w-68 w-full text-left border-b-1 sm:pb-3.5 pb-4.2 border-black;
 }
 
 .active {
@@ -291,11 +306,11 @@
 }
 
 .image-gallery__item {
-  @apply md:w-146 w-87 cursor-pointer;
+  @apply lg:w-146 md:w-87 w-full cursor-pointer;
 }
 
 .image-gallery__image-wrapper {
-  @apply md:h-62 h-48.2 relative overflow-hidden;
+  @apply lg:h-62 md:h-47 h-48.2 relative overflow-hidden;
 }
 
 .image-gallery__image {
@@ -321,7 +336,7 @@
 /* Video gallery */
 
 .video-gallery__item {
-  @apply flex md:flex-col flex-row items-start gap-3;
+  @apply flex md:flex-col flex-row items-start gap-3 cursor-pointer;
 }
 
 .video-gallery__play-icon {
