@@ -961,12 +961,12 @@ h6 {
   z-index: -20;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
 .z-30 {
   z-index: 30;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .order-1 {
@@ -1055,11 +1055,6 @@ h6 {
 .my-9 {
   margin-top: 2.25rem;
   margin-bottom: 2.25rem;
-}
-
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .mt-1 {
@@ -2130,11 +2125,6 @@ h6 {
   padding-bottom: 0.625rem;
 }
 
-.px-0 {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -2217,14 +2207,6 @@ h6 {
 
 .pb-2\.5 {
   padding-bottom: 0.625rem;
-}
-
-.pt-2\.5 {
-  padding-top: 0.625rem;
-}
-
-.pl-1 {
-  padding-left: 0.25rem;
 }
 
 .text-center {
@@ -4155,10 +4137,6 @@ select:-webkit-autofill:focus {
     width: 3rem;
   }
 
-  .sm\:flex-1 {
-    flex: 1 1 0%;
-  }
-
   .sm\:flex-col {
     flex-direction: column;
   }
@@ -4221,10 +4199,6 @@ select:-webkit-autofill:focus {
     row-gap: 3.5rem;
   }
 
-  .sm\:bg-transparent {
-    background-color: transparent;
-  }
-
   .sm\:bg-jury {
     background-image: url('/src/assets/images/backgrounds/jury.jpg');
   }
@@ -4274,10 +4248,6 @@ select:-webkit-autofill:focus {
 
   .sm\:pb-15 {
     padding-bottom: 3.75rem;
-  }
-
-  .sm\:pl-0 {
-    padding-left: 0px;
   }
 
   .sm\:text-xl {
@@ -4961,6 +4931,10 @@ select:-webkit-autofill:focus {
     padding-right: 0px;
   }
 
+  .lg\:pl-0 {
+    padding-left: 0px;
+  }
+
   .lg\:pb-13 {
     padding-bottom: 3.125rem;
   }
@@ -4971,10 +4945,6 @@ select:-webkit-autofill:focus {
 
   .lg\:pt-2 {
     padding-top: 0.5rem;
-  }
-
-  .lg\:pl-0 {
-    padding-left: 0px;
   }
 
   .lg\:text-xl {
@@ -5017,14 +4987,5 @@ select:-webkit-autofill:focus {
     writing-mode: vertical-rl;
     -webkit-writing-mode: vertical-lr;
     -ms-writing-mode: vertical-lr;
-  }
-}
-
-@media (min-width: 640px) {
-  @media (min-width: 1024px) {
-    .sm\:lg\:px-0 {
-      padding-left: 0px;
-      padding-right: 0px;
-    }
   }
 }
