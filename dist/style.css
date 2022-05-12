@@ -4203,10 +4203,6 @@ select:-webkit-autofill:focus {
     background-image: url('/src/assets/images/backgrounds/jury.jpg');
   }
 
-  .sm\:bg-participants {
-    background-image: url('/src/assets/images/backgrounds/participants.jpg');
-  }
-
   .sm\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
@@ -4378,6 +4374,10 @@ select:-webkit-autofill:focus {
     margin-bottom: 1rem;
   }
 
+  .md\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
   .md\:mb-41 {
     margin-bottom: 10.375rem;
   }
@@ -4388,6 +4388,10 @@ select:-webkit-autofill:focus {
 
   .md\:mb-13 {
     margin-bottom: 3.125rem;
+  }
+
+  .md\:mb-6 {
+    margin-bottom: 1.5rem;
   }
 
   .md\:block {
@@ -4906,6 +4910,10 @@ select:-webkit-autofill:focus {
 
   .lg\:border-b-3 {
     border-bottom-width: 3px;
+  }
+
+  .lg\:bg-participants {
+    background-image: url('/src/assets/images/backgrounds/participants.jpg');
   }
 
   .lg\:px-8 {
