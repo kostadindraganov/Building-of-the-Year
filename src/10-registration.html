@@ -16,15 +16,30 @@
     <!-- Header -->
     <header class="bg-header bg-cover bg-no-repeat bg-center md:pt-5 py-4 pb-8">
       <nav class="container flex flex-row items-start justify-between">
-        <img src="./assets/logo/logo.png" alt="logo" class="md:w-56 lg:w-68 w-56" />
+        <img src="./assets/logo/logo.svg" alt="logo" class="lg:w-68 w-56" />
         <div class="hidden md:flex text-white font-regular flex-col items-end justify-between h-29 mt-1">
           <div>
-            <ul class="flex items-center lg:gap-5 gap-3 text-sm">
-              <li class="btn-hover-5">Home</li>
-              <li class="btn-hover-5">About</li>
-              <li class="btn-hover-5">Archive</li>
-              <li class="btn-hover-5">Archive</li>
-              <li class="btn-hover-5">Contacts</li>
+            <ul class="flex items-center xl:gap-5 gap-3 text-sm">
+              <li class="btn-hover-5">
+                <a href="1-home.html" target="_self" rel="noopener noreferrer">
+                  Home
+                </a>
+              </li>
+              <li class="btn-hover-5">
+                <a href="2-about.html" target="_self" rel="noopener noreferrer">
+                  About
+                </a>
+              </li>
+              <li class="btn-hover-5">
+                <a href="3-archive.html" target="_self" rel="noopener noreferrer">
+                  Archive
+                </a>
+              </li>
+              <li class="btn-hover-5">
+                <a href="4-contact.html" target="_self" rel="noopener noreferrer">
+                  Contacts
+                </a>
+              </li>
               <li class="flex items-center btn-hover-5"> 
                 <img src="./assets/icon/globe.svg" alt="globe" class="w-5" />
                 <span class="ml-1.5">bg</span>
@@ -33,16 +48,39 @@
           </div>
   
           <div class="flex flex-1 justify-end items-center mt-2">
-            <ul class="flex flex-1 items-start lg:gap-5 gap-3 text-xl">
-              <li class="btn-hover-5">Participants</li>
-              <li class="btn-hover-5">Jury</li>
-              <li class="btn-hover-5">Gallery</li>
-              <li class="btn-hover-5">Initiatives</li>
-              <li class="btn-hover-5">Rules</li>
+            <ul class="flex flex-1 items-start xl:gap-5 gap-3 text-xl">
+              <li class="btn-hover-5">
+                <a href="5-participants.html" target="_self" rel="noopener noreferrer">
+                  Participants
+                </a>
+              </li>
+              <li class="btn-hover-5">
+                <a href="6-jury.html" target="_self" rel="noopener noreferrer">
+                  Jury
+                </a>
+              </li>
+              <li class="btn-hover-5">
+                <a href="7-gallery-photo.html" target="_self" rel="noopener noreferrer">
+                  Gallery
+                </a>
+              </li>
+              <li class="btn-hover-5">
+                <a href="8-initiatives.html" target="_self" rel="noopener noreferrer">
+                  Initiatives
+                </a>
+              </li>
+              <li class="btn-hover-5">
+                <a href="9-rules.html" target="_self" rel="noopener noreferrer">
+                  Rules
+                </a>
+              </li>
+              <a href="10-registration.html" target="_self" rel="noopener noreferrer">
                 <button type="button" class="more-btn btn-hover-1">
                   <span class="mr-2"> Online Application </span>
                   <svg xmlns="http://www.w3.org/2000/svg"width="14.145" height="12.142" viewBox="0 0 14.145 12.142"><path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(0 0)" /></svg>
                 </button>
+              </a>
+          
             </ul>
           </div>
         </div>
@@ -67,12 +105,14 @@
 
       <!-- Title -->
       <section class="container md:mt-5.5 mt-5"> 
-        <button type="button" class="back-btn btn-hover-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="10.484" height="9" viewBox="0 0 10.484 9">
-            <path d="M10.281,4.992l-3.8,3.8a.7.7,0,0,1-.984-.984L8.109,5.2H.7A.7.7,0,1,1,.7,3.8H8.109L5.492,1.188A.7.7,0,0,1,6.476.2l3.8,3.8a.7.7,0,0,1,0,.984" transform="translate(10.484 9) rotate(180)"/>
-          </svg>     
-          <p class="m-2"> Home </p>
-        </button>
+        <a href="1-home.html" target="_self" rel="noopener noreferrer">
+          <button type="button" class="back-btn btn-hover-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10.484" height="9" viewBox="0 0 10.484 9">
+              <path d="M10.281,4.992l-3.8,3.8a.7.7,0,0,1-.984-.984L8.109,5.2H.7A.7.7,0,1,1,.7,3.8H8.109L5.492,1.188A.7.7,0,0,1,6.476.2l3.8,3.8a.7.7,0,0,1,0,.984" transform="translate(10.484 9) rotate(180)"/>
+            </svg>     
+            <p class="m-2"> Home </p>
+          </button>
+        </a>
         <h4>Online Application</h4>
       </section>
 
@@ -97,31 +137,31 @@
 
             <div class="relative md:mt-7.1 mt-6">
               <input id="name-bg" name="name-bg" type="text" class="float-input peer w-full " placeholder="Наименование" required />
-              <label for="name-bg" class="float-label peer-focus:after:content-['(БЪЛГАРСКИ)'] after:ml-0.5">Наименование</label>
+              <label for="name-bg" class="float-label required-label peer-focus:after:content-['(БЪЛГАРСКИ)'] after:ml-0.5">Наименование</label>
             </div>
   
             <div class="relative md:mt-7.1 mt-6">
               <input id="Location" name="Location" type="text" class="float-input peer w-full " placeholder="Местоположение" required />
-              <label for="Location" class="float-label">Местоположение</label>
+              <label for="Location" class="required-label float-label">Местоположение</label>
             </div>
           </div>
   
           <div class="lg:w-146 w-full">
             <div class="relative md:mt-7.1 mt-6">
               <input id="name-en" name="name-en" type="text" class="float-input peer w-full " placeholder="Наименование" required />
-              <label for="name-en" class="float-label peer-focus:after:content-['(английски)'] after:ml-0.5">Наименование</label>
+              <label for="name-en" class="float-label required-label peer-focus:after:content-['(английски)'] after:ml-0.5">Наименование</label>
             </div>
 
             <div class="relative md:mt-7.1 mt-6 group">
               <button class="group inline-flex items-center justify-between w-full h-10 border-b-2 border-gray-300 hover:border-none" type="button" data-dropdown-toggle="dropdown">
-                <p class="text-gray-400 text-xl">Изберете 1 или повече категории </p>
+                <p class="text-gray-400 text-xl required-label">Изберете 1 или повече категории </p>
                 <svg class="transition-all group-hover:rotate-180 " xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6">
                   <path d="M5,0l5,6H0Z" transform="translate(10 6) rotate(180)"/>
                 </svg>
               </button>
 
               <!-- Dropdown menu -->
-              <div class="group-hover:block hidden      border-b-3 border-black bg-white text-base z-50 list-none" id="dropdown">
+              <div class="group-hover:block hidden border-b-3 border-black bg-white text-base z-50 list-none" id="dropdown">
                   <ul class="py-1 pb-2 text-xl text-black" aria-labelledby="dropdown">
                     <li class="text-sm hover:bg-gray-100 text-gray-700 inline-flex items-start px-4 py-1 w-full cursor-pointer">
                       <input type="checkbox" class="form-checkbox mr-2 border-black text-black focus:ring-0 w-3.8 h-3.8" >
@@ -196,29 +236,29 @@
       
             <div class="relative md:mt-7.1 mt-6">
               <input id="submitter-name-bg" name="submitter-name-bg" type="text" class="float-input peer w-full " placeholder="Име" required />
-              <label for="submitter-name-bg" class="float-label">Име</label>
+              <label for="submitter-name-bg" class="float-label required-label">Име</label>
             </div>
         
             <div class="relative md:mt-7.1 mt-6">
               <input id="submitter-company" name="submitter-company" type="text" class="float-input peer w-full " placeholder="Компания" required />
-              <label for="submitter-company" class="float-label">Компания</label>
+              <label for="submitter-company" class="float-label required-label">Компания</label>
             </div>
 
             <div class="relative md:mt-7.1 mt-6">
               <input id="submitter-phone" name="submitter-phone" type="tel" class="float-input peer w-full " placeholder="Телефон" required />
-              <label for="submitter-phone" class="float-label">Телефон</label>
+              <label for="submitter-phone" class="float-label required-label">Телефон</label>
             </div>
           </div>
         
           <div class="lg:w-146 w-full">
             <div class="relative md:mt-7.1 mt-6">
               <input id="submitter-last-name-en" name="submitter-last-name-en" type="text" class="float-input peer w-full " placeholder="Фамилия" required />
-              <label for="submitter-last-name-en" class="float-label">Фамилия</label>
+              <label for="submitter-last-name-en" class="float-label required-label">Фамилия</label>
             </div>
       
             <div class="relative md:mt-7.1 mt-6 group">
               <button class="group inline-flex items-center justify-between w-full h-10 border-b-2 border-gray-300 hover:border-none" type="button" data-dropdown-toggle="dropdown">
-                <p class="text-gray-400 text-xl">Роля в проекта</p>
+                <p class="text-gray-400 text-xl required-label">Роля в проекта</p>
                 <svg class="transition-all group-hover:rotate-180 " xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6">
                   <path d="M5,0l5,6H0Z" transform="translate(10 6) rotate(180)"/>
                 </svg>
@@ -227,14 +267,14 @@
 
             <div class="relative md:mt-7.1 mt-6">
               <input id="submitter-email-en" name="submitter-email-en" type="email" class="float-input peer w-full " placeholder="Email" required />
-              <label for="submitter-email-en" class="float-label">Email</label>
+              <label for="submitter-email-en" class="float-label required-label">Email</label>
             </div>
           </div>
 
           <div class="w-full">
             <div class="relative md:mt-7.1 mt-6">
               <input id="submitter-address-en" name="submitter-address-en" type="text" class="float-input peer w-full " placeholder="Адрес" required />
-              <label for="submitter-address-en" class="float-label">Адрес</label>
+              <label for="submitter-address-en" class="float-label required-label">Адрес</label>
             </div>
           </div>
         </div>
@@ -250,17 +290,17 @@
       
             <div class="relative md:mt-7.1 mt-6">
               <input id="investor-company-name-bg" name="investor-company-name-bg" type="text" class="float-input peer w-full " placeholder="Име на компанията" required />
-              <label for="investor-company-name-bg" class="float-label peer-focus:after:content-['(БЪЛГАРСКИ)'] after:ml-0.5">Име на компанията</label>
+              <label for="investor-company-name-bg" class="float-label required-label peer-focus:after:content-['(БЪЛГАРСКИ)'] after:ml-0.5">Име на компанията</label>
             </div>
 
             <div class="relative md:mt-7.1 mt-6">
               <input id="investor-phone-bg" name="investor-phone-bg" type="tel" class="float-input peer w-full " placeholder="Телефон" required />
-              <label for="investor-phone-bg" class="float-label">Телефон</label>
+              <label for="investor-phone-bg" class="float-label required-label">Телефон</label>
             </div>
         
             <div class="relative md:mt-7.1 mt-6">
               <input id="investor-website" name="investor-website" type="url" class="float-input peer w-full " placeholder="www.website.com" required />
-              <label for="investor-website" class="float-label">Уебсайт</label>
+              <label for="investor-website" class="float-label required-label">Уебсайт</label>
             </div>
    
           </div>
@@ -268,17 +308,17 @@
           <div class="lg:w-146 w-full">
             <div class="relative md:mt-7.1 mt-6">
               <input id="investor-company-name-en" name="investor-company-name-en" type="text" class="float-input peer w-full " placeholder="Име на компанията" required />
-              <label for="investor-company-name-en" class="float-label peer-focus:after:content-['(английски)'] after:ml-0.5">Име на компанията</label>
+              <label for="investor-company-name-en" class="float-label required-label peer-focus:after:content-['(английски)'] after:ml-0.5">Име на компанията</label>
             </div>
 
             <div class="relative md:mt-7.1 mt-6">
               <input id="investor-email" name="submitter-email" type="email" class="float-input peer w-full " placeholder="Email" required />
-              <label for="investor-email" class="float-label">Email</label>
+              <label for="investor-email" class="float-label required-label">Email</label>
             </div>
 
             <div class="relative md:mt-7.1 mt-6">
               <input id="investor-address" name="submitter-address" type="text" class="float-input peer w-full " placeholder="Адрес" required />
-              <label for="investor-address" class="float-label">Адрес</label>
+              <label for="investor-address" class="float-label required-label">Адрес</label>
             </div>
           </div>
 
@@ -295,17 +335,17 @@
       
             <div class="relative md:mt-7.1 mt-6">
               <input id="designer-company-name-bg" name="designer-company-name-bg" type="text" class="float-input peer w-full " placeholder="Име на компанията" required />
-              <label for="designer-company-name-bg" class="float-label peer-focus:after:content-['(БЪЛГАРСКИ)'] after:ml-0.5">Име на компанията</label>
+              <label for="designer-company-name-bg" class="float-label required-label peer-focus:after:content-['(БЪЛГАРСКИ)'] after:ml-0.5">Име на компанията</label>
             </div>
 
             <div class="relative md:mt-7.1 mt-6">
               <input id="designer-phone-bg" name="designer-phone-bg" type="tel" class="float-input peer w-full " placeholder="Телефон" required />
-              <label for="designer-phone-bg" class="float-label">Телефон</label>
+              <label for="designer-phone-bg" class="float-label required-label">Телефон</label>
             </div>
         
             <div class="relative md:mt-7.1 mt-6">
               <input id="designer-website" name="designer-website" type="url" class="float-input peer w-full " placeholder="www.website.com" required />
-              <label for="designer-website" class="float-label">Уебсайт</label>
+              <label for="designer-website" class="float-label required-label">Уебсайт</label>
             </div>
    
           </div>
@@ -313,17 +353,17 @@
           <div class="lg:w-146 w-full">
             <div class="relative md:mt-7.1 mt-6">
               <input id="designer-company-name-en" name="designer-company-name-en" type="text" class="float-input peer w-full " placeholder="Име на компанията" required />
-              <label for="designer-company-name-en" class="float-label peer-focus:after:content-['(английски)'] after:ml-0.5">Име на компанията</label>
+              <label for="designer-company-name-en" class="float-label required-label peer-focus:after:content-['(английски)'] after:ml-0.5">Име на компанията</label>
             </div>
 
             <div class="relative md:mt-7.1 mt-6">
               <input id="designer-email" name="designer-email" type="email" class="float-input peer w-full " placeholder="Email" required />
-              <label for="designer-email" class="float-label">Email</label>
+              <label for="designer-email" class="float-label required-label">Email</label>
             </div>
 
             <div class="relative md:mt-7.1 mt-6">
               <input id="designer-address" name="designer-address" type="text" class="float-input peer w-full " placeholder="Адрес" required />
-              <label for="designer-address" class="float-label">Адрес</label>
+              <label for="designer-address" class="float-label required-label">Адрес</label>
             </div>
           </div>
 
@@ -338,14 +378,14 @@
         <div class="flex flex-wrap content-start justify-between">
           <div class="lg:w-146 w-full">
             <div class="relative md:mt-7.1 mt-6">
-              <input id="constructor-company-name-bg" name="constructor-company-name-bg" type="text" class="float-input peer w-full " placeholder="Име на компанията" required />
+              <input id="constructor-company-name-bg" name="constructor-company-name-bg" type="text" class="float-input peer w-full " placeholder="Име на компанията" />
               <label for="constructor-company-name-bg" class="float-label peer-focus:after:content-['(БЪЛГАРСКИ)'] after:ml-0.5">Име на компанията</label>
             </div>
           </div>
         
           <div class="lg:w-146 w-full">
             <div class="relative md:mt-7.1 mt-6">
-              <input id="constructor-company-name-en" name="constructor-company-name-en" type="text" class="float-input peer w-full " placeholder="Име на компанията" required />
+              <input id="constructor-company-name-en" name="constructor-company-name-en" type="text" class="float-input peer w-full " placeholder="Име на компанията" />
               <label for="constructor-company-name-en" class="float-label peer-focus:after:content-['(английски)'] after:ml-0.5">Име на компанията</label>
             </div>
         </div>
@@ -366,13 +406,13 @@
           <div class="lg:w-146 w-full">
             <div class="relative md:mt-7.1 mt-6">
               <input id="rzp" name="rzp" type="text" class="float-input peer w-full " placeholder="РЗП" required />
-              <label for="rzp" class="float-label">РЗП</label>
+              <label for="rzp" class="float-label required-label">РЗП</label>
             </div>
           </div>
         
           <div class="lg:w-146 w-full">
             <div class="relative md:mt-7.1 mt-6">
-              <input id="permission" name="permission" type="text" class="float-input peer w-full" placeholder="Разрешение" required />
+              <input id="permission" name="permission" type="date" class="float-input peer w-full" placeholder="Разрешение" />
               <label for="permission" class="float-label">Разрешение (номер / дата)</label>
             </div>
         </div>
@@ -389,7 +429,7 @@
           </div>
         
           <div class="lg:w-146 w-full">
-            <textarea name="building-description-en" id="building-description-en" placeholder="Английски" class="textarea-custom w-full lg:h-98 h-62" required></textarea>
+            <textarea name="building-description-en" id="building-description-en" placeholder="Английски" class="textarea-custom w-full lg:h-98 h-62"></textarea>
         </div>
       </section>
 
@@ -403,19 +443,19 @@
 
             <!-- ?????????? -->
             <div class="relative">
-              <input id=files-plan" name="files-plan" type="text" class="float-input peer w-full" placeholder="Мастер план и разпределения" required />
+              <input id=files-plan" name="files-plan" type="text" class="float-input peer w-full" placeholder="Мастер план и разпределения" />
               <label for="files-plan" class="float-label">Мастер план и разпределения</label>
             </div>
 
             <!-- ?????????? -->
             <div class="relative mt-6">
-              <input id=files-pictures" name="files-pictures" type="text" class="float-input peer w-full " placeholder="Професионални снимки" required />
+              <input id=files-pictures" name="files-pictures" type="text" class="float-input peer w-full " placeholder="Професионални снимки" />
               <label for="files-pictures" class="float-label">Професионални снимки</label>
             </div>
 
              <!-- ?????????? -->
              <div class="relative  mt-6">
-              <input id=files-permission" name="files-permission" type="text" class="float-input peer w-full " placeholder="Копие от разрешение за експлоатация" required />
+              <input id=files-permission" name="files-permission" type="text" class="float-input peer w-full " placeholder="Копие от разрешение за експлоатация" />
               <label for="files-permission" class="float-label">Копие от разрешение за експлоатация</label>
             </div>
 
@@ -453,7 +493,6 @@
 
     </form>
 
-
     <!-- Footer -->
     <footer class="bg-footer h-full bg-no-repeat bg-bottom bg-cover	bg-black">
       <div class="container flex flex-col flex-1">
@@ -486,14 +525,42 @@
         <div class="text-white h-full">
           <div class="flex flex-row justify-start flex-nowrap sm:text-xl text-lg sm:leading-5 leading-4">
             <div class="sm:mr-0 mr-4">
-              <ul class="flex flex-col gap-6 text-white font-bold lg:w-68 md:w-47 w-26 sm:w-min-26">
-                <li class="btn-hover-5">Jury</li>
-                <li class="btn-hover-5">Contacts</li>
-                <li class="btn-hover-5">Gallery</li>
-                <li class="btn-hover-5">Initiatives</li>
-                <li class="btn-hover-5">Archive</li>
-                <li class="btn-hover-5 sm:hidden">Apply Online</li>
-                <li class="btn-hover-5 hidden sm:block">Online Application</li>
+              <ul class="flex flex-col gap-6 text-white font-bold xl:w-68 md:w-47 w-26 sm:w-min-26">
+                <li class="btn-hover-5">
+                  <a href="6-jury.html" target="_self" rel="noopener noreferrer">
+                    Jury
+                  </a>
+                </li>
+                <li class="btn-hover-5">
+                  <a href="4-contact.html" target="_self" rel="noopener noreferrer">
+                    Contacts
+                  </a>
+                </li>
+                <li class="btn-hover-5">
+                  <a href="7-gallery-photo.html" target="_self" rel="noopener noreferrer">
+                    Gallery
+                  </a>
+                </li>
+                <li class="btn-hover-5">
+                  <a href="8-initiatives.html" target="_self" rel="noopener noreferrer">
+                    Initiatives
+                  </a>
+                </li>
+                <li class="btn-hover-5">
+                  <a href="3-archive.html" target="_self" rel="noopener noreferrer">
+                    Archive
+                  </a>
+                </li>
+                <li class="btn-hover-5 sm:hidden">
+                  <a href="10-registration.html" target="_self" rel="noopener noreferrer">
+                    Apply Online
+                  </a>
+                </li>
+                <li class="btn-hover-5 hidden sm:block">
+                  <a href="10-registration.html" target="_self" rel="noopener noreferrer">
+                    Online Application
+                  </a>
+                </li>
               </ul>  
             </div>
 
@@ -501,27 +568,27 @@
             <div class="hidden sm:block"> 
               <p class="font-bold mb-7"> Categories </p>
               <div class="flex flex-row flex-wrap font-regular">
-                <div class="sm:w-68 w-56">
+                <div class="sm:w-68 w-56 mr-3">
                   <ul class="flex flex-col">
-                    <li class="btn-hover-5 mb-2.5">Social Infrastructure and Special Purpose Buildings</li>
-                    <li class="btn-hover-5 lg:mb-7.1 mb-2.5">City Development Projects</li>
+                    <li class="btn-hover-5 mb-2.5">Social Infrastructure and Special Purpose Buildings </li>
+                    <li class="btn-hover-5 xl:mb-7.1 mb-2.5">City Development Projects</li>
                     <li class="btn-hover-5 mb-2.5">Residential Buildings </br> 10 000 m2 or More</li>
                     <li class="btn-hover-5 mb-2.5">Production Buildings</li>
                   </ul> 
                 </div>
-                <div class="sm:w-68 w-56">
+                <div class="sm:w-68 w-56 mr-3">
                   <ul class="flex flex-col ">
-                    <li class="btn-hover-5 lg:mb-7.1 mb-2.5">Social Infrastructure: Healthcare</li>
-                    <li class="btn-hover-5 lg:mb-7.1 mb-2.5">Office and Corporate Buildings</li>
-                    <li class="btn-hover-5 lg:mb-7.1 mb-2.5">Hotels and Holiday Complexes</li>
-                    <li class="btn-hover-5 lg:mb-7.1 mb-2.5">Logistics Buildings</li>
+                    <li class="btn-hover-5 xl:mb-7.1 mb-2.5">Social Infrastructure: Healthcare</li>
+                    <li class="btn-hover-5 xl:mb-7.1 mb-2.5">Office and Corporate Buildings</li>
+                    <li class="btn-hover-5 xl:mb-7.1 mb-2.5">Hotels and Holiday Complexes</li>
+                    <li class="btn-hover-5 xl:mb-7.1 mb-2.5">Logistics Buildings</li>
                   </ul> 
                 </div>
-                <div class="sm:w-68 w-56">
+                <div class="sm:w-68 w-56 mr-3">
                   <ul class="flex flex-col ">
-                    <li class="btn-hover-5 lg:mb-7.1 mb-2.5">Sofia Metro</li>
+                    <li class="btn-hover-5 xl:mb-7.1 mb-2.5">Sofia Metro</li>
                     <li class="btn-hover-5 mb-2.5">Residential Buildings </br> 10 000 m2 or Less</li>
-                    <li class="btn-hover-5 lg:mb-7.1 mb-2.5">Commercial Buildings</li>
+                    <li class="btn-hover-5 xl:mb-7.1 mb-2.5">Commercial Buildings</li>
                     <li class="btn-hover-5 mb-2.5">Buildings with Elements of Green Architecture and Innovation</li>
                   </ul> 
                 </div>
@@ -530,8 +597,8 @@
             
             <div class="sm:hidden pr-4">
               <p class="font-bold mb-5"> Categories </p>
-              <ul class="flex flex-col sm:w-68 w-56 gap-3 mb-4">
-                <li class="btn-hover-5">Social Infrastructure and Special Purpose Buildings</li>
+              <ul class="flex flex-col sm:w-68 w-10/12 gap-3 mb-4">
+                <li class="btn-hover-5"> <p>Social Infrastructure and Special Purpose Buildings</p> </li>
                 <li class="btn-hover-5">Social Infrastructure: Healthcare</li>
                 <li class="btn-hover-5">Sofia Metro</li>
                 <li class="btn-hover-5">City Development Projects</li>
@@ -579,5 +646,6 @@
         </div>
       </div>
     </footer>
+
   </body>
 </html>
