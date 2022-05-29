@@ -1,4 +1,6 @@
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
   @font-face {
@@ -9,15 +11,15 @@
          url('/src/assets/fonts/en/NeueHaasUnicaW1G-Bold1.woff') format('woff'),
          url('/src/assets/fonts/en/NeueHaasUnicaW1G-Bold1.ttf')  format('truetype'),
          url('/src/assets/fonts/en/NeueHaasUnicaW1G-Bold1.svg#Neue Haas Unica W1G') format('svg');
-  },
+  }
   @font-face {
-    font-family: 'Neue-regular';
+    font-family: 'Neue Haas Unica W1G';
     src: url('/src/assets/fonts/en/NeueHaasUnicaW1G-Regular.eot');
     src: url('/src/assets/fonts/en/NeueHaasUnicaW1G-Regular.eot?#iefix') format('embedded-opentype'),
-         url('/src/assets/fonts/en/NeueHaasUnicaW1G-Regular.woff2') format('woff2'),
-         url('/src/assets/fonts/en/NeueHaasUnicaW1G-Regular.woff') format('woff'),
-         url('/src/assets/fonts/en/NeueHaasUnicaW1G-Regular.ttf')  format('truetype'),
-         url('/src/assets/fonts/en/NeueHaasUnicaW1G-Regular.svg#Neue Haas Unica W1G') format('svg');
+        url('/src/assets/fonts/en/NeueHaasUnicaW1G-Regular.woff2') format('woff2'),
+        url('/src/assets/fonts/en/NeueHaasUnicaW1G-Regular.woff') format('woff'),
+        url('/src/assets/fonts/en/NeueHaasUnicaW1G-Regular.ttf') format('truetype'),
+        url('/src/assets/fonts/en/NeueHaasUnicaW1G-Regular.svg#NeueHaasUnicaW1G-Regular') format('svg');
   }
   @font-face {
     font-family: 'Neue-regular-cyrillic';
@@ -67,9 +69,6 @@
   }
 }
 
-@tailwind components;
-@tailwind utilities;
-
 @layer utilities {
   .text-badge {
     writing-mode: vertical-rl;
@@ -102,7 +101,7 @@ select:-webkit-autofill:focus {
 
 
 .container {
-  @apply lg:px-0 md:px-4 px-4;
+  @apply xl:px-0 px-4;
 }
 
 .hide-scroll-bar {
@@ -165,12 +164,20 @@ select:-webkit-autofill:focus {
   @apply flex items-center justify-between border-b-1 pb-1.5;
 }
 
-.share-btn p {
+.share-btn span {
+  @apply sm:text-xl md:text-xl text-lg font-bold text-left;
+}
+
+.share-btn-white {
+  @apply flex items-center justify-between border-b-1 pb-2 btn-hover-5 mt-2 sm:w-68 w-42;
+}
+
+.share-btn-white span {
   @apply sm:text-xl md:text-xl text-lg font-bold text-left;
 }
 
 .more-btn {
-  @apply flex items-center justify-between border-b-1 pb-1.5;
+  @apply flex md:items-center items-end justify-between border-b-1 pb-1.5;
 }
 
 .more-btn span {
@@ -179,10 +186,6 @@ select:-webkit-autofill:focus {
 
 .control-btn {
   @apply more-btn btn-hover-2 mt-2 sm:w-68 w-42;
-}
-
-.share-btn-white {
-  @apply more-btn btn-hover-5 mt-2 sm:w-68 w-42;
 }
 
 .position-absolute-center {
@@ -224,7 +227,7 @@ select:-webkit-autofill:focus {
 /* Gallery */
 
 .gallery__wrapper {
-  @apply relative overflow-hidden lg:w-68 lg:h-47 md:w-56 md:h-36 w-42 h-29 cursor-pointer;
+  @apply relative overflow-hidden aspect-w-16 aspect-h-11 cursor-pointer;
 }
 
 .gallery__image {
@@ -292,7 +295,7 @@ select:-webkit-autofill:focus {
 /* Album */
 
 .album_wrapper {
-  @apply relative overflow-hidden lg:w-68 lg:h-48.2 md:w-45 md:h-28 w-18.1 h-13.8 cursor-pointer;
+  @apply relative overflow-hidden aspect-w-16 aspect-h-11 cursor-pointer;
 }
 
 /* Image gallery */
@@ -310,11 +313,11 @@ select:-webkit-autofill:focus {
 }
 
 .image-gallery__image-wrapper {
-  @apply lg:h-62 md:h-47 h-48.2 relative overflow-hidden;
+  @apply aspect-w-16 aspect-h-9 relative overflow-hidden;
 }
 
 .image-gallery__image {
-  @apply absolute w-full transition-all duration-500 ease-in-out transform;
+  @apply absolute w-full h-full object-center object-cover lg:w-full lg:h-full transition-all duration-500 ease-in-out transform;
 }
 
 .image-gallery__title {
@@ -322,7 +325,7 @@ select:-webkit-autofill:focus {
 }
 
 .image-gallery__title-wrapper {
-  @apply bg-white sm:w-94 w-68;
+  @apply bg-white w-9/12 pr-2 pt-2;
 }
 
 .image-gallery__navigation {
@@ -376,7 +379,7 @@ select:-webkit-autofill:focus {
 }
 
 .jury__item {
-  @apply sm:w-87.5 flex sm:text-xl text-lg sm:leading-5.2 leading-4.5;
+  @apply md:w-87.5 w-full flex sm:text-xl text-lg sm:leading-5.2 leading-4.5;
 }
 
 .jury__image {
@@ -387,4 +390,8 @@ select:-webkit-autofill:focus {
 
 .registration-form__title {
   @apply md:text-3xl text-2xl md:leading-5.5 leading-7.5 text-black font-bold md:mt-13 mt-7.1 md:mb-1.5 mb-1;
+}
+
+.swiper-slide-active .swiper-slide-text{
+  @apply animate-fade-in-up delay-1000;
 }

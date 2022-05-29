@@ -13,15 +13,30 @@
     <!-- Header -->
     <header class="sm:bg-jury bg-jury-m bg-cover bg-no-repeat  sm:pt-5 py-4 pb-8 ">
       <nav class="container flex flex-row items-start justify-between">
-        <img src="./assets/logo/logo.png" alt="logo" class="md:w-56 lg:w-68 w-56" />
+        <img src="./assets/logo/logo.svg" alt="logo" class="lg:w-68 w-56" />
         <div class="hidden md:flex text-white font-regular flex-col items-end justify-between h-29 mt-1">
           <div>
-            <ul class="flex items-center lg:gap-5 gap-3 text-sm">
-              <li class="btn-hover-5">Home</li>
-              <li class="btn-hover-5">About</li>
-              <li class="btn-hover-5">Archive</li>
-              <li class="btn-hover-5">Archive</li>
-              <li class="btn-hover-5">Contacts</li>
+            <ul class="flex items-center xl:gap-5 gap-3 text-sm">
+              <li class="btn-hover-5">
+                <a href="1-home.html" target="_self" rel="noopener noreferrer">
+                  Home
+                </a>
+              </li>
+              <li class="btn-hover-5">
+                <a href="2-about.html" target="_self" rel="noopener noreferrer">
+                  About
+                </a>
+              </li>
+              <li class="btn-hover-5">
+                <a href="3-archive.html" target="_self" rel="noopener noreferrer">
+                  Archive
+                </a>
+              </li>
+              <li class="btn-hover-5">
+                <a href="4-contact.html" target="_self" rel="noopener noreferrer">
+                  Contacts
+                </a>
+              </li>
               <li class="flex items-center btn-hover-5"> 
                 <img src="./assets/icon/globe.svg" alt="globe" class="w-5" />
                 <span class="ml-1.5">bg</span>
@@ -30,19 +45,43 @@
           </div>
   
           <div class="flex flex-1 justify-end items-center mt-2">
-            <ul class="flex flex-1 items-start lg:gap-5 gap-3 text-xl">
-              <li class="btn-hover-5">Participants</li>
-              <li class="btn-hover-5">Jury</li>
-              <li class="btn-hover-5">Gallery</li>
-              <li class="btn-hover-5">Initiatives</li>
-              <li class="btn-hover-5">Rules</li>
+            <ul class="flex flex-1 items-start xl:gap-5 gap-3 text-xl">
+              <li class="btn-hover-5">
+                <a href="5-participants.html" target="_self" rel="noopener noreferrer">
+                  Participants
+                </a>
+              </li>
+              <li class="btn-hover-5">
+                <a href="6-jury.html" target="_self" rel="noopener noreferrer">
+                  Jury
+                </a>
+              </li>
+              <li class="btn-hover-5">
+                <a href="7-gallery-photo.html" target="_self" rel="noopener noreferrer">
+                  Gallery
+                </a>
+              </li>
+              <li class="btn-hover-5">
+                <a href="8-initiatives.html" target="_self" rel="noopener noreferrer">
+                  Initiatives
+                </a>
+              </li>
+              <li class="btn-hover-5">
+                <a href="9-rules.html" target="_self" rel="noopener noreferrer">
+                  Rules
+                </a>
+              </li>
+              <a href="10-registration.html" target="_self" rel="noopener noreferrer">
                 <button type="button" class="more-btn btn-hover-1">
                   <span class="mr-2"> Online Application </span>
                   <svg xmlns="http://www.w3.org/2000/svg"width="14.145" height="12.142" viewBox="0 0 14.145 12.142"><path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(0 0)" /></svg>
                 </button>
+              </a>
+          
             </ul>
           </div>
         </div>
+
         <!-- Mobile menu button -->
         <div class=" md:hidden flex items-center mt-5">
          <button id="mobile-menu-btn">
@@ -59,12 +98,14 @@
 
       <div class="container flex flex-col justify-start text-white sm:mt-15.5 mt-10 ">
         <div>
-          <button type="button" class="pagination-menu__btn back-btn btn-hover-5">
-            <svg xmlns="http://www.w3.org/2000/svg" width="10.484" height="9" viewBox="0 0 10.484 9">
-              <path  d="M10.281,4.992l-3.8,3.8a.7.7,0,0,1-.984-.984L8.109,5.2H.7A.7.7,0,1,1,.7,3.8H8.109L5.492,1.188A.7.7,0,0,1,6.476.2l3.8,3.8a.7.7,0,0,1,0,.984" transform="translate(10.484 9) rotate(180)"/>
-            </svg>
-            <p class="m-2"> Home </p>
-          </button>
+          <a href="1-home.html" target="_self" rel="noopener noreferrer">
+            <button type="button" class="pagination-menu__btn back-btn btn-hover-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10.484" height="9" viewBox="0 0 10.484 9">
+                <path  d="M10.281,4.992l-3.8,3.8a.7.7,0,0,1-.984-.984L8.109,5.2H.7A.7.7,0,1,1,.7,3.8H8.109L5.492,1.188A.7.7,0,0,1,6.476.2l3.8,3.8a.7.7,0,0,1,0,.984" transform="translate(10.484 9) rotate(180)"/>
+              </svg>
+              <p class="m-2"> Home </p>
+            </button>
+          </a>
         </div>
         <div>
           <p class="pagination-menu__title">Jury</p>
@@ -171,14 +212,8 @@
           </div>
         </div>
 
-        
-
       </div>
     </section>
-
-
-
-
 
     <!-- Footer -->
     <footer class="bg-footer h-full bg-no-repeat bg-bottom bg-cover	bg-black">
@@ -212,14 +247,42 @@
         <div class="text-white h-full">
           <div class="flex flex-row justify-start flex-nowrap sm:text-xl text-lg sm:leading-5 leading-4">
             <div class="sm:mr-0 mr-4">
-              <ul class="flex flex-col gap-6 text-white font-bold lg:w-68 md:w-47 w-26 sm:w-min-26">
-                <li class="btn-hover-5">Jury</li>
-                <li class="btn-hover-5">Contacts</li>
-                <li class="btn-hover-5">Gallery</li>
-                <li class="btn-hover-5">Initiatives</li>
-                <li class="btn-hover-5">Archive</li>
-                <li class="btn-hover-5 sm:hidden">Apply Online</li>
-                <li class="btn-hover-5 hidden sm:block">Online Application</li>
+              <ul class="flex flex-col gap-6 text-white font-bold xl:w-68 md:w-47 w-26 sm:w-min-26">
+                <li class="btn-hover-5">
+                  <a href="6-jury.html" target="_self" rel="noopener noreferrer">
+                    Jury
+                  </a>
+                </li>
+                <li class="btn-hover-5">
+                  <a href="4-contact.html" target="_self" rel="noopener noreferrer">
+                    Contacts
+                  </a>
+                </li>
+                <li class="btn-hover-5">
+                  <a href="7-gallery-photo.html" target="_self" rel="noopener noreferrer">
+                    Gallery
+                  </a>
+                </li>
+                <li class="btn-hover-5">
+                  <a href="8-initiatives.html" target="_self" rel="noopener noreferrer">
+                    Initiatives
+                  </a>
+                </li>
+                <li class="btn-hover-5">
+                  <a href="3-archive.html" target="_self" rel="noopener noreferrer">
+                    Archive
+                  </a>
+                </li>
+                <li class="btn-hover-5 sm:hidden">
+                  <a href="10-registration.html" target="_self" rel="noopener noreferrer">
+                    Apply Online
+                  </a>
+                </li>
+                <li class="btn-hover-5 hidden sm:block">
+                  <a href="10-registration.html" target="_self" rel="noopener noreferrer">
+                    Online Application
+                  </a>
+                </li>
               </ul>  
             </div>
 
@@ -227,27 +290,27 @@
             <div class="hidden sm:block"> 
               <p class="font-bold mb-7"> Categories </p>
               <div class="flex flex-row flex-wrap font-regular">
-                <div class="sm:w-68 w-56">
+                <div class="sm:w-68 w-56 mr-3">
                   <ul class="flex flex-col">
-                    <li class="btn-hover-5 mb-2.5">Social Infrastructure and Special Purpose Buildings</li>
-                    <li class="btn-hover-5 lg:mb-7.1 mb-2.5">City Development Projects</li>
+                    <li class="btn-hover-5 mb-2.5">Social Infrastructure and Special Purpose Buildings </li>
+                    <li class="btn-hover-5 xl:mb-7.1 mb-2.5">City Development Projects</li>
                     <li class="btn-hover-5 mb-2.5">Residential Buildings </br> 10 000 m2 or More</li>
                     <li class="btn-hover-5 mb-2.5">Production Buildings</li>
                   </ul> 
                 </div>
-                <div class="sm:w-68 w-56">
+                <div class="sm:w-68 w-56 mr-3">
                   <ul class="flex flex-col ">
-                    <li class="btn-hover-5 lg:mb-7.1 mb-2.5">Social Infrastructure: Healthcare</li>
-                    <li class="btn-hover-5 lg:mb-7.1 mb-2.5">Office and Corporate Buildings</li>
-                    <li class="btn-hover-5 lg:mb-7.1 mb-2.5">Hotels and Holiday Complexes</li>
-                    <li class="btn-hover-5 lg:mb-7.1 mb-2.5">Logistics Buildings</li>
+                    <li class="btn-hover-5 xl:mb-7.1 mb-2.5">Social Infrastructure: Healthcare</li>
+                    <li class="btn-hover-5 xl:mb-7.1 mb-2.5">Office and Corporate Buildings</li>
+                    <li class="btn-hover-5 xl:mb-7.1 mb-2.5">Hotels and Holiday Complexes</li>
+                    <li class="btn-hover-5 xl:mb-7.1 mb-2.5">Logistics Buildings</li>
                   </ul> 
                 </div>
-                <div class="sm:w-68 w-56">
+                <div class="sm:w-68 w-56 mr-3">
                   <ul class="flex flex-col ">
-                    <li class="btn-hover-5 lg:mb-7.1 mb-2.5">Sofia Metro</li>
+                    <li class="btn-hover-5 xl:mb-7.1 mb-2.5">Sofia Metro</li>
                     <li class="btn-hover-5 mb-2.5">Residential Buildings </br> 10 000 m2 or Less</li>
-                    <li class="btn-hover-5 lg:mb-7.1 mb-2.5">Commercial Buildings</li>
+                    <li class="btn-hover-5 xl:mb-7.1 mb-2.5">Commercial Buildings</li>
                     <li class="btn-hover-5 mb-2.5">Buildings with Elements of Green Architecture and Innovation</li>
                   </ul> 
                 </div>
@@ -256,8 +319,8 @@
             
             <div class="sm:hidden pr-4">
               <p class="font-bold mb-5"> Categories </p>
-              <ul class="flex flex-col sm:w-68 w-56 gap-3 mb-4">
-                <li class="btn-hover-5">Social Infrastructure and Special Purpose Buildings</li>
+              <ul class="flex flex-col sm:w-68 w-10/12 gap-3 mb-4">
+                <li class="btn-hover-5"> <p>Social Infrastructure and Special Purpose Buildings</p> </li>
                 <li class="btn-hover-5">Social Infrastructure: Healthcare</li>
                 <li class="btn-hover-5">Sofia Metro</li>
                 <li class="btn-hover-5">City Development Projects</li>
@@ -305,5 +368,6 @@
         </div>
       </div>
     </footer>
+    
   </body>
 </html>
