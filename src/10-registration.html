@@ -255,16 +255,43 @@
               <input id="submitter-last-name-en" name="submitter-last-name-en" type="text" class="float-input peer w-full " placeholder="Фамилия" required />
               <label for="submitter-last-name-en" class="float-label required-label">Фамилия</label>
             </div>
-      
+
+
             <div class="relative md:mt-7.1 mt-6 group">
               <button class="group inline-flex items-center justify-between w-full h-10 border-b-2 border-gray-300 hover:border-none" type="button" data-dropdown-toggle="dropdown">
-                <p class="text-gray-400 text-xl required-label">Роля в проекта</p>
+                <p class="text-gray-400 text-xl required-label">Роля в проекта </p>
                 <svg class="transition-all group-hover:rotate-180 " xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6">
                   <path d="M5,0l5,6H0Z" transform="translate(10 6) rotate(180)"/>
                 </svg>
               </button>
-            </div>
 
+              <!-- Dropdown menu -->
+              <div class="group-hover:block hidden border-b-3 border-black bg-white text-base z-50 list-none" id="dropdown">
+                  <ul class="py-1 pb-2 text-xl text-black" aria-labelledby="dropdown">
+                    <li class="text-sm hover:bg-gray-100 text-gray-700 inline-flex items-start px-4 py-1 w-full cursor-pointer">
+                      <input type="checkbox" class="form-checkbox mr-2 border-black text-black focus:ring-0 w-3.8 h-3.8" >
+                      <span>Офисни сгради </span>
+                    </li>
+                    <li class="text-sm hover:bg-gray-100 text-gray-700 inline-flex items-start px-4 py-1  w-full cursor-pointer">
+                      <input type="checkbox" class="form-checkbox mr-2 border-black text-black focus:ring-0 w-3.8 h-3.8" >
+                      <span>Инвеститор </span>
+                    </li>
+                    <li class="text-sm hover:bg-gray-100 text-gray-700 inline-flex items-start px-4 py-1  w-full cursor-pointer">
+                      <input type="checkbox" class="form-checkbox mr-2 border-black text-black focus:ring-0 w-3.8 h-3.8">
+                      <span>Изпълнител </span>
+                    </li>
+                    <li class="text-sm hover:bg-gray-100 text-gray-700 inline-flex items-start px-4 py-1  w-full cursor-pointer">
+                      <input type="checkbox" class="form-checkbox mr-2 border-black text-black focus:ring-0 w-3.8 h-3.8">
+                      <span>Архитект</span>
+                    </li>
+                    <li class="text-sm hover:bg-gray-100 text-gray-700 inline-flex items-start px-4 py-1  w-full cursor-pointer">
+                      <input type="checkbox" class="form-checkbox mr-2 border-black text-black focus:ring-0 w-3.8 h-3.8">
+                      <span>Друго</span>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+      
             <div class="relative md:mt-7.1 mt-6">
               <input id="submitter-email-en" name="submitter-email-en" type="email" class="float-input peer w-full " placeholder="Email" required />
               <label for="submitter-email-en" class="float-label required-label">Email</label>
@@ -370,6 +397,51 @@
         </div>
       </section>
 
+      <!-- Contractor -->
+      <section class="container">
+        <p class="registration-form__title">
+          Изпълнител
+        </p>
+        <div class="flex flex-wrap content-start justify-between">
+          <div class="lg:w-146 w-full">
+      
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="designer-company-name-bg" name="designer-company-name-bg" type="text" class="float-input peer w-full " placeholder="Име на компанията" required />
+              <label for="designer-company-name-bg" class="float-label required-label peer-focus:after:content-['(БЪЛГАРСКИ)'] after:ml-0.5">Име на компанията</label>
+            </div>
+
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="designer-phone-bg" name="designer-phone-bg" type="tel" class="float-input peer w-full " placeholder="Телефон" required />
+              <label for="designer-phone-bg" class="float-label required-label">Телефон</label>
+            </div>
+        
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="designer-website" name="designer-website" type="url" class="float-input peer w-full " placeholder="www.website.com" required />
+              <label for="designer-website" class="float-label required-label">Уебсайт</label>
+            </div>
+   
+          </div>
+        
+          <div class="lg:w-146 w-full">
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="designer-company-name-en" name="designer-company-name-en" type="text" class="float-input peer w-full " placeholder="Име на компанията" required />
+              <label for="designer-company-name-en" class="float-label required-label peer-focus:after:content-['(английски)'] after:ml-0.5">Име на компанията</label>
+            </div>
+
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="designer-email" name="designer-email" type="email" class="float-input peer w-full " placeholder="Email" required />
+              <label for="designer-email" class="float-label required-label">Email</label>
+            </div>
+
+            <div class="relative md:mt-7.1 mt-6">
+              <input id="designer-address" name="designer-address" type="text" class="float-input peer w-full " placeholder="Адрес" required />
+              <label for="designer-address" class="float-label required-label">Адрес</label>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       <!-- Constructor -->
       <section class="container">
         <p class="registration-form__title">
@@ -412,7 +484,7 @@
         
           <div class="lg:w-146 w-full">
             <div class="relative md:mt-7.1 mt-6">
-              <input id="permission" name="permission" type="date" class="float-input peer w-full" placeholder="Разрешение" />
+              <input id="permission" name="permission" type="text" class="float-input peer w-full" placeholder="Разрешение" />
               <label for="permission" class="float-label">Разрешение (номер / дата)</label>
             </div>
         </div>
