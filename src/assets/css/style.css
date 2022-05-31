@@ -379,7 +379,7 @@ select:-webkit-autofill:focus {
 }
 
 .jury__item {
-  @apply md:w-87.5 w-full flex sm:text-xl text-lg sm:leading-5.2 leading-4.5;
+  @apply xl:w-87.5 w-full flex sm:text-xl text-lg sm:leading-5.2 leading-4.5;
 }
 
 .jury__image {

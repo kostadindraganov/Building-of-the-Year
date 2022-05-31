@@ -17,7 +17,7 @@
     <header class="bg-header bg-cover bg-no-repeat bg-center sm:pt-5 py-4 pb-8">
       <nav class="container flex flex-row items-start justify-between">
         <img src="./assets/logo/logo.svg" alt="logo" class="lg:w-68 w-56" />
-        <div class="hidden md:flex text-white font-regular flex-col items-end justify-between h-29 mt-1">
+        <div class="hidden lg:flex text-white font-regular flex-col items-end justify-between h-29 mt-1">
           <div>
             <ul class="flex items-center xl:gap-5 gap-3 text-sm">
               <li class="btn-hover-5">
@@ -86,7 +86,7 @@
         </div>
 
         <!-- Mobile menu button -->
-        <div class=" md:hidden flex items-center mt-5">
+        <div class="lg:hidden flex items-center mt-5">
          <button id="mobile-menu-btn">
            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="17" viewBox="0 0 25 17" class="mobile-btn-hover">
              <g transform="translate(-333 -19)">
@@ -127,7 +127,7 @@
     <section class="container flex lg:flex-row flex-col lg:gap-y-7 relative">
 
       <!-- Title -->
-      <div class="lg:absolute right-0 bottom-64 z-10 lg:mb-0 mb-3"> 
+      <div class="lg:absolute right-0 bottom-64 z-10 xl:mb-0 mb-3 xl:mr-0 lg:mr-4"> 
         <div class="lg:px-8 lg:py-2 bg-white lg:border-b-3 border-black lg:w-149">
           <h3 class="lg:leading-10 leading-5.5"> Supercomputer Center Petascale Bulgaria</h3>
           <p class="lg:text-xl lg:leading-5.2 text-lg leading-4.7">Sofia</p>
@@ -147,12 +147,14 @@
       </div>
 
       <!-- Navigation -->
-      <div class="flexlg:justify-start lg:items-start items-end lg:flex-row flex-col lg:w-198 lg:mb-0 mb-7"> 
+      <div class="flex xl:justify-start xl:items-start items-end xl:flex-row flex-col xl:w-198 xl:mb-0 mb-7"> 
+
+        <!-- FIRST PRIZE BADGE -->
         <!-- <div class="flex bg-primary text-white uppercase sm:-ml-7.1 ml-0 sm:mr-0 mr-4">
           <span class="md:text-badge font-bold md:text-sm text-extra-small md:leading-4.6 leading-3.3 p-1.2">FIRST PRIZE</span>
         </div> -->
 
-        <div class="lg:w-198 lg:h-178 relative">
+        <div class="xl:w-198 xl:h-178 relative">
           <div class="lg:hidden flex absolute bottom-0 right-0 items-center w-30 h-12 bg-white px-2.5">
             <button class="btn-hover-2 h-full px-2.5"> 
               <svg xmlns="http://www.w3.org/2000/svg" width="32.618" height="28" viewBox="0 0 32.618 28">
@@ -165,12 +167,13 @@
               </svg>
             </button>
           </div>
-          <img src="./assets/images/gallery/t33.jpg" alt="t33" class="w-full" />
+          <img src="./assets/images/gallery/t33.jpg" alt="t33" class="w-full h-full object-center object-cover lg:w-full lg:h-full" />
+        </div>
         </div>
       </div>
 
       <!-- Buttons -->
-      <div class="flex lg:flex-col flex-row lg:justify-end justify-between lg:items-end lg:ml-4 lg:w-68">
+      <div class="flex lg:flex-col flex-row lg:justify-end justify-between lg:items-end lg:ml-4 xl:w-68">
         <div class="flex lg:justify-end justify-between lg:flex-col flex-row lg:w-68 w-full btn-hover-2">
 
           <div class="lg:block hidden">
@@ -346,15 +349,17 @@
         <div class="flex flex-wrap gap-x-3.5 justify-between gap-y-6 sm:mt-7.1 mt-5 sm:text-xl text-lg sm:leading-5.2 leading-4.5">
          <div class="sm:w-188 w-87.5 ">
            <p class="font-bold sm:mb-5 mb-2.5"> Project Description </p>
-           <p> The supercomputer center with the first in its class petascale supercomputer in Bulgaria - Discoverer, was established after the candidacy of our country for participation in the European network of high-performance machines EuroHPC JU, approved in 2020. The Bulgarian state, together with Spain, Finland, Italy, the Czech Republic, Luxembourg, Portugal and Slovenia, was chosen as the host country in which to build one of the EU's supercomputer centers. </p>
-           <button type="button" id="show-more-btn" class="more-btn btn-hover-2 mt-4 w-full group transition-all">
-            <span class="mr-2"> Show more </span>
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="12.142" height="14.145" viewBox="0 0 12.142 14.145">
-              <path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(0 14.145) rotate(-90)"/>
-            </svg> -->
-            <svg class="group-hover:rotate-180" xmlns="http://www.w3.org/2000/svg" width="12.142" height="14.145" viewBox="0 0 12.142 14.145">
+           <div class="collapse-text overflow-hidden ransition-all ease-in-out  h-58">
+            <p> The supercomputer center with the first in its class petascale supercomputer in Bulgaria - Discoverer, was established after the candidacy of our country for participation in the European network of high-performance machines EuroHPC JU, approved in 2020. The Bulgarian state, together with Spain, Finland, Italy, the Czech Republic, Luxembourg, Portugal and Slovenia, was chosen as the host country in which to build one of the EU's supercomputer centers. </p>
+            <p class="my-7">  The supercomputer center with the first in its class petascale supercomputer in Bulgaria - Discoverer, was established after the candidacy of our country for participation in the European network of high-performance machines EuroHPC JU, approved in 2020. The Bulgarian state, together with Spain, Finland, Italy, the Czech Republic, Luxembourg, Portugal and Slovenia, was chosen as the host country in which to build one of the EU's supercomputer centers. </p>
+            <p> The supercomputer center with the first in its class petascale supercomputer in Bulgaria - Discoverer, was established after the candidacy of our country for participation in the European network of high-performance machines EuroHPC JU, approved in 2020. The Bulgarian state, together with Spain, Finland, Italy, the Czech Republic, Luxembourg, Portugal and Slovenia, was chosen as the host country in which to build one of the EU's supercomputer centers. </p>
+          </div>
+          <button type="button" id="show-more" class="show-more more-btn btn-hover-2 mt-7 w-full">
+            <span class="mr-2 show-more__text-more"> Show More </span>
+            <span class="mr-2 show-more__text-less hidden"> Show Less </span>       
+            <svg class="show-more__icon transition-all ease-in-out" xmlns="http://www.w3.org/2000/svg" width="12.142" height="14.145" viewBox="0 0 12.142 14.145">
               <path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(12.142) rotate(90)"/>
-            </svg>            
+            </svg>        
           </button>
          </div>
 
@@ -431,18 +436,17 @@
               </div>
               <p>Renovation of kindergarten Perunika, Plovdiv</p>
             </div>
-
           </div>
 
-          <button type="button" id="show-more-btn" class="more-btn btn-hover-2 w-full">
-            <span class="mr-2"> Back to Category </span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="12.142" height="14.145" viewBox="0 0 12.142 14.145">
-              <path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(0 14.145) rotate(-90)"/>
-            </svg>
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="12.142" height="14.145" viewBox="0 0 12.142 14.145">
-              <path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(12.142) rotate(90)"/>
-            </svg>             -->
-          </button>
+          
+          <a href="17-category.html" target="_self" rel="noopener noreferrer">
+            <button type="button" id="show-more-btn" class="more-btn btn-hover-2 w-full">
+              <span class="mr-2"> Back to Category </span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="12.142" height="14.145" viewBox="0 0 12.142 14.145">
+                <path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(0 14.145) rotate(-90)"/>
+              </svg>
+            </button>
+          </a>
         </div>
 
     </section>

@@ -1291,6 +1291,46 @@ h6 {
   margin-bottom: 3rem;
 }
 
+.-mt-10 {
+  margin-top: -2.5rem;
+}
+
+.-mt-11 {
+  margin-top: -2.75rem;
+}
+
+.-mt-2 {
+  margin-top: -0.5rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
+}
+
+.ml-20 {
+  margin-left: 5rem;
+}
+
+.ml-21 {
+  margin-left: 5.188rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.-ml-7\.1 {
+  margin-left: -1.875rem;
+}
+
+.-ml-7 {
+  margin-left: -1.75rem;
+}
+
+.-ml-0 {
+  margin-left: -0px;
+}
+
 .block {
   display: block;
 }
@@ -3643,7 +3683,7 @@ select:-webkit-autofill:focus {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .jury__item {
     width: 21.5rem;
   }
@@ -4445,6 +4485,10 @@ select:-webkit-autofill:focus {
     top: -6rem;
   }
 
+  .md\:bottom-64 {
+    bottom: 16rem;
+  }
+
   .md\:order-3 {
     order: 3;
   }
@@ -4547,6 +4591,18 @@ select:-webkit-autofill:focus {
     margin-top: 0px;
   }
 
+  .md\:mr-4 {
+    margin-right: 1rem;
+  }
+
+  .md\:-ml-7\.1 {
+    margin-left: -1.875rem;
+  }
+
+  .md\:-ml-7 {
+    margin-left: -1.75rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -4621,10 +4677,6 @@ select:-webkit-autofill:focus {
 
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:w-87 {
-    width: 21.375rem;
   }
 
   .md\:w-56 {
@@ -4838,6 +4890,10 @@ select:-webkit-autofill:focus {
     left: 50%;
   }
 
+  .lg\:bottom-64 {
+    bottom: 16rem;
+  }
+
   .lg\:m-auto {
     margin: auto;
   }
@@ -4918,6 +4974,26 @@ select:-webkit-autofill:focus {
 
   .lg\:mb-7 {
     margin-bottom: 1.75rem;
+  }
+
+  .lg\:-mt-2 {
+    margin-top: -0.5rem;
+  }
+
+  .lg\:-mt-11 {
+    margin-top: -2.75rem;
+  }
+
+  .lg\:-mt-12 {
+    margin-top: -3rem;
+  }
+
+  .lg\:-mt-14 {
+    margin-top: -3.5rem;
+  }
+
+  .lg\:mr-4 {
+    margin-right: 1rem;
   }
 
   .lg\:block {
@@ -5010,6 +5086,18 @@ select:-webkit-autofill:focus {
 
   .lg\:w-28 {
     width: 7rem;
+  }
+
+  .lg\:w-1 {
+    width: 0.25rem;
+  }
+
+  .lg\:w-155 {
+    width: 37rem;
+  }
+
+  .lg\:w-87 {
+    width: 21.375rem;
   }
 
   .lg\:-translate-y-1\/2 {
@@ -5166,6 +5254,30 @@ select:-webkit-autofill:focus {
 }
 
 @media (min-width: 1280px) {
+  .xl\:absolute {
+    position: absolute;
+  }
+
+  .xl\:right-1\/2 {
+    right: 50%;
+  }
+
+  .xl\:top-1\/2 {
+    top: 50%;
+  }
+
+  .xl\:left-1\/2 {
+    left: 50%;
+  }
+
+  .xl\:bottom-64 {
+    bottom: 16rem;
+  }
+
+  .xl\:m-auto {
+    margin: auto;
+  }
+
   .xl\:mr-24 {
     margin-right: 6rem;
   }
@@ -5180,6 +5292,42 @@ select:-webkit-autofill:focus {
 
   .xl\:ml-6 {
     margin-left: 1.5rem;
+  }
+
+  .xl\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .xl\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .xl\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .xl\:mr-4 {
+    margin-right: 1rem;
+  }
+
+  .xl\:mr-0 {
+    margin-right: 0px;
+  }
+
+  .xl\:-ml-7\.1 {
+    margin-left: -1.875rem;
+  }
+
+  .xl\:-ml-7 {
+    margin-left: -1.75rem;
+  }
+
+  .xl\:hidden {
+    display: none;
+  }
+
+  .xl\:h-178 {
+    height: 37.188rem;
   }
 
   .xl\:w-auto {
@@ -5198,6 +5346,19 @@ select:-webkit-autofill:focus {
     width: 21.375rem;
   }
 
+  .xl\:w-198 {
+    width: 52.5rem;
+  }
+
+  .xl\:w-28 {
+    width: 7rem;
+  }
+
+  .xl\:-translate-y-1\/2 {
+    --tw-translate-y: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -5210,12 +5371,32 @@ select:-webkit-autofill:focus {
     flex-direction: row;
   }
 
+  .xl\:items-start {
+    align-items: flex-start;
+  }
+
+  .xl\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .xl\:justify-end {
+    justify-content: flex-end;
+  }
+
   .xl\:gap-5 {
     gap: 1.25rem;
   }
 
   .xl\:gap-3 {
     gap: 0.75rem;
+  }
+
+  .xl\:gap-y-7 {
+    row-gap: 1.75rem;
+  }
+
+  .xl\:border-b-3 {
+    border-bottom-width: 3px;
   }
 
   .xl\:px-0 {
@@ -5225,5 +5406,13 @@ select:-webkit-autofill:focus {
 
   .xl\:pl-0 {
     padding-left: 0px;
+  }
+
+  .xl\:text-6xl {
+    font-size: 2.5rem;
+  }
+
+  .xl\:text-xl {
+    font-size: .938rem;
   }
 }
