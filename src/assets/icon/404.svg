@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="137.333" height="152" viewBox="0 0 137.333 152">
+  <g id="Group_652" data-name="Group 652" transform="translate(-173 -510)">
+    <g id="Group_651" data-name="Group 651" transform="translate(175 512)">
+      <line id="Line_69" data-name="Line 69" y1="23.81" transform="translate(52.381 102.381)" fill="none" stroke="#be8d3c" stroke-miterlimit="10" stroke-width="4"/>
+      <line id="Line_70" data-name="Line 70" y1="23.81" transform="translate(66.667 102.381)" fill="none" stroke="#be8d3c" stroke-miterlimit="10" stroke-width="4"/>
+      <line id="Line_71" data-name="Line 71" y1="23.81" transform="translate(80.952 102.381)" fill="none" stroke="#be8d3c" stroke-miterlimit="10" stroke-width="4"/>
+      <line id="Line_72" data-name="Line 72" x2="23.81" transform="translate(54.762 52.381)" fill="none" stroke="#be8d3c" stroke-miterlimit="10" stroke-width="4"/>
+      <g id="Group_650" data-name="Group 650" transform="translate(0 0)">
+        <g id="Group_653" data-name="Group 653">
+          <path id="Path_943" data-name="Path 943" d="M38.576,15.9A11.788,11.788,0,1,1,26.786,4.022,11.834,11.834,0,0,1,38.576,15.9Z" transform="translate(54.048 12.749)" fill="none" stroke="#be8d3c" stroke-miterlimit="10" stroke-width="4"/>
+          <path id="Path_944" data-name="Path 944" d="M31.81,15.917A11.9,11.9,0,1,1,19.9,4.012,11.9,11.9,0,0,1,31.81,15.917Z" transform="translate(27.714 12.712)" fill="none" stroke="#be8d3c" stroke-miterlimit="10" stroke-width="4"/>
+          <path id="Path_945" data-name="Path 945" d="M133.833,86.548V24.762a7.263,7.263,0,0,0-7.262-7.262H7.762A7.263,7.263,0,0,0,.5,24.762V86.548" transform="translate(-0.5 63.452)" fill="none" stroke="#be8d3c" stroke-miterlimit="10" stroke-width="4"/>
+          <path id="Path_946" data-name="Path 946" d="M94,.5H10.024A5.526,5.526,0,0,0,4.5,6.029v55.61a5.526,5.526,0,0,0,5.524,5.529H94.19a5.528,5.528,0,0,0,5.529-5.548L99.524,6A5.531,5.531,0,0,0,94,.5Z" transform="translate(14.548 -0.5)" fill="none" stroke="#be8d3c" stroke-miterlimit="10" stroke-width="4"/>
+          <rect id="Rectangle_664" data-name="Rectangle 664" width="19.048" height="28.571" transform="translate(114.286 9.524)" fill="none" stroke="#be8d3c" stroke-miterlimit="10" stroke-width="4"/>
+          <rect id="Rectangle_665" data-name="Rectangle 665" width="19.048" height="28.571" transform="translate(0 9.524)" fill="none" stroke="#be8d3c" stroke-miterlimit="10" stroke-width="4"/>
+          <g id="Group_654" data-name="Group 654" transform="translate(-1.664 -1.69)">
+            <line id="Line_73" data-name="Line 73" x2="8" y2="8" transform="translate(78.5 26.5)" fill="none" stroke="#be8d3c" stroke-width="3"/>
+            <line id="Line_74" data-name="Line 74" x2="8" y2="8" transform="translate(86.5 26.5) rotate(90)" fill="none" stroke="#be8d3c" stroke-width="3"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

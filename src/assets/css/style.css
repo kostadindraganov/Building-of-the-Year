@@ -99,6 +99,9 @@ select:-webkit-autofill:focus {
   box-shadow: 0 0 0 30px white inset;
 }
 
+html, body {
+  @apply h-full;
+}
 
 .container {
   @apply xl:px-0 px-4;
@@ -224,6 +227,10 @@ select:-webkit-autofill:focus {
   @apply stroke-white hover:stroke-primary cursor-pointer;
 }
 
+.link-hover {
+  @apply  hover:text-primary cursor-pointer;
+}
+
 /* Gallery */
 
 .gallery__wrapper {
@@ -242,8 +249,12 @@ select:-webkit-autofill:focus {
 
 /* Arhives */
 
-.arhives__tab a {
-  @apply w-20 h-13.5 flex items-center justify-center overflow-hidden border-1 border-grey-light shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out cursor-pointer;
+.arhives__tab  {
+  @apply w-20 h-13.5 px-2 flex items-center justify-center bg-black hover:bg-primary cursor-pointer;
+}
+
+.arhives__tab.selected  {
+  @apply bg-primary text-white;
 }
 
 .collapsible {
@@ -277,15 +288,15 @@ select:-webkit-autofill:focus {
 /* focus:invalid:border-pink-500 focus:invalid:ring-pink-500 */ 
 
 .float-input {
-  @apply h-10 border-b-2 focus:pl-2 pl-0 transition-all autofill:bg-transparent border-gray-300 text-gray-700 placeholder-transparent focus:ring-0 outline-none focus:border-black focus:invalid:border-red-500 focus:shadow-white  border-x-0 border-t-0;  
+  @apply h-10 border-b-2 focus:pl-2 pl-0 transition-all autofill:bg-transparent border-gray-300 text-gray-700 placeholder-transparent focus:ring-0 outline-none focus:border-black focus:invalid:border-red-custom focus:shadow-white  border-x-0 border-t-0;  
 }
 
 .float-label {
-  @apply absolute left-0 -top-3.5 text-gray-500 text-xl peer-focus:uppercase peer-focus:text-uxs transition-all peer-placeholder-shown:text-xl peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 cursor-pointer peer-focus:peer-invalid:text-red-500;
+  @apply absolute left-0 -top-3.5 text-gray-500 text-xl peer-focus:uppercase peer-focus:text-uxs transition-all peer-placeholder-shown:text-xl peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 cursor-pointer peer-focus:peer-invalid:text-red-custom;
 }
 
 .required-label {
-  @apply after:content-['*'] after:ml-0.5 after:text-red-500;
+  @apply after:content-['*'] after:ml-0.5 after:text-red-custom;
 }
 
 .textarea-custom {
@@ -394,4 +405,39 @@ select:-webkit-autofill:focus {
 
 .swiper-slide-active .swiper-slide-text{
   @apply animate-fade-in-up delay-1000;
+}
+
+
+
+.hamburger-menu .line {
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+  margin: 7px auto;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.hamburger-menu.is-active .line {
+  background-color: black;
+}
+
+.hamburger-menu.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+.hamburger-menu.is-active .line:nth-child(1){
+  -webkit-transform: translateY(6px) rotate(45deg);
+  -ms-transform: translateY(6px) rotate(45deg);
+  -o-transform: translateY(6px) rotate(45deg);
+  transform: translateY(6px) rotate(45deg);
+}
+
+.hamburger-menu.is-active .line:nth-child(3){
+  -webkit-transform: translateY(-12px) rotate(-45deg);
+  -ms-transform: translateY(-12px) rotate(-45deg);
+  -o-transform: translateY(-12px) rotate(-45deg);
+  transform: translateY(-12px) rotate(-45deg);
 }

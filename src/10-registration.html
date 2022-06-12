@@ -14,9 +14,9 @@
   
   <body class="font-en font-normal bg-white">
     <!-- Header -->
-    <header class="bg-header bg-cover bg-no-repeat bg-center md:pt-5 py-4 pb-8">
+    <header class="bg-header bg-cover bg-no-repeat bg-center sm:pt-5 py-4 pb-8">
       <nav class="container flex flex-row items-start justify-between">
-        <img src="./assets/logo/logo.svg" alt="logo" class="lg:w-68 w-56" />
+        <img src="./assets/logo/logo.svg" alt="logo" class="w-68" />
         <div class="hidden lg:flex text-white font-regular flex-col items-end justify-between h-29 mt-1">
           <div>
             <ul class="flex items-center xl:gap-5 gap-3 text-sm">
@@ -85,20 +85,55 @@
           </div>
         </div>
 
-        <!-- Mobile menu button -->
-        <div class="lg:hidden flex items-center mt-5">
-         <button id="mobile-menu-btn">
-           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="17" viewBox="0 0 25 17" class="mobile-btn-hover">
-             <g transform="translate(-333 -19)">
-               <line x1="25" transform="translate(333 20)"   stroke-width="2"/>
-               <line x1="25" transform="translate(333 27.5)"  stroke-width="2"/>
-               <line x1="25" transform="translate(333 35)"  stroke-width="2"/>
-             </g>
-           </svg>
-         </button>
+        <div class="lg:hidden container flex justify-end">
+          <div class="hamburger-menu cursor-pointer mt-4 z-50" >
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
         </div>
-
       </nav>
+
+      <div class="mobile-menu hidden animate-fade-in bg-white h-full w-full absolute top-0 left-0 z-20">
+        <div class="flex flex-col justify-between container w-full h-full">
+          <div class="sm:mt-5 mt-4">
+            <img src="./assets/logo/mobile-logo.svg" alt="logo" class="w-68" />
+          </div>
+
+          <nav class="flex flex-1 justify-center items-center">
+            <ul class="text-3xl text-black font-boldEn leading-14 text-center">
+              <li>
+                <a href="#" class="link-hover">About</a>
+              </li>
+              <li>
+                <a href="6-jury.html" class="link-hover">Jury</a>
+              </li>
+              <li>
+                <a href="4-contact.html" class="link-hover">Contacts</a>
+              </li>
+              <li>
+                <a href="7-gallery-photo.html" class="link-hover">Gallery</a>
+              </li>
+              <li>
+                <a href="8-initiatives.html" class="link-hover">Initiatives</a>
+              </li>
+              <li>
+                <a href="3-archive.html" class="link-hover">Archive</a>
+              </li>
+              <li>
+                <a href="10-registration.html" class="link-hover">Apply Online</a>
+              </li>
+            </ul>
+          </nav>
+        
+          <div class="border-t-2 border-black ">
+            <div class="flex justify-start items-center text-black font-boldEn text-xl my-4 ">
+              <img src="./assets/icon/globe-black.svg" alt="globe" class="w-5" />
+              <span class="ml-1 link-hover">EN</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <form  action="" method="POST" class="registration-form md:mb-41 mb-48">
@@ -127,6 +162,19 @@
         </div>
       </section>
 
+      <!-- Error msg -->
+      <section class="container mt-6">
+        <div class="flex bg-red-custom justify-start items-center content-center gap-x-4  text-white text-lg leading-5 px-6 h-10 w-full">
+          <svg xmlns="http://www.w3.org/2000/svg" width="5" height="21" viewBox="0 0 5 21">
+            <g transform="translate(-26 -520)">
+              <circle cx="2.5" cy="2.5" r="2.5" transform="translate(26 536)" fill="#fff"/>
+              <rect  width="5" height="13" rx="2.5" transform="translate(26 520)" fill="#fff"/>
+            </g>
+          </svg>
+          <span>Възникна грешка, вижте подробности по-долу.</span>
+        </div>
+      </section>
+
       <!-- Building -->
       <section class="container">
         <p class="registration-form__title">
@@ -135,14 +183,16 @@
         <div class="flex flex-wrap content-start justify-between">
           <div class="lg:w-146 w-full">
 
-            <div class="relative md:mt-7.1 mt-6">
+            <div class="relative md:mt-7.1 mt-6 text-right">
               <input id="name-bg" name="name-bg" type="text" class="float-input peer w-full " placeholder="Наименование" required />
               <label for="name-bg" class="float-label required-label peer-focus:after:content-['(БЪЛГАРСКИ)'] after:ml-0.5">Наименование</label>
+              <span class="text-red-custom uppercase text-uxs leading-3.4 invisible peer-invalid:visible" id="error">моля, използвайте латиница</span>
             </div>
   
-            <div class="relative md:mt-7.1 mt-6">
+            <div class="relative md:mt-7.1 mt-6 text-right">
               <input id="Location" name="Location" type="text" class="float-input peer w-full " placeholder="Местоположение" required />
               <label for="Location" class="required-label float-label">Местоположение</label>
+              <span class="text-red-custom uppercase text-uxs leading-3.4 invisible peer-invalid:visible" id="error">моля, използвайте латиница</span>
             </div>
           </div>
   
@@ -554,7 +604,7 @@
           </li>
         </ul>
 
-        <button type="submit" class="text-white bg-black lg:w-146 w-full h-13.5 cursor-pointer hover:text-primary">
+        <button type="submit" id="submitBtn" class="text-white bg-black lg:w-146 w-full h-13.5 cursor-pointer hover:text-primary">
           <span>Изпращане</span>
         </button>
       </section>
@@ -562,7 +612,7 @@
     </form>
 
     <!-- Footer -->
-    <footer class="bg-footer h-full bg-no-repeat bg-bottom bg-cover	bg-black">
+    <footer class="bg-footer bg-no-repeat bg-bottom bg-cover	bg-black">
       <div class="container flex flex-col flex-1">
 
         <div class="flex justify-between items-start text-white">
@@ -714,6 +764,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="./assets/js/shortcodes.js"></script>
 
   </body>
 </html>

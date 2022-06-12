@@ -9,13 +9,14 @@ module.exports = {
         'grey':    '#C7C7C7',
         'grey-light':   '#707070',
         'grey-light-2' : '#F2F2F2',
-        'grey-custom' : '#8D8D8D'
+        'grey-custom' : '#8D8D8D',
+        'red-custom' : '#FF0000'
       },
       fontFamily: {
         en: ['Neue Haas Unica W1G', ...defaultTheme.fontFamily.sans],
-        bg: ['Neue-regular-cyrillic', ...defaultTheme.fontFamily.sans]
-        // bold: ['Neue-bold', ...defaultTheme.fontFamily.sans],
-        // boldCyrillic: ['Neue-bold-cyrillic', ...defaultTheme.fontFamily.sans],      
+        bg: ['Neue-regular-cyrillic', ...defaultTheme.fontFamily.sans],
+        boldEn: ['Neue-bold', ...defaultTheme.fontFamily.sans],
+        boldCyrillic: ['Neue-bold-cyrillic', ...defaultTheme.fontFamily.sans]     
       },
       fontSize: {
         'extra-small': '.563rem', // 9px
@@ -175,7 +176,7 @@ module.exports = {
         '7.9': '2.188rem',  // 35px
         '10.5': '2.625rem', // 42px
         '12.8': '3.125rem', // 50px
-        '13': '3.25rem',    // 52px
+        '13':   '3.25rem',  // 52px
         '15.3': '3.625rem', // 58px
         '15.5': '3.75rem',  // 60px
         '15.6': '3.938rem', // 63px
@@ -231,22 +232,19 @@ module.exports = {
               transform: 'translateY(0)'
           },
       },
-      'fade-out-up': {
-          'from': {
-              opacity: '1',
-              transform: 'translateY(0px)'
-          },
-          'to': {
-              opacity: '0',
-              transform: 'translateY(10px)'
-          },
-      }
+      'fade-in': {
+        '0%': {
+            opacity: '0',
+        },
+        '100%': {
+            opacity: '1'        },
+      },
       },
       animation: {
         'fade-in-down': 'fade-in-down 0.5s ease-out',
         'fade-out-down': 'fade-out-down 0.5s ease-out',
         'fade-in-up': 'fade-in-up 1s ease-in-out',
-        'fade-out-up': 'fade-out-up 0.5s ease-out'
+        'fade-in': 'fade-in 0.55s ease-in-out'
       }
     },
     container: {

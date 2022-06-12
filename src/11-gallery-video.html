@@ -13,7 +13,7 @@
     <!-- Header -->
     <header class="bg-header bg-cover bg-no-repeat bg-center sm:pt-5 py-4 pb-8">
       <nav class="container flex flex-row items-start justify-between">
-        <img src="./assets/logo/logo.svg" alt="logo" class="lg:w-68 w-56" />
+        <img src="./assets/logo/logo.svg" alt="logo" class="w-68" />
         <div class="hidden lg:flex text-white font-regular flex-col items-end justify-between h-29 mt-1">
           <div>
             <ul class="flex items-center xl:gap-5 gap-3 text-sm">
@@ -82,20 +82,55 @@
           </div>
         </div>
 
-        <!-- Mobile menu button -->
-        <div class="lg:hidden flex items-center mt-5">
-         <button id="mobile-menu-btn">
-           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="17" viewBox="0 0 25 17" class="mobile-btn-hover">
-             <g transform="translate(-333 -19)">
-               <line x1="25" transform="translate(333 20)"   stroke-width="2"/>
-               <line x1="25" transform="translate(333 27.5)"  stroke-width="2"/>
-               <line x1="25" transform="translate(333 35)"  stroke-width="2"/>
-             </g>
-           </svg>
-         </button>
+        <div class="lg:hidden container flex justify-end">
+          <div class="hamburger-menu cursor-pointer mt-4 z-50" >
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
         </div>
-
       </nav>
+
+      <div class="mobile-menu hidden animate-fade-in bg-white h-full w-full absolute top-0 left-0 z-20">
+        <div class="flex flex-col justify-between container w-full h-full">
+          <div class="sm:mt-5 mt-4">
+            <img src="./assets/logo/mobile-logo.svg" alt="logo" class="w-68" />
+          </div>
+
+          <nav class="flex flex-1 justify-center items-center">
+            <ul class="text-3xl text-black font-boldEn leading-14 text-center">
+              <li>
+                <a href="#" class="link-hover">About</a>
+              </li>
+              <li>
+                <a href="6-jury.html" class="link-hover">Jury</a>
+              </li>
+              <li>
+                <a href="4-contact.html" class="link-hover">Contacts</a>
+              </li>
+              <li>
+                <a href="7-gallery-photo.html" class="link-hover">Gallery</a>
+              </li>
+              <li>
+                <a href="8-initiatives.html" class="link-hover">Initiatives</a>
+              </li>
+              <li>
+                <a href="3-archive.html" class="link-hover">Archive</a>
+              </li>
+              <li>
+                <a href="10-registration.html" class="link-hover">Apply Online</a>
+              </li>
+            </ul>
+          </nav>
+        
+          <div class="border-t-2 border-black ">
+            <div class="flex justify-start items-center text-black font-boldEn text-xl my-4 ">
+              <img src="./assets/icon/globe-black.svg" alt="globe" class="w-5" />
+              <span class="ml-1 link-hover">EN</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <section class="container">
@@ -241,7 +276,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-footer h-full bg-no-repeat bg-bottom bg-cover	bg-black">
+    <footer class="bg-footer bg-no-repeat bg-bottom bg-cover	bg-black">
       <div class="container flex flex-col flex-1">
 
         <div class="flex justify-between items-start text-white">
@@ -393,6 +428,8 @@
         </div>
       </div>
     </footer>
+
+    <script src="./assets/js/shortcodes.js"></script>
 
   </body>
 </html>

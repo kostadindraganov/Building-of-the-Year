@@ -10,130 +10,148 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   </head>
   
-  <body class="font-en font-normal bg-white">
+  <body class="font-en font-normal bg-white relative">
     <!-- Header -->
+    <header>
+      <div class="absolute w-full z-20 bg-gradient-to-b  from-black to-transparent">
+        <nav class="container flex flex-row items-start justify-between sm:mt-5 mt-4 pb-11">
+          <img src="./assets/logo/logo.svg" alt="logo" class="w-68" />
+          <div class="hidden lg:flex text-white font-regular flex-col items-end justify-between h-29 mt-1">
+            <div>
+              <ul class="flex items-center xl:gap-5 gap-3 text-sm">
+                <li class="btn-hover-5">
+                  <a href="1-home.html" target="_self" rel="noopener noreferrer">
+                    Home
+                  </a>
+                </li>
+                <li class="btn-hover-5">
+                  <a href="2-about.html" target="_self" rel="noopener noreferrer">
+                    About
+                  </a>
+                </li>
+                <li class="btn-hover-5">
+                  <a href="3-archive.html" target="_self" rel="noopener noreferrer">
+                    Archive
+                  </a>
+                </li>
+                <li class="btn-hover-5">
+                  <a href="4-contact.html" target="_self" rel="noopener noreferrer">
+                    Contacts
+                  </a>
+                </li>
+                <li class="flex items-center btn-hover-5"> 
+                  <img src="./assets/icon/globe.svg" alt="globe" class="w-5" />
+                  <span class="ml-1.5">bg</span>
+                </li>
+              </ul>
+            </div>
     
-    <header class="absolute w-full z-20 bg-gradient-to-b  from-black to-transparent">
-      <nav class="container flex flex-row items-start justify-between sm:mt-5 mt-4 pb-11">
-        <img src="./assets/logo/logo.svg" alt="logo" class="lg:w-68 w-56" />
-        <div class="hidden lg:flex text-white font-regular flex-col items-end justify-between h-29 mt-1">
-          <div>
-            <ul class="flex items-center xl:gap-5 gap-3 text-sm">
-              <li class="btn-hover-5">
-                <a href="1-home.html" target="_self" rel="noopener noreferrer">
-                  Home
+            <div class="flex flex-1 justify-end items-center mt-2">
+              <ul class="flex flex-1 items-start gap-5 text-xl">
+                <li class="btn-hover-5">
+                  <a href="5-participants.html" target="_self" rel="noopener noreferrer">
+                    Participants
+                  </a>
+                </li>
+                <li class="btn-hover-5">
+                  <a href="6-jury.html" target="_self" rel="noopener noreferrer">
+                    Jury
+                  </a>
+                </li>
+                <li class="btn-hover-5">
+                  <a href="7-gallery-photo.html" target="_self" rel="noopener noreferrer">
+                    Gallery
+                  </a>
+                </li>
+                <li class="btn-hover-5">
+                  <a href="8-initiatives.html" target="_self" rel="noopener noreferrer">
+                    Initiatives
+                  </a>
+                </li>
+                <li class="btn-hover-5">
+                  <a href="9-rules.html" target="_self" rel="noopener noreferrer">
+                    Rules
+                  </a>
+                </li>
+                <a href="10-registration.html" target="_self" rel="noopener noreferrer">
+                  <button type="button" class="more-btn btn-hover-1">
+                    <span class="mr-2"> Online Application </span>
+                    <svg xmlns="http://www.w3.org/2000/svg"width="14.145" height="12.142" viewBox="0 0 14.145 12.142"><path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(0 0)" /></svg>
+                  </button>
                 </a>
-              </li>
-              <li class="btn-hover-5">
-                <a href="2-about.html" target="_self" rel="noopener noreferrer">
-                  About
-                </a>
-              </li>
-              <li class="btn-hover-5">
-                <a href="3-archive.html" target="_self" rel="noopener noreferrer">
-                  Archive
-                </a>
-              </li>
-              <li class="btn-hover-5">
-                <a href="4-contact.html" target="_self" rel="noopener noreferrer">
-                  Contacts
-                </a>
-              </li>
-              <li class="flex items-center btn-hover-5"> 
-                <img src="./assets/icon/globe.svg" alt="globe" class="w-5" />
-                <span class="ml-1.5">bg</span>
-              </li>
-            </ul>
+            
+              </ul>
+            </div>
           </div>
-  
-          <div class="flex flex-1 justify-end items-center mt-2">
-            <ul class="flex flex-1 items-start gap-5 text-xl">
-              <li class="btn-hover-5">
-                <a href="5-participants.html" target="_self" rel="noopener noreferrer">
-                  Participants
-                </a>
-              </li>
-              <li class="btn-hover-5">
-                <a href="6-jury.html" target="_self" rel="noopener noreferrer">
-                  Jury
-                </a>
-              </li>
-              <li class="btn-hover-5">
-                <a href="7-gallery-photo.html" target="_self" rel="noopener noreferrer">
-                  Gallery
-                </a>
-              </li>
-              <li class="btn-hover-5">
-                <a href="8-initiatives.html" target="_self" rel="noopener noreferrer">
-                  Initiatives
-                </a>
-              </li>
-              <li class="btn-hover-5">
-                <a href="9-rules.html" target="_self" rel="noopener noreferrer">
-                  Rules
-                </a>
-              </li>
-              <a href="10-registration.html" target="_self" rel="noopener noreferrer">
-                <button type="button" class="more-btn btn-hover-1">
-                  <span class="mr-2"> Online Application </span>
-                  <svg xmlns="http://www.w3.org/2000/svg"width="14.145" height="12.142" viewBox="0 0 14.145 12.142"><path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(0 0)" /></svg>
-                </button>
-              </a>
-          
-            </ul>
+        </nav>
+      </div>
+      <div class="lg:hidden z-50 absolute top-0 left-0 w-full">
+        <div class="container flex justify-end">
+          <div class="hamburger-menu cursor-pointer mt-4" >
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
           </div>
+        </div>
+      </div>
+      <div class="mobile-menu hidden animate-fade-in bg-white h-full w-full absolute top-0 left-0 z-40">
+        <div class="flex flex-col justify-between container w-full h-full">
+        <div class="sm:mt-5 mt-4">
+          <img src="./assets/logo/mobile-logo.svg" alt="logo" class="w-68" />
         </div>
 
-        <!-- Mobile menu button -->
-        <div class=" lg:hidden flex items-center mt-5">
-          <button id="mobile-menu-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="17" viewBox="0 0 25 17" class="mobile-btn-hover">
-              <g transform="translate(-333 -19)">
-                <line x1="25" transform="translate(333 20)"   stroke-width="2"/>
-                <line x1="25" transform="translate(333 27.5)"  stroke-width="2"/>
-                <line x1="25" transform="translate(333 35)"  stroke-width="2"/>
-              </g>
-            </svg>
-          </button>
+        <nav class="flex flex-1 justify-center items-center">
+          <ul class="text-3xl text-black font-boldEn leading-14 text-center">
+            <li>
+              <a href="#" class="link-hover">About</a>
+            </li>
+            <li>
+              <a href="6-jury.html" class="link-hover">Jury</a>
+            </li>
+            <li>
+              <a href="4-contact.html" class="link-hover">Contacts</a>
+            </li>
+            <li>
+              <a href="7-gallery-photo.html" class="link-hover">Gallery</a>
+            </li>
+            <li>
+              <a href="8-initiatives.html" class="link-hover">Initiatives</a>
+            </li>
+            <li>
+              <a href="3-archive.html" class="link-hover">Archive</a>
+            </li>
+            <li>
+              <a href="10-registration.html" class="link-hover">Apply Online</a>
+            </li>
+          </ul>
+        </nav>
+      
+        <div class="border-t-2 border-black ">
+        <div class="flex justify-start items-center text-black font-boldEn text-xl my-4 ">
+          <img src="./assets/icon/globe-black.svg" alt="globe" class="w-5" />
+          <span class="ml-1 link-hover">EN</span>
         </div>
-      </nav>
+        </div>
+      </div>
+      </div>
     </header>
 
+
     <!-- Hero -->
-    <section class="flex flex-col justify-between relative w-full md:h-188 h-141 "> 
-      
-      <!-- Navigation arrows -->
-      <div class="absolute bottom-0 flex justify-between flex-row w-full flex-nowrap z-10">
-        <div class="flex-1"></div>
-        <div class="sm:container flex items-center justify-end h-12 xl:px-0 md:px-0 sm:px-0">
-          <button class="home-slider-prev btn-hover-2 h-full px-2.5 bg-white"> 
-            <svg xmlns="http://www.w3.org/2000/svg" width="32.618" height="28" viewBox="0 0 32.618 28">
-              <path d="M31.984,15.53,20.149,27.365A2.165,2.165,0,0,1,17.087,24.3l8.14-8.139H2.165a2.165,2.165,0,0,1,0-4.33H25.227L17.087,3.7A2.165,2.165,0,0,1,20.149.634L31.984,12.469a2.164,2.164,0,0,1,0,3.061" transform="translate(32.618 28) rotate(180)"/>
-            </svg>
-          </button>
-          <button class="home-slider-next btn-hover-2 h-full pl-2.5 pr-4 bg-white"> 
-            <svg xmlns="http://www.w3.org/2000/svg" width="32.618" height="28" viewBox="0 0 32.618 28">
-              <path  d="M31.984,15.53,20.149,27.365A2.165,2.165,0,0,1,17.087,24.3l8.14-8.139H2.165a2.165,2.165,0,0,1,0-4.33H25.227L17.087,3.7A2.165,2.165,0,0,1,20.149.634L31.984,12.469a2.164,2.164,0,0,1,0,3.061" transform="translate(0 0)"/>
-            </svg>
-          </button>
-        </div>
-        <div class="flex-1 bg-white sm:flex hidden"></div>
-      </div>
-      
-      <div class="home-slider absolute top-0 left-0 w-full h-full overflow-hidden">
+    <section class="flex flex-col justify-between relative w-full md:h-188 h-141 z-10"> 
+            
+      <div class="home-slider absolute top-0 left-0 w-full h-full overflow-hidden z-20">
         <div class="swiper-wrapper">
           <!-- Slides -->
 
           <div class="swiper-slide w-full h-full bg-no-repeat bg-cover bg-center" style="background-image: url('./assets/images/hero-slider/hero-1.jpg');">
             <div class="swiper-slide-text container relative flex justify-end flex-col h-full">
-              <div class="border-l-20 border-l-primary sm:mb-10 mb-5.5">
+              <div class="border-l-20 border-l-primary sm:mb-12 mb-5.5">
                 <div class="md:w-173 w-5/6 sm:ml-7.1 ml-3.5">
                   <h1>Online Application Phase for 2022 Has Launched</h1>
-                  <a href="10-registration.html" target="_self" rel="noopener noreferrer">
-                    <button type="button" class="more-btn sm:w-68 w-34.5 btn-hover-5 mt-5">
-                      <span> Submit Your Application Now </span>
-                      <svg  xmlns="http://www.w3.org/2000/svg"width="14.145" height="12.142" viewBox="0 0 14.145 12.142"><path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(0 0)"/></svg>
-                    </button>
+                  <a href="10-registration.html" target="_self" rel="noopener noreferrer" class="more-btn sm:w-68 w-34.5 btn-hover-5 mt-5">
+                    <span> Submit Your Application Now </span>
+                    <svg  xmlns="http://www.w3.org/2000/svg"width="14.145" height="12.142" viewBox="0 0 14.145 12.142"><path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(0 0)"/></svg>
                   </a>
                 </div>
               </div>
@@ -145,11 +163,9 @@
               <div class="border-l-20 border-l-primary sm:mb-10 mb-5.5">
                 <div class="md:w-173 w-5/6 sm:ml-7.1 ml-3.5">
                   <h1>Online Application Phase for 2022 Has Launched</h1>
-                  <a href="10-registration.html" target="_self" rel="noopener noreferrer">
-                    <button type="button" class="more-btn sm:w-68 w-34.5 btn-hover-5 mt-5">
-                      <span> Submit Your Application Now </span>
-                      <svg  xmlns="http://www.w3.org/2000/svg"width="14.145" height="12.142" viewBox="0 0 14.145 12.142"><path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(0 0)"/></svg>
-                    </button>
+                  <a href="10-registration.html" target="_self" rel="noopener noreferrer" class="more-btn sm:w-68 w-34.5 btn-hover-5 mt-5">
+                    <span> Submit Your Application Now </span>
+                    <svg  xmlns="http://www.w3.org/2000/svg"width="14.145" height="12.142" viewBox="0 0 14.145 12.142"><path d="M13.869,6.734,8.737,11.867A.939.939,0,1,1,7.41,10.539l3.53-3.53h-10a.939.939,0,1,1,0-1.878h10L7.41,1.6A.939.939,0,0,1,8.737.275l5.132,5.132a.938.938,0,0,1,0,1.327" transform="translate(0 0)"/></svg>
                   </a>
                 </div>
               </div>
@@ -158,95 +174,116 @@
       
         </div>
       </div>
+
+      <!-- Navigation arrows -->
+      <div class="absolute bottom-0 flex justify-between flex-row w-full flex-nowra">
+        <div class="flex-1 z-0"></div>
+        <div class="sm:container flex items-center justify-end h-12 xl:px-0 md:px-0 sm:px-0 z-20">
+          <button class="home-slider-prev btn-hover-2 h-full px-2.5 bg-white"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="32.618" height="28" viewBox="0 0 32.618 28">
+              <path d="M31.984,15.53,20.149,27.365A2.165,2.165,0,0,1,17.087,24.3l8.14-8.139H2.165a2.165,2.165,0,0,1,0-4.33H25.227L17.087,3.7A2.165,2.165,0,0,1,20.149.634L31.984,12.469a2.164,2.164,0,0,1,0,3.061" transform="translate(32.618 28) rotate(180)"/>
+            </svg>
+          </button>
+          <button class="home-slider-next btn-hover-2 h-full pl-2.5 pr-4 bg-white"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="32.618" height="28" viewBox="0 0 32.618 28">
+              <path  d="M31.984,15.53,20.149,27.365A2.165,2.165,0,0,1,17.087,24.3l8.14-8.139H2.165a2.165,2.165,0,0,1,0-4.33H25.227L17.087,3.7A2.165,2.165,0,0,1,20.149.634L31.984,12.469a2.164,2.164,0,0,1,0,3.061" transform="translate(0 0)"/>
+            </svg>
+          </button>
+        </div>
+        <div class="flex-1 bg-white sm:flex hidden z-20"></div>
+      </div>
+    </section>
+
+     <!-- Cookie Consent  -->
+    <section class="relative">
+      <div class="bg-black sm:w-78 w-full  p-4 absolute left-0 sm:-top-13 top-32 z-30">
+        <p class="text-lg text-white leading-4 pr-3">
+          Сайтът използва бисквитки. Etiam finibus leo et lacus lacinia, in lobortis ligula semper. Nunc ex tortor, efficitur nec arcu ut, suscipit euismod nulla.
+        </p>
+        <button class="cursor-pointer flex gap-2 items-center content-center w-fit my-2 btn-hover-1 ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16.971" height="16.97" viewBox="0 0 16.971 16.97">
+            <path d="M14384,14524v-4h10v4Zm-4,0v-10h4v10Z" transform="translate(-20431.143 -84.854) rotate(-45)"/>
+          </svg>
+          <span>Приемам</span>
+        </button>
+      </div>
     </section>
 
     <!-- Sponsors -->
     <section class="container sm:text-sm text-extra-small mt-11">
-      <div class="flex flex-wrap sm:gap-x-24 gap-x-23 gap-y-10.5 justify-start items-start content-center">
+      <div class="flex flex-wrap sm:gap-x-32 gap-x-8 gap-y-8 justify-start items-start content-center w-full">
         <div>
           <p class="sm:mb-9 mb-5">Under the Auspices of</p>
-          <img src="./assets/images/partners/mrdpw.png" alt="mrdpw" class="sm:w-36 w-25.5 cursor-pointer">
+          <div class="flex flex-col gap-y-5">
+            <img src="./assets/images/partners/mrdpw.png" alt="mrdpw" class="w-3/4 cursor-pointer">
+          </div>
         </div>
         <div>
           <p class="sm:mb-9 mb-5">Exclusive Partner</p>
-          <img src="./assets/images/partners/euromarket.png" alt="euromarket" class="sm:w-47 w-32 cursor-pointer">
+          <div class="flex flex-col gap-y-5 w-fit">
+            <img src="./assets/images/partners/euromarket.png" alt="euromarket" class="w-3/4 cursor-pointer">
+          </div>
         </div>
-        <div>
+        <div >
           <p class="sm:mb-9 mb-5">Main Sponsor</p>
-          <img src="./assets/images/partners/agcapital.png" alt="agcapital" class="sm:w-44 w-25.5 cursor-pointer">
+          <div class="grid grid-flow-col gap-x-10 gap-y-5 content-center items-center">
+            <img src="./assets/images/partners/agcapital.png" alt="agcapital" class="w-3/4 cursor-pointer">
+          </div>
         </div>
-        <div>
-          <p class="mb-2">Golden Sponsor</p>
-          <img src="./assets/images/partners/etem.png" alt="etem" class="sm:w-42 w-26 cursor-pointer">
+      </div> 
+
+
+      <div class="mt-9">
+        <p>Golden Sponsor</p>
+        <div class="grid md:grid-cols-6 grid-cols-3 gap-x-10 gap-y-5 sm:mt-2.5 mt-5.2 items-center">
+          <img src="./assets/images/partners/etem.png" alt="etem" class="w-3/4 cursor-pointer">
         </div>
       </div>
 
-      <div class="sm:mt-13.5 mt-8">
+
+
+      <div class="mt-9">
         <p>With the Support of</p>
-        <div class="flex flex-wrap sm:gap-x-12 gap-x-9 sm:gap-y-10.5 gap-y-5 justify-between items-center content-center sm:mt-2.5 mt-5.2">
-          <div>
-            <img src="./assets/images/partners/milkana.png" alt="milkana" class="sm:w-36 w-[86px] cursor-pointer">
-          </div>
-          <div>
-            <img src="./assets/images/partners/hidromat.png" alt="hidromat" class="sm:w-[138px] w-[83px] cursor-pointer">
-          </div>
-          <div>
-            <img src="./assets/images/partners/semmelrock.png" alt="semmelrock" class="sm:w-[175px] w-[104px] cursor-pointer">
-          </div>
-          <div>
-            <img src="./assets/images/partners/ideal-standart.png" alt="ideal-standart" class="sm:w-[115px] w-[64px] cursor-pointer">
-          </div>
-          <div>
-            <img src="./assets/images/partners/schnider.png" alt="schnider" class="sm:w-[139px] w-[104px] cursor-pointer">
-          </div>
-          <div>
-            <img src="./assets/images/partners/sisecam.png" alt="sisecam" class="sm:w-[152px] w-[90px] cursor-pointer">
-          </div>
-          <div>
-            <img src="./assets/images/partners/amax.png" alt="amax" class="sm:w-[155px] w-[90px] cursor-pointer">
-          </div>
-          <div class="sm:w-[138px] w-[84px] flex justify-center sm:pr-4 pr-0">
-            <img src="./assets/images/partners/rollplast.png" alt="rollplast" class="sm:w-[70px] w-[42px] cursor-pointer">
-          </div>
-          <div> 
-            <img src="./assets/images/partners/alukoning.png" alt="alukoning" class="sm:w-[147px] w-[88px] cursor-pointer">
-          </div>
-          <div >
-            <img src="./assets/images/partners/knouf.png" alt="knouf" class="sm:w-[130px] w-[78px] sm:ml-4 cursor-pointer">
-          </div>
-          <div >
-            <img src="./assets/images/partners/doors-center.png" alt="doors-center" class="sm:w-[144px] w-[86px] cursor-pointer">
-          </div>
-          <div class="sm:w-[138px] w-[83px] flex justify-center">
-            <img src="./assets/images/partners/seg.png" alt="seg" class="sm:w-[71px] w-[43px] cursor-pointer">
-          </div>
+        <div class="grid md:grid-cols-6 grid-cols-3 gap-x-10 gap-y-5 sm:mt-2.5 mt-5.2 items-center">
+          <img src="./assets/images/partners/milkana.png" alt="milkana" class="w-full cursor-pointer">
+          <img src="./assets/images/partners/hidromat.png" alt="hidromat" class="w-full cursor-pointer">
+          <img src="./assets/images/partners/semmelrock.png" alt="semmelrock" class="w-full cursor-pointer">
+          <img src="./assets/images/partners/ideal-standart.png" alt="ideal-standart" class="w-full cursor-pointer">
+          <img src="./assets/images/partners/schnider.png" alt="schnider" class="w-full cursor-pointer">
+          <img src="./assets/images/partners/sisecam.png" alt="sisecam" class="w-full cursor-pointer">
+          <img src="./assets/images/partners/amax.png" alt="amax" class="w-full cursor-pointer">
+          <img src="./assets/images/partners/rollplast.png" alt="rollplast" class="w-full cursor-pointer">
+          <img src="./assets/images/partners/alukoning.png" alt="alukoning" class="w-full cursor-pointer">
+          <img src="./assets/images/partners/knouf.png" alt="knouf" class="w-full cursor-pointer">
+          <img src="./assets/images/partners/doors-center.png" alt="doors-center" class="w-full cursor-pointer">
+          <img src="./assets/images/partners/seg.png" alt="seg" class="w-full cursor-pointer">
         </div>
       </div>
     
-      <div class="flex flex-wrap justify-between items-end content-center sm:gap-x-16 gap-x-23 gap-y-10.5 sm:mt-13.5 mt-8 mb-16">
-        <div class="flex flex-wrap sm:gap-x-20 gap-x-8 gap-y-10.5 justify-start items-end content-center">
+      <div class="flex flex-wrap justify-between items-start content-center sm:gap-x-16 gap-x-23 gap-y-10.5  mt-8 mb-16">
+        <div class="flex flex-wrap gap-y-10.5 justify-start items-start content-center">
           <div>
-            <p class="sm:mb-7 mb-5">Partners</p>
-            <img src="./assets/images/partners/bcc.png" alt="bcc" class="sm:w-[189px] w-[104px] py-2 cursor-pointer">
-          </div>
-          <div>
-            <img src="./assets/images/partners/kab.png" alt="kab" class=w-[44px] cursor-pointer">
-          </div>
-          <div>
-            <img src="./assets/images/partners/kuun.png" alt="kuun" class="sm:w-[65px] w-[36px] cursor-pointer">
-          </div>
-          <div>
-            <img src="./assets/images/partners/bacea.png" alt="bacea" class="sm:w-[73px] w-[40px] cursor-pointer">
+            <p class="mb-5">Partners</p>
+            <div class="grid grid-flow-col gap-x-10 gap-y-5 content-center items-center">
+              <img src="./assets/images/partners/bcc.png" alt="bcc" class="w-3/4  cursor-pointer">
+              <img src="./assets/images/partners/kab.png" alt="kab" class="w-3/4  cursor-pointer">
+              <img src="./assets/images/partners/kuun.png" alt="kuun" class="w-3/4  cursor-pointer">
+              <img src="./assets/images/partners/bacea.png" alt="bacea" class="w-3/4 cursor-pointer">
+            </div>
           </div>
         </div>
-        <div class="flex flex-1 justify-between items-end content-center">
+        <div class="flex flex-1 justify-between items-center content-center gap-x-5">
           <div>
             <p class="sm:mb-5.2 mb-4">Media Partner</p>
-            <img src="./assets/images/partners/bnt.png" alt="bnt" class="sm:w-[174px] w-[104px] cursor-pointer">
+            <div class="grid grid-flow-col gap-x-10 gap-y-5 content-center items-center">
+              <img src="./assets/images/partners/bnt.png" alt="bnt" class="w-full cursor-pointer">
+            </div>
           </div>
           <div>
             <p class="sm:mb-5.2 mb-4">Organizer</p>
-            <img src="./assets/images/partners/town.png" alt="town" class="sm:w-[175px] w-[100px] cursor-pointer">
+            <div class="grid grid-flow-col gap-x-10 gap-y-5 content-center items-center">
+              <img src="./assets/images/partners/town.png" alt="town" class="w-full cursor-pointer">
+            </div>
           </div>
         </div>
     </div>
@@ -373,7 +410,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-footer h-full bg-no-repeat bg-bottom bg-cover	bg-black">
+    <footer class="bg-footer bg-no-repeat bg-bottom bg-cover	bg-black">
       <div class="container flex flex-col flex-1">
 
         <div class="flex justify-between items-start text-white">
